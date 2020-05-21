@@ -15,3 +15,11 @@ CODE - [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/
 ![Table in png](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Table%20created%20using%20HTML.png)
 #
 #
+ CODE -  [Basic Form in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Basic_form.html)
+<br> LIVE PAGE - [Tution Form](https://keshavgbpecdelhi.github.io/Web-Development/Basic_form.html)
+ <br>
+ #
+#
+ CODE -  [Video Embedding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/video_embedding.html)
+<br> LIVE PAGE - [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/video_embedding.html)
+ <br>
