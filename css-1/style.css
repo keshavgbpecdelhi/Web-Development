@@ -1,0 +1,17 @@
+body{
+	background:rgba(5,255,0,0.3);
+}
+
+/***************comment in css **************/
+
+
+/*
+------------Color code RGBA--------------
+rgba(
+		[here value can vary from 0-255],
+		[here value can vary from 0-255],
+		[here value can vary from 0-255],
+		[this determines opacity from 0-1]
+	)
+
+*/
