@@ -23,3 +23,24 @@ CODE - [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/
  CODE -  [Video Embedding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/video_embedding.html)
 <br> LIVE PAGE - [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/video_embedding.html)
  <br>
+#
+#
+ META TAG CODE  -  [META](https://raw.githubusercontent.com/keshavgbpecdelhi/Web-Development/master/meta_tag.html)
+<br> META TAG LIVE PAGE - [META TAG LIVE PAGE]( https://keshavgbpecdelhi.github.io/Web-Development/meta_tag.html)
+ <br>
+  #
+#
+CSS RGBA COLOR CODE  -  [RGBA](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-1)
+<br> LIVE PAGE - [COLOR CODE LIVE](https://keshavgbpecdelhi.github.io/Web-Development/css-1/)
+ <br>
+  #
+#
+ CODE FOR FONT_FAMILY -[FONT_FAMILY](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-2/font-family)
+<br> LIVE PAGE - [FONT_FAMILY](https://keshavgbpecdelhi.github.io/Web-Development/css-2/font-family/index.html
+)
+ <br>
+   #
+#
+CODE For MARGIN & BORDER -  [MARGIN & BORDER](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-3/margin-border)
+<br> LIVE CHECKING - [MARGIN & BORDER](https://keshavgbpecdelhi.github.io/Web-Development/css-3/margin-border/index.html)
+ <br>
