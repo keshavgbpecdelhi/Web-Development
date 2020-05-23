@@ -1,0 +1,12 @@
+/* margin and boder*/
+body
+{
+	margin:10px 10px 20px 30px;
+}
+
+#section_id
+{
+	border: 2px dashed #000;
+	border-top: none;
+}
+5
