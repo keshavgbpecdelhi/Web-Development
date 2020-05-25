@@ -4,15 +4,11 @@ Web Development Notes
  CODE -  [HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/types_of_headings.html "h-tag")
 <br> LIVE PAGE - [See headings](https://keshavgbpecdelhi.github.io/Web-Development/types_of_headings.html "h-tag")
  <br>
-![HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Various%20headings%20in%20HTML.png)
-#
+ #
 #
 CODE - [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/a_simple_table_in_html.html)
 <br>LIVE PAGE - [See Table](https://keshavgbpecdelhi.github.io/Web-Development/a_simple_table_in_html.html)
 <br>
-![Layout of table to be created using HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Layout%20of%20table%20to%20be%20created%20using%20HTML.png)
-
-![Table in png](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Table%20created%20using%20HTML.png)
 #
 #
  CODE -  [Basic Form in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Basic_form.html)
@@ -43,4 +39,9 @@ CSS RGBA COLOR CODE  -  [RGBA](https://github.com/keshavgbpecdelhi/Web-Developme
 #
 CODE For MARGIN & BORDER -  [MARGIN & BORDER](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-3/margin-border)
 <br> LIVE CHECKING - [MARGIN & BORDER](https://keshavgbpecdelhi.github.io/Web-Development/css-3/margin-border/index.html)
+ <br>
+ #
+#
+code for background-img -  [background-img](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-4/background-img)
+<br> Live Testing - [background-img](https://keshavgbpecdelhi.github.io/Web-Development/css-4/background-img/index.html)
  <br>
