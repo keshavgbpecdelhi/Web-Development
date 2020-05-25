@@ -1,0 +1,26 @@
+/* margin and boder*/
+body
+{
+	margin: 10px 10px 20px 30px;
+}
+h1{
+	font-style: italic;
+	font-weight: 90;
+}
+a{
+	text-decoration: overline underline  /*line-through*/;
+	text-decoration-color: #f00;
+}
+img{
+	font-weight:100;
+	border: 2px dashed #000;
+	display: inline-block;
+	width : 200px;
+	line-height: 40px;
+	margin-top: 100px;
+	margin: auto;
+	max-width: 50%;
+}
+p{
+	font-weight: 500px;
+}
