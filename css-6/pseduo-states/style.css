@@ -1,0 +1,31 @@
+body
+{
+	margin: 10px 10px 20px 30px;
+
+}
+
+img{
+	border: 2px solid #000;
+	display: inline-block;
+	max-width: 50%;
+}
+
+input{
+	display: block;
+	width: 95%;
+	margin: 10px;
+}
+/*Pseduo-states*/
+input:focus{
+	background: #aaa;
+	color: #1b4;
+	outline: none;
+	border: 1px solid black;
+}
+input:hover{
+	font-size: 20px;
+}
+
+p:active{
+	opacity: 0;
+}
