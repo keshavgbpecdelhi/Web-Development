@@ -50,3 +50,8 @@ code for background-img -  [background-img](https://github.com/keshavgbpecdelhi/
 text-decoration code -  [text-decoration](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-5/text-decoration)
 <br> Live page - [text-decoration](https://keshavgbpecdelhi.github.io/Web-Development/css-5/text-decoration/index.html)
  <br>
+ #
+#
+pseduo-states code -  [pseduo-states](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-6/pseduo-states)
+<br> Live page - [pseduo-states](https://keshavgbpecdelhi.github.io/Web-Development/css-6/pseduo-states/index.html)
+ <br>
