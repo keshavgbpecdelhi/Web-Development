@@ -10,22 +10,22 @@ img{
 	max-width: 50%;
 }
 
-input{
+.input{
 	display: block;
 	width: 95%;
 	margin: 10px;
 }
 /*Pseduo-states*/
-input:focus{
+.input:focus{
 	background: #aaa;
 	color: #1b4;
 	outline: none;
 	border: 1px solid black;
 }
-input:hover{
+.input:hover{
 	font-size: 20px;
 }
 
-p:active{
+.p_class:active{
 	opacity: 0;
 }
