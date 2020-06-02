@@ -57,6 +57,6 @@ pseduo-states code -  [pseduo-states](https://github.com/keshavgbpecdelhi/Web-De
  <br>
  #
 #
-javascript Hi <name> -  [hi_name](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/javascript/hi_name)
+javascript Hi "name" -  [hi_name](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/javascript/hi_name)
 <br> Live page - [hi_name](https://keshavgbpecdelhi.github.io/Web-Development/javascript/hi_name/index.html)
  <br>
