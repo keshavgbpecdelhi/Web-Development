@@ -1,0 +1,22 @@
+.profile-menu{
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+[data-trigger="dropdown"]{
+	padding-bottom: 35px;
+}
+a{
+	 text-decoration: none;
+    color: #000;
+    font-family: monospace;
+    font-weight: 400;
+	
+}
+.submenu{
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
