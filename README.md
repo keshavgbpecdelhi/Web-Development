@@ -65,3 +65,8 @@ javascript Hi "name" -  [hi_name](https://github.com/keshavgbpecdelhi/Web-Develo
 javascript extend_classes -  [extend_classes](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/javascript/extend_class)
 <br> Live page - [extend_classes](https://keshavgbpecdelhi.github.io/Web-Development/javascript/extend_class/)
  <br>
+  #
+#
+jQuery dropdown-menu -  [extend_classes](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/dropdown-menu)
+<br> Live dropdown-menu - [extend_classes](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/dropdown-menu/index.html)
+ <br>
