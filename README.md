@@ -67,6 +67,11 @@ javascript extend_classes -  [extend_classes](https://github.com/keshavgbpecdelh
  <br>
   #
 #
-jQuery dropdown-menu -  [extend_classes](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/dropdown-menu)
-<br> Live dropdown-menu - [extend_classes](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/dropdown-menu/index.html)
+jQuery dropdown-menu -  [dropdown-menu](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/dropdown-menu)
+<br> Live dropdown-menu - [dropdown-menu](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/dropdown-menu/index.html)
+ <br>
+  #
+#
+jQuery event-handling -  [event-handling](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/event-handling)
+<br> Live event-handling - [event-handling](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/event-handling/index.html)
  <br>
