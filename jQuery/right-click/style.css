@@ -1,0 +1,29 @@
+#context{
+	display: inline-block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    display: none;	
+	
+}
+
+.context-menu{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.context-menu a{
+	display: block;
+    width: 200px;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 400;
+	
+}
+
+.context-menu a:hover{
+	background: #eee;
+}
