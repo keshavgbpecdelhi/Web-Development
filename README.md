@@ -1,5 +1,5 @@
-# Web-Development<br><br>
-Web Development Notes
+# Web-Development
+Web Development Notes<br><br>
 ##
  CODE -  [HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/types_of_headings.html "h-tag")
 <br> LIVE PAGE - [See headings](https://keshavgbpecdelhi.github.io/Web-Development/types_of_headings.html "h-tag")
