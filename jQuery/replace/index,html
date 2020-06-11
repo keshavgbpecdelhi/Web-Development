@@ -1,0 +1,24 @@
+<html>
+	<head>	
+		<link rel="stylesheet" href="style.css" />
+		<title>Multiple targets in jQuery</title>
+	</head>
+	
+   <body>
+		<section>
+					<textarea class="text" placeholder="Write here"></textarea>
+					<br><br>
+					<button id="prepend">Prepend</button>
+					<button id="append">Append</button>
+					<button id="replace">Replace</button>
+		</section>
+		
+		<section id="main">
+			<p class="my-selection">This is something just to show therefore not important</p>
+		</section>
+		
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="main.js"></script>
+   </body>
+
+</html>
