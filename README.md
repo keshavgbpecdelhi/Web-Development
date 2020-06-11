@@ -80,3 +80,8 @@ jQuery event-handling -  [event-handling](https://github.com/keshavgbpecdelhi/We
 jQuery Right click -  [Right click](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/right-click)
 <br> Live Page - [Right click](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/right-click/index.html)
  <br><br><br>
+   #
+#
+jQuery replace -  [replace](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/replace)
+<br> Live Page - [replace](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/replace/index.html)
+ <br><br><br>
