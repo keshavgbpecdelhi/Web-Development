@@ -85,3 +85,8 @@ jQuery Right click -  [Right click](https://github.com/keshavgbpecdelhi/Web-Deve
 jQuery replace -  [replace](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/replace)
 <br> Live Page - [replace](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/replace/index.html)
  <br><br><br>
+   #
+#
+jQuery valid_email -  [valid_email](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/valid_email)
+<br> Live Page - [valid_email](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/valid_email/)
+ <br><br><br>
