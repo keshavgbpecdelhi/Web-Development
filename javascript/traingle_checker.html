@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html> 
+
+<head>
+
+<meta charset=utf-8 />
+<title>Triangle versus Non-Triangle</title>
+
+<style type="text/css">
+	body
+	{
+	background:orange;
+	margin: 40px;
+	}
+	body,h1
+	{
+	text-align: center;
+	}
+	div
+	{
+	margin:10px;
+	}
+	input
+	{
+	background:yellow;
+	}
+	input:hover
+	{
+	background:pink;
+	}
+</style>
+
+</head>
+
+
+<body>
+	<h1>Triangle Checker </h1>
+	<h3>Enter three Integer to test if they form a triangle (even a right angled 
+	triangle) or not...</h3>
+	<form>
+		<div><span>Side A : </span> <input type="text" id="sideA" /> </div>
+		<div><span>Side B : </span> <input type="text" id="sideB" /> </div>
+		<div><span>Side C : </span> <input type="text" id="sideC" /> </div>
+		<div><input type="button" onClick="testTriangle()" Value="test" /> </div>
+	</form>
+</body>
+
+<script>
+
+//testTriangle takes three inputs...
+
+function testTriangle(){
+	a = parseInt(document.getElementById("sideA").value);
+	b = parseInt(document.getElementById("sideB").value);
+	c = parseInt(document.getElementById("sideC").value);
+	
+	
+    //if sum of two sides is not smaller than or equal to the third one it means not a triangle
+		if((a+b<=c)||(b+c<=a)||(a+c<=b)){
+		alert("It's not a Triangle");
+		}
+		else{
+		
+			//if any side smaller than or equal to zero than it's not a triangle
+			if((a<=0)||(b<=0)||(c<=0)){
+			alert("It's not a Triangle");
+			}	
+			
+			else if((Math.pow(a,2)+Math.pow(b,2)===Math.pow(c,2))
+			||(Math.pow(c,2)+Math.pow(b,2)===Math.pow(a,2))||
+			(Math.pow(a,2)+Math.pow(c,2)===Math.pow(b,2)))
+			{
+			alert("It's a right angled Triangle");
+			}
+			
+			else{
+			//then the condition satisfies the requirement of a triangle
+			alert("it's a triangle");
+			}
+
+			}	
+		
+}
+
+
+</script>
+</html>
