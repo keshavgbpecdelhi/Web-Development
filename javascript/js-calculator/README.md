@@ -1,6 +1,9 @@
-# Calculator 💕
+# Simple Calculator
 
 A simple JavaScript project to demonstrate the calculator with some basic and scientific operations .
+
+[View here](https://naimaghulammuhammad.github.io/Js-Calculator/) <br><br>
+![image](https://user-images.githubusercontent.com/63257312/136667147-75a1e1f5-f730-4ead-a5dd-38a80d82411e.png)
 
 ### Feel free to customize it and make it look more attractive.
 
