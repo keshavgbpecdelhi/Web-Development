@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4.0.0/github-markdown.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+
+<body class="main">
+    <div class="markdown-body">
+        <h2 id="borders-in-css">
+          Borders In CSS
+        </h2>
+        <p>
+            Border is a property that defines the style, width and color of the element's border.
+        </p>
+        <div id="effects-of-borders">
+            <h3>Effects of Borders</h3>
+            <div class="preview">
+                <div class="effect">
+                    <div id="borders" class="property" onmouseover="showBorder()"
+                        onmouseleave="this.style.border='none';">
+                        Hover the mouse over me to see the effect of <code class="language-css">border</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="how-to-use-borders">
+            How to USE Borders
+        </h3>
+       
+        <pre><code class="language-css">border-style: solid; /* border style */
+border-width: 2px; /* border width */
+border:#f33; /* border color */
+border: 2px dashed green; /* width | style | color */
+
+border-top: 2px solid blue; /* border-top */
+border-right: 2px solid red; /* border-right */
+border-bottom: 2px solid #f33; /* border-bottom */
+        </code></pre>
+    </div>
+    <!-- divider -->
+    <div class="divider"></div>
+
+    <!-- Margin section -->
+    <div class="markdown-body">
+        <h2 id="margins-in-css">
+            <span class="octicon octicon-link"></span>Margins In CSS
+        </h2>
+        <p>
+            a property that defines the space between the element and its parent element.
+        </p>
+        <div id="effects-of-margin">
+            <h3>Effects of Margin</h3>
+            <div class="preview">
+                <div id="margin-effect" class="effect" onmouseover="showMargin()">
+                    <div id="margins" class="property margins">Hover over me to see the effects of <code class="language-css">margins</code></div>
+                </div>
+            </div>
+        </div>
+        <h3 class="how-to-use-margins">
+            How to USE Margin
+        </h3>
+        <p>
+            CSS has properties for specifying the margin for each side of an element:<br>
+            <code class="language-css">margin-top</code>, <code class="language-css">margin-right</code>, <code class="language-css">margin-bottom</code>, <code class="language-css">margin-left</code>.
+        </p>
+        <pre><code class="language-css">margin-top: 100px; /* margin from the top */
+margin-bottom: 100px; /* margin from the bottom */
+margin-right: 150px; /* margin from the right */
+margin-left: 80px; /* margin from the left */
+margin: 25px 50px 75px 100px; /* margin from all sides */
+        </code></pre>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        var borderElement = document.getElementById('borders');
+        var effectElement = document.getElementById('margin-effect');
+        var marginElement = document.getElementById('margins');
+        const showBorder = () => {
+            borderElement.style.border = '2px solid black';
+        }
+        effectElement.addEventListener('mouseover', function() {
+            effectElement.style.background = 'black';
+            marginElement.style.margin = '10px';
+        });
+        effectElement.addEventListener('mouseleave', function() {
+            effectElement.style.background = '';
+            marginElement.style.margin = '';
+        });
+    </script>
+</body>
+
+</html>
