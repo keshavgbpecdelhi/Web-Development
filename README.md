@@ -1,28 +1,28 @@
 # Web-Development
 Web Development Demo Pages collection<br><br>
 ##
- CODE -  [HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/types_of_headings.html "h-tag")
+ CODE -  [HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html "h-tag")
 <br> LIVE PAGE - [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html "h-tag")
  <br><br><br>
  #
 #
-CODE - [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/a_simple_table_in_html.html)
-<br>LIVE PAGE - [See Table](https://keshavgbpecdelhi.github.io/Web-Development/a_simple_table_in_html.html)
+CODE - [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html)
+<br>LIVE PAGE - [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html)
 <br><br><br>
 #
 #
- CODE -  [Basic Form in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Basic_form.html)
-<br> LIVE PAGE - [Tution Form](https://keshavgbpecdelhi.github.io/Web-Development/Basic_form.html)
+ CODE -  [Basic Form in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html)
+<br> LIVE PAGE - [Tution Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html)
  <br><br><br>
  #
 #
- CODE -  [Video Embedding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/video_embedding.html)
-<br> LIVE PAGE - [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/video_embedding.html)
+ CODE -  [Video Embedding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/video_embedding.html)
+<br> LIVE PAGE - [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/html/video_embedding.html)
  <br><br><br>
 #
 #
- META TAG CODE  -  [META](https://raw.githubusercontent.com/keshavgbpecdelhi/Web-Development/master/meta_tag.html)
-<br> META TAG LIVE PAGE - [META TAG LIVE PAGE]( https://keshavgbpecdelhi.github.io/Web-Development/meta_tag.html)
+ META TAG CODE  -  [META](https://raw.githubusercontent.com/keshavgbpecdelhi/Web-Development/master/html/meta_tag.html)
+<br> META TAG LIVE PAGE - [META TAG LIVE PAGE]( https://keshavgbpecdelhi.github.io/Web-Development/html/meta_tag.html)
  <br><br><br>
   #
 #
