@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body id="mainbody" class="dark">
+
+    <div id="main" class="Calculator">
+        <h1 style="color: #4dc7f0" class="text-center">Calculator</h1>
+        <div>
+            <input type="text" id="calc" class="result" >
+        </div>
+        <div class="accordion" id="accordionExample">
+        <div >
+          <p class="d-flex">
+          <button class="btn btn-light ml-auto mx-2" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="width: 40%; ">
+            simple
+          </button>
+          <button class="btn btn-light collapsed mr-auto mx-2" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="width: 40%">
+            Scientific
+          </button>
+        </p>
+        </div>
+        <div id="collapseOne" class="collapse collapse show" aria-labelledby="simple" data-parent="#accordionExample">
+        <div id="simple" class="ml-4 mb-2">
+        <div >
+            <button  onclick="btnclick(this, 7)" onmouseout="btnafterclick(this)">7</button>
+            <button  onclick="btnclick(this, 8)" onmouseout="btnafterclick(this)">8</button>
+            <button  onclick="btnclick(this, 9)" onmouseout="btnafterclick(this)">9</button>
+            <button  onclick="clearValue(this)" onmouseout="btnafterclick(this)">C</button>
+        </div>
+         <div id="btn2">
+            <button  onclick="btnclick(this, 4)" onmouseout="btnafterclick(this)">4</button>
+            <button  onclick="btnclick(this, 5)" onmouseout="btnafterclick(this)">5</button>
+            <button  onclick="btnclick(this, 6)" onmouseout="btnafterclick(this)">6</button>
+            <button  onclick="btnclick(this,'/' )" onmouseout="btnafterclick(this)">÷</button>
+        </div>
+         <div id="btn3">
+            <button  onclick="btnclick(this, 1)" onmouseout="btnafterclick(this)">1</button>
+            <button  onclick="btnclick(this, 2)" onmouseout="btnafterclick(this)">2</button>
+            <button  onclick="btnclick(this, 3)" onmouseout="btnafterclick(this)">3</button>
+            <button  onclick="btnclick(this, '*')" onmouseout="btnafterclick(this)">×</button>
+        </div>
+         <div id="btn4">
+            <button  onclick="btnclick(this, 0)" onmouseout="btnafterclick(this)">0</button>
+            <button  onclick="btnclick(this, '.')" onmouseout="btnafterclick(this)">.</button>
+            <button  onclick="getResult(this)" onmouseout="btnafterclick(this)">=</button>
+            <button  onclick="btnclick(this, '+')" onmouseout="btnafterclick(this)">+</button>
+        </div>
+        </div>
+        </div>
+        
+
+        <div id="collapseTwo" class="collapse" aria-labelledby="scie" data-parent="#accordionExample">
+        <div  id="scie" class="ml-4 mb-2">
+          <div id="sbtn1">
+            <button id="b1" onclick="scientific(this, 'π')" onmouseout="btnafterclick(this)">π</button>
+            <button id="b2" onclick="scientific(this, '%')" onmouseout="btnafterclick(this)">%</button>
+            <button id="b3" onclick="scientific(this, 'ln')" onmouseout="btnafterclick(this)">ln</button>
+            <button id="b4" onclick="clearValue(this)" onmouseout="btnafterclick(this)">C</button>
+        </div>
+         <div id="sbtn2">
+            <button id="b5" onclick="scientific(this, 'sin')" onmouseout="btnafterclick(this)">sin</button>
+            <button id="b6" onclick="scientific(this, 'cos')" onmouseout="btnafterclick(this)">cos</button>
+            <button id="b7" onclick="scientific(this, 'tan')" onmouseout="btnafterclick(this)">tan</button>
+            <button id="b8" onclick="scientific(this, '√')" onmouseout="btnafterclick(this)">√</button>
+        </div>
+         <div id="sbtn3">
+            <button id="b9" onclick="scientific(this, 'x2')" onmouseout="btnafterclick(this)">x2</button>
+            <button id="b0" onclick="factorial(this)" onmouseout="btnafterclick(this)"> ! </button>
+            <button id="b01" onclick="scientific(this, 'e')" onmouseout="btnafterclick(this)">e</button>
+            <button id="b02" onclick="getResult(this)" onmouseout="btnafterclick(this)">=</button>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div >
+        <button  style="width: 87%; margin-left: 25px;"  onclick="del(this)" onmouseout="btnafterclick(this)">del</button>
+      </div>
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <script src="app.JS"></script>
+</body>
+</html>

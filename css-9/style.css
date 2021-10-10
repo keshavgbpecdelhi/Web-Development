@@ -1,0 +1,68 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fcfafa;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.divider{
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 2px;
+    left: 48vw;
+    top: 0;
+    bottom: 0;
+    margin: 0 5px;
+}
+.preview{
+    width: 48.5vw;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 8px;
+}
+.effect{
+    padding: 10px;
+    background-color: #fff;
+    width: 50%;
+    height: max-content;
+    min-height: 15vh;
+    margin: 1% 2%;
+}
+.property{
+    padding: 10px;
+    height: 15vh;
+    background-color: #eee;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 920px){
+    .main{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .preview{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .property{
+        width: auto;
+    }
+    .divider{
+        display: none;
+    }
+    
+}
