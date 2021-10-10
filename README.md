@@ -111,8 +111,8 @@ Responsive Page using Bootstrap -  [Fully responsive :)](https://github.com/kesh
 <br> Live page - [fully responsive :>](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/)
  <br><br><br>
 #
-  CODE FOR CALCULATOR - [simple JS Calcutor](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/calculator)<br>
-  Live page - [simple JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/calculator/index.html)
+  CODE FOR CALCULATOR - [simple JS Calcutor](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html)<br>
+  Live page - [simple JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html)
   <br><br><br>
   #
   #
