@@ -110,3 +110,11 @@ Responsive Page using Bootstrap -  [Fully responsive :)](https://github.com/kesh
   padding in css - [css padding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-8/Padding%20css/index.html)
 <br> Live page - [fully responsive :>](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/)
  <br><br><br>
+#
+  CODE FOR CALCULATOR - [simple JS Calcutor](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/calculator)<br>
+  Live page - [simple JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/calculator/index.html)
+  <br><br><br>
+  #
+  #
+  CODE FOR BORDERS AND MARGIN - [borders and margin in css](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-9/index.html)
+  <br>Live page - [borders and margin](https://keshavgbpecdelhi.github.io/Web-Development/css-9/index.html)
