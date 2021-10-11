@@ -12,3 +12,5 @@ Web Development Demo Pages collection<br><br>
 | RGBA | [RGBA](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-1) | [COLOR CODE LIVE](https://keshavgbpecdelhi.github.io/Web-Development/css-1/) |
 | FONT_FAMILY | [FONT_FAMILY](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-2/font-family) | [FONT_FAMILY](https://keshavgbpecdelhi.github.io/Web-Development/css-2/font-family/index.html) |
 | MARGIN & BORDER | [MARGIN & BORDER](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-3/margin-border) | [MARGIN & BORDER](https://keshavgbpecdelhi.github.io/Web-Development/css-3/margin-border/index.html) |
+| background-img | [background-img](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-4/background-img) | [background-img](https://keshavgbpecdelhi.github.io/Web-Development/css-4/background-img/index.html) |
+| text-decoration | [text-decoration](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-5/text-decoration) | [text-decoration](https://keshavgbpecdelhi.github.io/Web-Development/css-5/text-decoration/index.html) |
