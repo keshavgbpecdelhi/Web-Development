@@ -31,3 +31,4 @@ Web Development Demo Pages collection<br><br>
 | simple JS Calcutor | [simple JS Calcutor](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html) | [simple JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html) |
 | borders and margin in css | [borders and margin in css](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-9/index.html) | [borders and margin in css](https://keshavgbpecdelhi.github.io/Web-Development/css-9/index.html) |
 | Car Animation| [Car Animation](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/car-animation/index.html) | [Live Car](https://keshavgbpecdelhi.github.io/Web-Development/css-9/index.html) |
+| Fluid Webpage| [Fluid Webpage](https://github.com/keshavgbpecdelhi/Web-Development/) | 
