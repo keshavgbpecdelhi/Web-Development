@@ -30,5 +30,5 @@ Web Development Demo Pages collection<br><br>
 | Landing Page Example) | [Landing Page Example](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/landing-page/index.html) | [fully responsive :)](https://keshavgbpecdelhi.github.io/Web-Development/landing-page/) |
 | simple JS Calcutor | [simple JS Calcutor](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html) | [simple JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html) |
 | borders and margin in css | [borders and margin in css](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-9/index.html) | [borders and margin in css](https://keshavgbpecdelhi.github.io/Web-Development/css-9/index.html) |
-| Car Animation| [Car Animation](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/car-animation/index.html) | [Live Car](https://keshavgbpecdelhi.github.io/Web-Development/css-9/index.html) |
-| Fluid Webpage| [Fluid Webpage](https://github.com/keshavgbpecdelhi/Web-Development/) | 
+| Car Animation| [Car Animation](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/car-animation/index.html) | [Live Car](https://keshavgbpecdelhi.github.io/Web-Development/car-animation/) |
+| Fluid Webpage| [Fluid Webpage](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/fluid-webpage/Fluid-Webpage/index.html) | [Blue Bubble](https://keshavgbpecdelhi.github.io/Web-Development/fluid-webpage/Fluid-Webpage/index.html)
