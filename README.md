@@ -36,5 +36,3 @@ Web Development Demo Pages collection<br><br>
 | Parallax websiite | [Parallax website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/parallax-website) | [Parallax website](https://keshavgbpecdelhi.github.io/Web-Development/parallax-website)  |
 | HTML Card | [HTML Cards](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/card) | [Round](https://keshavgbpecdelhi.github.io/Web-Development/html/card/card.html), [Flip](https://keshavgbpecdelhi.github.io/Web-Development/html/card/flipcard.html), [Profile](https://keshavgbpecdelhi.github.io/Web-Development/html/card/profilecard.html) |
 | Dynamic Page | [Dynamic Page](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/dynamic-page) | [Dynamic Page Website](https://keshavgbpecdelhi.github.io/Web-Development/dynamic-page) |
-| Tribute Page | [Tribute Page](https://github.com/aarrpitt/demotributepage.github.io/blob/main/tributepage/index.html) | [Tribute Page Website](https://aarrpitt.github.io/demotributepage.github.io/tributepage/) |
-
