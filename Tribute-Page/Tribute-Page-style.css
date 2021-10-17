@@ -1,0 +1,45 @@
+body {
+    background-color: #DADADA;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 100px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px #7E7474;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+img {
+    border-radius: 50%;
+    display: block;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+
+}
+
+.content {
+
+    background-color: #BBBBBB;
+    box-shadow: 15px 15px lightgrey;
+    margin: 150px;
+    margin-top: 65px;
+    padding: 5%;
+    margin-bottom: 70px;
+}
+
+#heading {
+    font-size: 60px;
+    font-family: "Georgia";
+    text-align: center;
+    margin-top: 5px;
+}
+
+ul {
+    font-size: 25px;
+}
