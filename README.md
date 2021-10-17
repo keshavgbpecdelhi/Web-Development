@@ -7,6 +7,7 @@ Web Development Demo Pages collection<br><br>
 | HEADINGS IN HTML | [HEADINGS IN HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html) |
 | Table in HTML | [Table in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html) |
 | Basic Form in HTML | [Basic Form in HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html) | [Tution Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html) |
+| Survey form | [HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/survey-form.html) | [Employee Interests](https://keshavgbpecdelhi.github.io/Web-Development/html/survey-form.html) |
 | Video Embedding | [Video Embedding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/video_embedding.html) | [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/html/video_embedding.html) |
 | META | [META](https://raw.githubusercontent.com/keshavgbpecdelhi/Web-Development/master/html/meta_tag.html) | [META TAG LIVE PAGE](https://keshavgbpecdelhi.github.io/Web-Development/html/meta_tag.html) |
 | RGBA | [RGBA](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-1) | [COLOR CODE LIVE](https://keshavgbpecdelhi.github.io/Web-Development/css-1/) |
@@ -37,3 +38,5 @@ Web Development Demo Pages collection<br><br>
 | HTML Card | [HTML Cards](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/card) | [Round](https://keshavgbpecdelhi.github.io/Web-Development/html/card/card.html), [Flip](https://keshavgbpecdelhi.github.io/Web-Development/html/card/flipcard.html), [Profile](https://keshavgbpecdelhi.github.io/Web-Development/html/card/profilecard.html) |
 | Dynamic Page | [Dynamic Page](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/dynamic-page) | [Dynamic Page Website](https://keshavgbpecdelhi.github.io/Web-Development/dynamic-page) |
 | Tribute Page | [Tribute Page](https://github.com/agraghav26/Tribute-Page/blob/master/index.html) | [Tribute Page Website](https://agraghav26.github.io/Tribute-Page/)
+| Gallery Website | [Gallery Website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/gallery-website) | [Gallery Website Live](https://keshavgbpecdelhi.github.io/Web-Development/gallery-website) |
+
