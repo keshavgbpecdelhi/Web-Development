@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(113, 204, 77);
+    text-align: center;
+}
+
+#container{
+    /* max-width: 1000px; */
+    background-color: #777;
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main nav nav"
+    "main main main main nav nav"
+    "main main main main aside aside"
+    "section section section section section section"
+    "section section section section section section"
+    "footer footer footer footer footer footer";
+}
+#container > *{
+    padding: 30px;
+}
+header{grid-area: header;}
+main{grid-area: main;line-height: 100px;}
+section{grid-area: section;}
+aside{grid-area: aside;}
+nav{grid-area: nav;}
+footer{grid-area: footer;}
+
+#card-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+   justify-items: center;
+   align-items: center;
+}
+#card-container > *{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+audio{
+    width: 100%;
+    
+}
+div.card-body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+header h1{
+    margin: 0;
+    padding: 0;
+}
