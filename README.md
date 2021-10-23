@@ -42,3 +42,4 @@ Web Development Demo Pages collection<br><br>
 | Html Music-Store | [Music Website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Music-Store) | [Music-Store Live](https://music-store.vercel.app/) |
 | Gallery Website | [Gallery Website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/gallery-website) | [Gallery Website Live](https://keshavgbpecdelhi.github.io/Web-Development/gallery-website) |
 | Short link generator | [Short link generator](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/shortLink) | [Short link generator](https://keshavgbpecdelhi.github.io/Web-Development/shortLink) |
+| SVG Examples | [SVG Examples](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/svg) | [SVG Examples](https://keshavgbpecdelhi.github.io/Web-Development/svg) |
