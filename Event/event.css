@@ -1,0 +1,165 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1{
+    color:white;
+}
+
+.main-head{
+    font-family: 'Orbitron' , sans-sherif;
+    font-size:5vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    text-align:center;
+    padding:5vh;
+
+
+}
+
+span{
+    color:rgb(255, 217, 1);
+    text-decoration: underline;
+    
+}
+
+
+
+
+.btn{
+    
+    position: absolute;
+    color:black;
+    background-color:white;
+    width:30vh;
+    left:45%;
+    
+    
+    border-radius:20px 30px 20px 30px;
+    font-family: 'Orbitron' , sans-sherif;
+    text-align: center;
+    font-size:4vh;
+    margin-bottom:2rem;
+    
+    
+    align-items:center;
+    justify-content: center;
+    padding:0 5vh 0 3.5vh;
+    border:4px solid rgb(255, 217, 1);
+   
+    
+
+}
+.btn:hover{
+    background-color:rgb(255, 217, 1);
+    border:4px solid white;
+
+
+
+
+}
+.container{
+    max-width:1100px;
+    margin:auto;
+    overflow:auto;
+    padding:0 2rem;
+    margin-top:4rem;
+}
+
+h3,p{
+    font-family:'Orbitron' , sans-sherif;
+    color:grey;
+
+}
+
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.img{
+    width:100%
+}
+
+.card{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2vh;
+    row-gap: 5vh;
+    background-color:thistle;
+    opacity:0.9;
+    margin-bottom:2rem;
+    
+}
+
+.card,img{
+    height:400px;
+    
+}
+
+.card>div{
+    padding:3rem;
+}
+
+
+
+
+
+h2{
+    
+    color:white;
+    text-align:center;
+    
+    font-family: 'Orbitron' , sans-sherif;
+    margin-bottom:2rem;
+
+}
+
+@media (max-width:800px){
+    .btn{
+        left:35%;
+    }
+    section{
+        margin:10px;
+
+    }
+    .card{
+        display:flex;
+        flex-direction:column;
+        margin-bottom:20rem;
+        
+        
+        
+    }
+    .p{
+        width:300px;
+        background-color: thistle;
+    }
+}
+
+@media (max-width:930px) and (min-width:800px){
+    p{
+        font-size:0.7rem;
+    }
+}
+
+.heading{
+    margin-top:9rem;
+    color:white;
+    text-align:center;
+    font-family: 'Orbitron' , sans-sherif;
+    font-size:2.5rem;
+    text-decoration: underline;
+
+}
