@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User Search</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div id="header" class="container">
+            <h1>DevFinder</h1>
+        </div>
+        <div id="search-bar" class="form container" >
+            <img class="icon" src="./images/icon-search.svg" alt="search">
+            <input type="text" name="username" id="username">
+            <button id="submit" onclick="submitHandler()">Search</button>
+        </div>
+        <div id="content" class="container">
+            <div class="profile">
+                <img src="" alt="Avatar" id="avatar">
+                <div class="profile-details">
+                    <h1 class="name">No User</h1>
+                    <h3 class="username"></h3>
+                    <h3 class="doj"></h3>
+                </div>
+            </div>
+            <div class="stats statistics">
+                <div>
+                    <h1>Repos</h1>
+                    <h3 class="repos"></h3>
+                </div>
+                <div>
+                    <h1>Followers</h1>
+                    <h3 class="followers"></h3>
+                </div>
+                <div>
+                    <h1>Following</h1>
+                    <h3 class="following"></h3>
+                </div>
+            </div>
+            <div class="links">
+                <div class="link">
+                    <img src="./images/icon-location.svg" alt="Location">
+                    <h3 class="location"></h3>
+                </div>
+                <div class="link">
+                    <img src="./images/icon-twitter.svg" alt="Twitter">
+                    <h3 class="twitter"></h3>
+                </div>
+                <div class="link">
+                    <img src="./images/icon-website.svg" alt="Website">
+                    <h3 class="website"></h3>
+                </div>
+                <div class="link">
+                    <img src="./images/icon-company.svg" alt="Company">
+                    <h3 class="company"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
