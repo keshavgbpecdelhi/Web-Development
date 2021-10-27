@@ -44,4 +44,4 @@ Web Development Demo Pages collection<br><br>
 | Short link generator | [Short link generator](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/shortLink) | [Short link generator](https://keshavgbpecdelhi.github.io/Web-Development/shortLink) |
 | SVG Examples | [SVG Examples](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/svg) | [SVG Examples](https://keshavgbpecdelhi.github.io/Web-Development/svg) |
 | webpage-using-api | [DevFinder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/webpage-using-api) | [DevFinder Live](https://keshavgbpecdelhi.github.io/Web-Development/webpage-using-api/) |
-| Social_Icons | [Social_Icons](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/awesome_Social_icons) | [Social](https://dipesh123-ux.github.io/my-social/) |
+| Social_Icons | [Social_Icons](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/awesome_Social_icons) | [Demo Socials](https://keshavgbpecdelhi.github.io/Web-Development/awesome_Social_icons/mysocial.html) |
