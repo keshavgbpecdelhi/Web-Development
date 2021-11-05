@@ -1,0 +1,31 @@
+
+
+.haft-circle{
+    position:relative;
+    margin:50px;
+}
+.bottom-circle {
+    top: 125px;
+    left: 100px;
+    height: 100px;
+    width: 205px;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-radius: 0 0 150px 150px;
+    position: absolute;
+}
+.top-circle{
+   top: 85px;
+   left: 100px;
+   width: 205px;
+   height: 70px;
+   border: 3px solid;
+   -moz-border-radius: 60px / 25px;
+   -webkit-border-radius: 60px / 25px;
+   border-radius: 180px / 60px;
+   background: #968e8e;
+   position: absolute;
+}

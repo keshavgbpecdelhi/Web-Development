@@ -1,0 +1,24 @@
+        #shape { 
+
+         position:relative; margin:0 auto; top:80px; width:200px; height:200px; 
+         -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+         transform-style: preserve-3d;
+         -webkit-transform: rotateX(10deg) rotateY(15deg);
+         -moz-transform: rotateX(10deg) rotateY(15deg);
+         transform: rotateX(10deg) rotateY(80deg);
+         -webkit-transition: -webkit-transform 2s;
+         -moz-transition: -moz-transform 2s;
+         transition: transform 2s;
+     }
+     #shape > div 
+     {
+        position:absolute; width:125px; height:125px;border:2px solid black;
+        background-color:#968e8e; opacity:.5;
+     }
+    #shape .ft { -webkit-transform: translateZ(63px); -moz-transform: translateZ(63px); transform: translateZ(63px); }
+    #shape .rt { -webkit-transform: rotateY(90deg) translateZ(63px); -moz-transform: rotateY(90deg) translateZ(63px); transform: rotateY(90deg) translateZ(63px); }
+    #shape .bk { -webkit-transform: rotateY(180deg) translateZ(63px); -moz-transform: rotateY(180deg) translateZ(63px); transform: rotateY(180deg) translateZ(63px); }
+    #shape .lt { -webkit-transform: rotateY(270deg) translateZ(63px); -moz-transform: rotateY(270deg) translateZ(63px); transform: rotateY(270deg) translateZ(63px); }
+    #shape .tp { -webkit-transform: rotateX(90deg) translateZ(63px); -moz-transform: rotateX(90deg) translateZ(63px); transform: rotateX(90deg) translateZ(63px); }
+    #shape .bm { -webkit-transform: rotateX(270deg) rotateY(0deg) translateZ(63px); -moz-transform: rotateX(270deg) rotateY(0deg) translateZ(63px); transform: rotateX(270deg) rotateY(0deg) translateZ(63px); }
