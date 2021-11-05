@@ -1,0 +1,77 @@
+
+.ball {
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 30vmin;
+	height: 30vmin;
+	margin: 1vmin;  
+	transform-style: preserve-3d;  
+	transform: rotateX(-5deg);
+
+}
+
+@keyframes rot{
+	0% { transform: rotateY(160deg); }
+	100% { transform: rotateY(160deg); }
+}
+
+.layer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 30vmin;
+	height: 30vmin;
+}
+
+.moving
+{
+	transform-style: preserve-3d;
+	transform-origin: 15vmin 15vmin;
+	animation: rot 10s linear infinite;
+}
+
+.gridplane {
+	width: 30vmin;
+	height: 30vmin;       
+	border-radius: 50%;
+	border: 0.5vmin dashed rgb(128, 128, 128);
+}
+
+.xline { transform: translateY(1%) rotateX(90deg); }
+.xline2 { transform: translateY(-1%) rotateX(90deg); }
+.yline { transform: rotateY(90deg); }
+.zline { transform: rotateZ(90deg); }
+
+.clip
+{
+	border-radius: 50%;  
+	overflow:hidden;
+	transform: translateZ(-0vmin);
+}
+
+@keyframes highlightanim {     
+	0.00% {left: -150.00%; top: -178.00% }
+	12.50% {left: -117.67%; top: -179.64% }
+	25.00% {left: -97.69%; top: -195.87% }
+	28.75% {left: -95.00%; top: -207.09% }
+	32.50% {left: -97.69%; top: -220.70% }
+	40.00% {left: -117.67%; top: -240.01% }
+	47.50% {left: -150.00%; top: -247.50% }
+	55.00% {left: -182.33%; top: -240.01% }
+	62.50% {left: -202.31%; top: -220.70% }
+	68.75% {left: -205.00%; top: -207.09% }
+	75.00% {left: -202.31%; top: -195.87% }
+	87.50% {left: -182.33%; top: -179.64% }
+	100.00% {left: -150.00%; top: -178.00% }
+}     
+
+.shade
+{
+	position: relative;
+	top: -150%;
+	left: -150%;
+	width: 400%;
+	height: 400%;
+	background: #968e8e;
+}

@@ -1,0 +1,37 @@
+.shape{
+  position:relative;
+  margin:50px;
+}
+#triangle-up {
+  width: 0; 
+  height: 0; 
+  position: relative;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid black;
+  margin-left: 50px;
+}
+
+#triangle-up::before {
+  content: "";
+  width: 0; 
+  height: 0;
+  position: absolute; 
+  border-left: 99.5px solid transparent;
+  border-right: 99.5px solid transparent;
+  border-bottom: 199px solid #968e8e;
+  top: 6px;
+  left: -99.5px;
+}
+.shape .bottom{
+  width: 199px;
+  height: 50px;
+  border: 3px solid;
+  background: #968e8e;
+  -moz-border-radius: 100px / 25px;
+  -webkit-border-radius: 100px / 25px;
+  border-radius: 100px / 25px;
+  position:absolute;
+  top: 175px;
+  left: 50.5px;
+}

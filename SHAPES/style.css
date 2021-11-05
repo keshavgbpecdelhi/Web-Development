@@ -1,0 +1,82 @@
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background: #968e8e;
+	border-radius: 50%;
+	border-style: solid;
+	border-color: black;
+	margin-left: 50px;
+}
+.square {
+	width: 200px;
+	height: 200px;
+	background: #968e8e;
+	border-style: solid;
+	border-color: black;
+}
+.rectangle {
+	width: 300px;
+	height: 200px;
+	background: #968e8e;
+	border-style: solid;
+	border-color: black;
+}
+.triangle-up {
+	width: 0; 
+	height: 0; 
+	position: relative;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid black;
+	margin-left: 50px;
+}
+
+.triangle-up::before {
+	content: "";
+	width: 0; 
+	height: 0;
+	position: absolute; 
+	border-left: 95px solid transparent;
+	border-right: 95px solid transparent;
+	border-bottom: 190px solid #968e8e;
+	top: 7px;
+	left: -95px;
+}
+.trapezoid {
+	border-bottom: 100px solid #968e8e;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 10px;
+	width: 200px;
+	margin-left: 50px;
+}
+
+.parallelogram {
+	width: 150px;
+	height: 100px;
+	transform: skew(20deg);
+	background: #968e8e;
+	margin-left: 50px;
+	margin-right: 100px;
+}
+.diamond {
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-bottom-color: #968e8e;
+	position: relative;
+	top: -100px;
+
+
+}
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -100px;
+	top: 100px;
+	width: 0;
+	height: 0;
+	border: 100px solid transparent;
+	border-top-color: #968e8e;
+}
