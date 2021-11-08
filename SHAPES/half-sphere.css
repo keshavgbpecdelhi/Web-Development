@@ -1,12 +1,10 @@
-
-
 .haft-circle{
     position:relative;
-    margin:50px;
+    margin:10px;
 }
 .bottom-circle {
     top: 125px;
-    left: 100px;
+    left: 10px;
     height: 100px;
     width: 205px;
     border-top-width: 0px;
@@ -19,7 +17,7 @@
 }
 .top-circle{
    top: 85px;
-   left: 100px;
+   left: 10px;
    width: 205px;
    height: 70px;
    border: 3px solid;

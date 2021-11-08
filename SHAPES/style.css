@@ -1,4 +1,6 @@
-
+.container {
+	margin:auto ;
+}
 .circle {
 	width: 200px;
 	height: 200px;
@@ -47,14 +49,14 @@
 	border-bottom: 100px solid #968e8e;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-	height: 10px;
-	width: 200px;
+	height: 100px;
+	width: 250px;
 	margin-left: 50px;
 }
 
 .parallelogram {
-	width: 150px;
-	height: 100px;
+	width: 200px;
+	height: 150px;
 	transform: skew(20deg);
 	background: #968e8e;
 	margin-left: 50px;
