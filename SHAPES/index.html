@@ -1,91 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="cone.css">
-	<link rel="stylesheet" type="text/css" href="cylinder.css">
-	<link rel="stylesheet" type="text/css" href="cube.css">
-	<link rel="stylesheet" type="text/css" href="sphere.css">
-	<link rel="stylesheet" type="text/css" href="half-sphere.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cone.css">
+    <link rel="stylesheet" type="text/css" href="cylinder.css">
+    <link rel="stylesheet" type="text/css" href="cube.css">
+    <link rel="stylesheet" type="text/css" href="sphere.css">
+    <link rel="stylesheet" type="text/css" href="half-sphere.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        ul li{
+            list-style: none;
+        }
+        li{
+            padding-top: 20px;
+            height: 250px;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="container">
-		<h2 style="text-align: center;">Shapes</h2>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="circle"></div>
-			</div>
-			<div class="col-lg-3">
-				<div class="square"></div>
-			</div>
-			<div class="col-lg-3">
-				<div class="rectangle"></div>
-			</div>
-			<div class="col-lg-3">
-				<div class="triangle-up"></div>
-			</div>
-		</div>
-		<br>
-		<br>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="trapezoid"></div>
-			</div>
-			<div class="col-lg-3">
-				<div class="parallelogram"></div>
-			</div> 
-			<div class="col-lg-3">
-				<div class="diamond"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="shape">
-					<div id="triangle-up"></div>
-					<div class="bottom"></div>  			
-				</div>	
-			</div>
-			<div class="col-md-3">
-				<div class="tank">
-					<div class="bottom"></div>
-					<div class="middle"></div>
-					<div class="top"></div>  
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div id="shape">
-					<div class="ft"></div>
-					<div class="rt"></div>
-					<div class="bk"></div>
-					<div class="lt"></div>
-					<div class="tp"></div>
-					<div class="bm"></div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class='ball'>
-					<div class='layer moving'>
-						<div class='layer gridplane yline'></div>   
-					</div> 
-					<div class='layer clip'>
-						<div class='shade'> 
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="haft-circle">
-					<div class="top-circle"></div> 
-					<div class="bottom-circle"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <h2 style="text-align: center;">Shapes</h2>
+        <ul class="row">
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="circle"></div>
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="square"></div>
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="rectangle"></div>
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="triangle-up"></div>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col-lg-4 col-sm-12 col-sm-12">
+                <div class="trapezoid"></div>
+            </li>
+            <li class="col-lg-4 col-sm-12 col-sm-12">
+                <div class="parallelogram"></div>
+            </li>
+            <li class="col-lg-4 col-sm-12 col-sm-12">
+                <div class="diamond"></div>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="shape">
+                    <div id="triangle-up"></div>
+                    <div class="bottom"></div>              
+                </div>  
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="tank">
+                    <div class="bottom"></div>
+                    <div class="middle"></div>
+                    <div class="top"></div>  
+                </div>
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div id="shape">
+                    <div class="ft"></div>
+                    <div class="rt"></div>
+                    <div class="bk"></div>
+                    <div class="lt"></div>
+                    <div class="tp"></div>
+                    <div class="bm"></div>
+                </div>
+            </li>
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class='ball'>
+                    <div class='layer moving'>
+                        <div class='layer gridplane yline'></div>   
+                    </div> 
+                    <div class='layer clip'>
+                        <div class='shade'> 
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="row">
+            <li class="col-lg-3 col-sm-12 col-sm-12">
+                <div class="haft-circle">
+                    <div class="top-circle"></div> 
+                    <div class="bottom-circle"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
 </body>
+
 </html>
