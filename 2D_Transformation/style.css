@@ -1,0 +1,33 @@
+.box1{
+    background-color: orange;
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transform: translate(30px,10px);
+
+    /* for different browsers:
+-ms-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+
+    */
+  }
+  .box2{
+    background-color: green;
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    transform: rotate(30deg);
+  }
+  .box3{
+    background-color: yellow;
+    color: black;
+    font-family: Arial, sans-serif;
+    width: 100px;
+    height: 100px;
+    padding:10px;
+    transform: skew(10deg,10deg);
+  }
