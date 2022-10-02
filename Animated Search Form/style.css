@@ -1,10 +1,60 @@
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
+body {
+  padding: 1rem;
 }
 
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-  width: 100%;
+* {
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  padding: 0px 10px;
+
+  border: 1px solid #ccc;
+
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.active, input[type=text]:active, input[type=text]:focus-visible {
+  width: 200px!important;
+  border: 2px solid #ccc !important;
+}
+
+form {
+  position: relative;
+  display: flex;
+}
+button {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border: 1px solid #ccc;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  background: #ccc;
+}
+button:focus {
+  border: 2px solid #ccc;
 }
