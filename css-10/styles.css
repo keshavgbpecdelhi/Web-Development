@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-area{
+    padding: 2rem;
+}
+.heading-box{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.heading-box h1{
+    color: #1e88e5;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.heading-box p{
+    color: grey;
+    font-size: 1.4rem;
+}
+.cursor-box{
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+    -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+    grid-template-columns: repeat(5,1fr);
+    background: #f2f2f2;
+    padding: 2rem;
+}
+.cursor-box .each-box{
+    background: #ffffff;
+    border: 2px solid grey;
+    border-radius: 2px;
+    padding: 0.5rem;
+    text-align: center;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+}
+.cursor-box .each-box:hover{
+    border: 2px solid #1e88e5;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+}
+.cursor-box .each-box p{
+    letter-spacing: 1px;
+}
+
+/* Different CSS Cursor  */
+.each-box.b-1{
+    cursor: auto;
+}
+.each-box.b-2{
+    cursor: default;
+}
+.each-box.b-3{
+    cursor: none;
+}
+.each-box.b-4{
+    cursor: context-menu;
+}
+.each-box.b-5{
+    cursor: help;
+}
+.each-box.b-6{
+    cursor: pointer;
+}
+.each-box.b-7{
+    cursor: progress;
+}
+.each-box.b-8{
+    cursor: wait;
+}
+.each-box.b-9{
+    cursor: cell;
+}
+.each-box.b-10{
+    cursor: crosshair;
+}
+.each-box.b-11{
+    cursor: text;
+}
+.each-box.b-12{
+    cursor: vertical-text;
+}
+.each-box.b-13{
+    cursor: alias;
+}
+.each-box.b-14{
+    cursor: copy;
+}
+.each-box.b-15{
+    cursor: move;
+}
+.each-box.b-16{
+    cursor: no-drop;
+}
+.each-box.b-17{
+    cursor: not-allowed;
+}
+.each-box.b-18{
+    cursor: all-scroll;
+}
+.each-box.b-19{
+    cursor: col-resize;
+}
+.each-box.b-20{
+    cursor: row-resize;
+}
+.each-box.b-21{
+    cursor: n-resize;
+}
+.each-box.b-22{
+    cursor: e-resize;
+}
+.each-box.b-23{
+    cursor: s-resize;
+}
+.each-box.b-24{
+    cursor: w-resize;
+}
+.each-box.b-25{
+    cursor: ne-resize;
+}
+.each-box.b-26{
+    cursor: nw-resize;
+}
+.each-box.b-27{
+    cursor: se-resize;
+}
+.each-box.b-28{
+    cursor: sw-resize;
+}
+.each-box.b-29{
+    cursor: ew-resize;
+}
+.each-box.b-30{
+    cursor: ns-resize;
+}
+.each-box.b-31{
+    cursor: nesw-resize;
+}
+.each-box.b-32{
+    cursor: nwse-resize;
+}
+.each-box.b-33{
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+.each-box.b-34{
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+}
+.each-box.b-35{
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+.each-box.b-36{
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+/* Footer CSS  */
+footer{
+    background: #3f3f3f;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Media Query CSS  */
+@media only screen and (max-width:1200px) {
+    .cursor-box{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width:750px) {
+    .cursor-box{
+        grid-template-columns: repeat(3,1fr);
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width:750px) {
+    .cursor-box{
+        grid-template-columns: repeat(3,1fr);
+        padding: 1rem;
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width:600px) {
+    .heading-box {
+        margin-bottom: 1rem;
+    }
+    .heading-box h1 {
+        font-size: 1.8rem;
+    }
+    .heading-box p {
+        font-size: 1.1rem;
+    }
+    .main-area {
+        padding: 1rem;
+    }
+    .cursor-box{
+        -ms-grid-columns: 1fr 0.5rem 1fr;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+}
