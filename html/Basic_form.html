@@ -1,47 +1,50 @@
 <html>
 
-	<head>
-		<title>Web Page</title>
-	</head>
-   
-   <body>
+<head>
+	<title>Web Page</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+
+<body id="bk">
 	<section id="contact-form">
-		<h2>Contact form</h2>
-		<form method="POST" action="action.php">
-		
+		<div id="container">
+			<h2>Contact form</h2>
+			<form method="POST" action="action.php">
+
 				Address<br>
-				<input name="Address" placeholder="Address"/>
+				<input name="Address" placeholder="Address" />
 				<br><br>
 				City<br>
-				<input name="City" placeholder="City"/>
+				<input name="City" placeholder="City" />
 				<br><br>
 				Zip<br>
-				<input name="ZIP" placeholder="Zip"/><br>
+				<input name="ZIP" placeholder="Zip" /><br>
+
+				<h2>Subjects :</h2> <br>
+
+				<input name="Subjects" type="checkbox" />MATHS<br>
+				<input name="Subjects" type="checkbox" />ENGLISH<br>
+				<input name="Subjects" type="checkbox" />SCIENCE<br>
 				
-			<h2>Subjects :</h2>	<br>
-			
-			<input name="Subjects" type="checkbox" />MATHS<br>
-			<input name="Subjects" type="checkbox" />ENGLISH<br>
-			<input name="Subjects" type="checkbox" />SCIENCE<br>
-			<br>
-			
-			<h2>Homework done:</h2>
-			
-			<input name="Homework" type="radio" />YES<br>
-			<input name="Homework" type="radio" />NO<br>				
-			
-			<h2>Class:</h2>
-			<select name="class">
-				<option value="12th">12th</option>
-				<option value="12th">11th</option>
-				<option value="12th">10th</option>
+
+				<h2>Homework done:</h2>
+
+				<input name="Homework" type="radio" />YES<br>
+				<input name="Homework" type="radio" />NO<br>
+
+				<h2>Class:</h2>
+				<select name="class">
+					<option value="12th">12th</option>
+					<option value="12th">11th</option>
+					<option value="12th">10th</option>
 				</select>
-				<br><br>
-			
-			<button type="submit">Submit</button>
+				<br>
+
+				<button type="submit">Submit</button>
+		</div>
 		</form>
-	
+
 	</section>
-   </body>
+</body>
 
 </html>
