@@ -1,0 +1,167 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serift;
+}
+
+.Container {
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  width: 170px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: hsl(215, 32%, 27%);
+  border-radius: 10px;
+}
+
+.title {
+  color: white;
+  font-weight: 550;
+  display: flex;
+  background: transparent;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.image {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 7px;
+}
+
+.hoverimage {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 170px;
+  height: 170px;
+  border-radius: 7px;
+  background-color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.imagepng {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 7px;
+}
+
+.image:hover .hoverimage {
+  display: flex;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.hoverpng {
+  object-fit: contain;
+  border-radius: 7px;
+  width: 30px;
+  background: transparent;
+}
+
+.description {
+  background: transparent;
+  color: hsl(215, 51%, 70%);
+  font-size: 10px;
+  font-weight: 330;
+}
+
+.price {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding-top: 3px;
+}
+
+.price p {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 9px;
+}
+
+.price img {
+  background: transparent;
+}
+
+.ethsvg {
+  width: 7px;
+  margin-right: 4px;
+}
+
+.clocksvg {
+  width: 10px;
+  margin-right: 2px;
+}
+
+.creator {
+  background: transparent;
+  align-items: center;
+  display: flex;
+  font-size: 9px;
+  color: white;
+}
+
+.creator img {
+  width: 21px;
+  background: transparent;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5px;
+}
+
+.creatorInfo {
+  background: transparent;
+  color: hsl(215, 51%, 70%);
+  margin: 7px;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+}
+
+.creatorName {
+  color: white;
+  background: transparent;
+  margin-left: -3px;
+}
+
+.creatorName:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+hr {
+  display: flex;
+  border-style: solid;
+  border-color: hsl(215, 32%, 27%);
+  border-width: 0.2px;
+}
