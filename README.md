@@ -25,7 +25,7 @@ Web Development Demo Pages collection<br><br>
 | Valid Email | [valid_email](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/valid_email) | [valid_email](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/valid_email/) |
 | Fully Responsive | [Fully responsive](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Bootstrap/responsive-page) | [Fully responsive ](https://keshavgbpecdelhi.github.io/Web-Development/Bootstrap/responsive-page/) |
 | Bootstrap Form | [Bootstrap Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Bootstrap/bootstrap-form/index.html) | [Fully Responsive](https://keshavgbpecdelhi.github.io/Web-Development/Bootstrap/bootstrap-form/) |
-| Portfolio Website | [Portfolio Website](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-7) | [Fully responsive](https://keshavgbpecdelhi.github.io/Web-Development/css-7/portfolio_example.html) |
+| Portfolio Website | [Portfolio Website](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/css-7) | [Fully responsive](https://keshavgbpecdelhi.github.io/Web-Development/css-7/index.html) |
 | Text Replace | [replace](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/replace) | [replace](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/replace/index.html) |
 | CSS Padding | [css padding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-8/Padding%20css/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/) |
 | Landing Page | [Landing](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/landing-page/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/landing-page/) |
