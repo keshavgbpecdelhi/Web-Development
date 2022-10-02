@@ -30,12 +30,14 @@ Web Development Demo Pages collection<br><br>
 | CSS Padding | [css padding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-8/Padding%20css/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/) |
 | Landing Page | [Landing](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/landing-page/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/landing-page/) |
 |JS Calculator | [JS Calculator](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html) | [JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html) |
+|Animated Search| [Animated Search](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Animated%20Search%20Form) | [Search Animation](https://keshavgbpecdelhi.github.io/Web-Development/Animated%20Search%20Form/) |
 | Car Animation| [Car Animation](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/car-animation/index.html) | [Live Car](https://keshavgbpecdelhi.github.io/Web-Development/car-animation/) |
 | Fluid Webpage| [Fluid Webpage](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/fluid-webpage/Fluid-Webpage/index.html) | [Blue Bubble](https://keshavgbpecdelhi.github.io/Web-Development/fluid-webpage/Fluid-Webpage/index.html) |
 | Gradient Generator | [Gradient Generator](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Gradient-generator) | [Gradient Generator](https://keshavgbpecdelhi.github.io/Web-Development/Gradient-generator/bggenerator.html)  |
 | Calendar | [Glassmorphism Calendar](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/glassmorphism-calendar) | [Glassmorphism Calendar](https://keshavgbpecdelhi.github.io/Web-Development/glassmorphism-calendar)  |
 | Parallax Website | [Parallax website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/parallax-website) | [Parallax website](https://keshavgbpecdelhi.github.io/Web-Development/parallax-website)  |
 | HTML Card | [HTML Cards](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/card) | [Round](https://keshavgbpecdelhi.github.io/Web-Development/html/card/card.html), [Flip](https://keshavgbpecdelhi.github.io/Web-Development/html/card/flipcard.html), [Profile](https://keshavgbpecdelhi.github.io/Web-Development/html/card/profilecard.html) |
+| NFT Card | [NFT Cards](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/nft-preview-card-component) | [Card Component](https://keshavgbpecdelhi.github.io/Web-Development/nft-preview-card-component/) |
 | Dynamic Page | [Dynamic Page](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/dynamic-page) | [Dynamic Page Website](https://keshavgbpecdelhi.github.io/Web-Development/dynamic-page) |
 | Tribute Page | [Tribute Page](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Tribute-Page) | [Tribute Page Website](https://keshavgbpecdelhi.github.io/Web-Development/Tribute-Page/index.html)
 | Gallery Website | [Gallery Website](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/gallery-website) | [Gallery Website Live](https://keshavgbpecdelhi.github.io/Web-Development/gallery-website) |
@@ -47,7 +49,7 @@ Web Development Demo Pages collection<br><br>
 | Social Icons | [Social_Icons](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/awesome_Social_icons) | [Demo Socials](https://keshavgbpecdelhi.github.io/Web-Development/awesome_Social_icons/mysocial.html) |
 | 2D Transform | [2D](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/2D_Transformation) | [Transformations](https://keshavgbpecdelhi.github.io/Web-Development/2D_Transformation/) |
 
-# :handshake: Our Contributors
-<a href="hhttps://github.com/keshavgbpecdelhi/Web-Development">
-  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" />
+### :handshake: Our Contributors
+<a href="https://github.com/keshavgbpecdelhi/Web-Development">
+  <img style="height:90px; width=90px;" src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" />
 </a>
