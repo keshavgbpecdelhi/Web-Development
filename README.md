@@ -48,6 +48,7 @@ Web Development Demo Pages collection<br><br>
 | Webpage API | [DevFinder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/webpage-using-api) | [DevFinder Live](https://keshavgbpecdelhi.github.io/Web-Development/webpage-using-api/) |
 | Social Icons | [Social_Icons](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/awesome_Social_icons) | [Demo Socials](https://keshavgbpecdelhi.github.io/Web-Development/awesome_Social_icons/mysocial.html) |
 | 2D Transform | [2D](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/2D_Transformation) | [Transformations](https://keshavgbpecdelhi.github.io/Web-Development/2D_Transformation/) |
+| CSS Adjuster | [CSS Adjuster](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-Adjuster) | [Live Adjuster](https://keshavgbpecdelhi.github.io/Web-Development/CSS-Adjuster/) |
 
 ### :handshake: Our Contributors
 <a href="https://github.com/keshavgbpecdelhi/Web-Development">
