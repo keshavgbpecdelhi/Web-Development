@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.main-area{
+    padding: 2rem;
+}
+.heading-box{
+    text-align: center;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.heading-box h1{
+    color: #1e88e5;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.heading-box p{
+    color: grey;
+    font-size: 1.4rem;
+    max-width: 40rem;
+}
+.animation-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f2f2f2;
+    padding: 2rem;
+    gap: 1rem;
+}
+.animation-box .each-box{
+    background: #ffffff;
+    width: 40rem;
+    max-width: 100%;
+    padding: 0.5rem;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    border-radius: 5px;
+    border: 2px solid #567982;
+}
+.animation-box .each-box p {
+	font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.each-box span {
+	width: 1rem;
+	height: 1rem;
+	background: #1e88e5;
+	padding: 0.2rem;
+	border-radius: 100%;
+	color: white;
+	font-size: 0.9rem;
+}
+.each-box div {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-image: -o-linear-gradient(left, #0acffe 0%, #495aff 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#0acffe), to(#495aff));
+	background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+	border-radius: 5px;
+	position: relative;
+	-webkit-animation: myanimation 5s infinite;
+	        animation: myanimation 5s infinite;
+}
+
+#div1 {
+	-webkit-animation-timing-function: linear;
+	        animation-timing-function: linear;
+}
+
+#div2 {
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
+}
+
+#div3 {
+	-webkit-animation-timing-function: ease-in;
+	        animation-timing-function: ease-in;
+}
+
+#div4 {
+	-webkit-animation-timing-function: ease-out;
+	        animation-timing-function: ease-out;
+}
+
+#div5 {
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+#div6 {
+	-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+	        animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+
+@-webkit-keyframes myanimation {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 300px;
+	}
+}
+
+@keyframes myanimation {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 300px;
+	}
+}
+/* Footer CSS  */
+footer{
+    background: #3f3f3f;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Media Query CSS  */
+@media only screen and (max-width:600px) {
+    .heading-box {
+        margin-bottom: 1rem;
+    }
+    .heading-box h1 {
+        font-size: 1.8rem;
+    }
+    .heading-box p {
+        font-size: 1.1rem;
+    }
+    .main-area {
+        padding: 1rem;
+    }
+    .animation-box {
+        padding: 1rem;
+    }
+    @-webkit-keyframes myanimation {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 200px;
+        }
+    }
+    @keyframes myanimation {
+        from {
+            left: 0px;
+        }
+        to {
+            left: 200px;
+        }
+    }
+}
