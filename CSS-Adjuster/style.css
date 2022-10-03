@@ -1,0 +1,54 @@
+/* Add CSS Variables */
+
+:root {
+    --border: #80b8e0;
+    --size: 450px;
+    --visibility: 0px;
+  }
+  
+  img {
+    height: var(--size);
+    background: var(--border);
+    filter: blur(var(--visibility));
+    padding: 50px;
+  }
+  
+  /*
+    Misc styles, nothing to do with CSS variables
+  */
+  
+  body {
+    text-align: center;
+    background: #0b3452;
+    color: white;
+    font-family: "helvetica neue", sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+  
+  .whole {
+    margin-top: 25vh;
+  }
+  
+  .controls {
+    margin-bottom: 50px;
+    width: 50%;
+    min-width: 350px;
+    min-height: 400px;
+    float: left;
+    margin-top: 100px;
+  }
+  
+  input {
+    width: 100px;
+  }
+  
+  #border {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .image {
+    margin-top: 35vh;
+    position: relative;
+  }
