@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Todo</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+	<link rel="icon" href="images/flag-hackclub.png">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Parisienne&family=Poppins:wght@200&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+/*────────────────── 
+        body
+──────────────────*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-weight: 100;
+    color: #f5eeff;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient( 45deg, #000000, #000000);
+    background: -webkit-linear-gradient( 45deg, #000000, #000000);
+}
+
+/*────────────────── 
+       header
+──────────────────*/
+
+
+header{
+    width: 100%;
+    height: 40%;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1478728073286-db190d3d8ce6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+    background-position: center;
+    background-size:cover;
+    box-shadow: 0px 0px 10px #182952;
+}
+
+/* list name */
+
+#list-title{
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    border: hidden;
+    font-size: 40px;
+    color: #fefefe;
+    background: transparent;
+    text-transform: capitalize;
+}
+
+input::placeholder{
+    color: #fefefe;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus{
+    outline-color: rgba(255, 255, 255, 0.726);
+}
+
+/* delete list button */
+
+header i{
+    top: 20px;
+    right: 40px;
+    font-size: 1.5rem;
+    position: absolute;
+    animation: close 1s 1 ease-out;
+}
+
+.heading i:hover{
+    color: pink;
+    font-size: 2rem;
+}
+
+@keyframes close{
+    0%{transform: rotate(-90deg);}
+    50%{transform: rotate(0deg);}
+}
+
+/*────────────────── 
+    content area
+──────────────────*/
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 60%;
+}
+
+/* list */
+
+#list{
+    padding: 20px 40px;
+    font-size: 1.2em;
+}
+
+#list i:hover{
+    color: rgb(248, 128, 168);
+}
+
+/* item */
+
+.item{
+    position: relative;
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item:hover{
+    box-shadow: 0px 0px 5px #b27af36b; 
+}
+
+.item p{
+    position: relative;
+    flex-grow: 1;
+    padding-left: 20px;
+    animation: slide .30s 1 ease-out;
+}
+
+@keyframes slide{
+    0%   {left: -10px; opacity: .4;}
+  50%  { left: 0px; opacity: 1;}
+}
+
+
+.line-through{
+    text-decoration: line-through;
+}
+
+/*────────────────── 
+    user input 
+──────────────────*/
+
+#input{
+    position: relative;
+    outline: none;
+    padding: 10px 15px;
+    color: #f5eeff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background: transparent;
+    border: 3px solid #f5eeff;
+    animation: slide 1s 1 ease-out;
+}
+
+ 
+/* add item */
+
+#add{
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+    padding: 5px 12px;
+}
+
+/* plus button */
+
+#add i{
+    font-size: 2.5em;
+    margin-right:20px;
+}
+
+/*────────────────── 
+    media query    
+──────────────────*/
+
+@media only screen and (max-width: 600px) {
+   #add{
+       justify-content: center;
+   }
+   #list-title{
+       width: 300px;
+   }
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="heading">
+			<input type="text" id="list-title" name="listname" placeholder="Things to do"></input>
+            <i class="clear fas fa-times"></i>
+          </div>
+    </header>
+
+        <div id="content">
+          <ul id="list">
+            
+            </ul>
+            <div id="add">
+                <i class="fas fa-plus-circle"></i>
+                <input type="text" id="input" placeholder="Add a to-do">
+             
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+    	// javascript code was from https://youtu.be/b8sUhU_eq3g
+
+// select the elements
+const clear = document.querySelector(".clear");
+const listTitle = document.getElementById("list-title");
+const list = document.getElementById("list");
+const input = document.getElementById("input");
+
+// classes name
+const CHECK = "fa-check-circle";
+const UNCHECK = "fa-circle";
+const LINE_THROUGH = "line-through";
+
+//  vars
+let LIST, id;
+/* localstorage.setItem('key', 'value');
+let variable = localstorage.getItem('key');*/
+
+//get item from localstorage
+let data = localStorage.getItem("TODO");
+let name = localStorage.getItem("NAME");
+
+// check if data is not empty 
+if(data){
+    LIST = JSON.parse(data);
+    id = LIST.length;
+    LoadList(name, LIST);
+} else {
+    LIST = [];
+    id = 0;
+}
+
+if(name) {
+	listTitle.value = name
+}
+
+//load items to the user interface
+function LoadList(name, array){
+	listTitle.value = name
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
+
+// clear the local storage (with the cross on top)
+ clear.addEventListener("click", function(){
+     localStorage.clear();
+     location.reload();
+ });
+
+// add to do function 
+
+function addToDo(toDo, id, done, trash){
+
+    if(trash){ return; }
+
+    const DONE = done ? CHECK : UNCHECK;
+    const LINE = done ? LINE_THROUGH : "";
+
+    const item = `
+                <li class="item">
+                  <i class="far ${DONE}" job="complete" id="${id}"></i>
+                  <p class="text ${LINE}">${toDo}</p>
+                  <i class="fas fa-trash-alt" job="delete" id="${id}"></i>
+                </li>
+                `;
+    const position = "beforeend";
+    list.insertAdjacentHTML(position, item);
+}
+
+//add an item to the list when user hit enter key
+document.addEventListener("keyup",function(event){
+    if(event.keyCode == 13){
+        const toDo = input.value;
+
+     //if the  input isn't empty
+        if(toDo){
+            addToDo(toDo, id, false, false);
+
+            LIST.push({
+                name : toDo,
+                id : id,
+                done : false,
+                trash : false
+            });
+
+            id++;
+
+        //add item from localstorage
+
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+
+        }
+        input.value  = "";
+    }
+});
+
+// complete to do
+function completeToDo(element){
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+
+    LIST[element.id].done = LIST[element.id].done ? false : true;
+}
+
+// remove to do
+function removeToDo(element){
+    element.parentNode.parentNode.removeChild(element.parentNode);
+
+    LIST[element.id].trash = true;
+}
+
+//target the items created dynamically
+
+list.addEventListener("click", function(event){
+	
+    const element = event.target; //return the clicked element inside the list
+    const elementJob = element.attributes.job.value; //complete or delete
+
+    if(elementJob == "complete"){
+        completeToDo(element);
+    } else if(elementJob == "delete"){
+        removeToDo(element);
+    }
+    
+    //add item from localstorage
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+
+});
+
+listTitle.addEventListener("change", function(event){
+	localStorage.setItem("NAME", listTitle.value.trim())
+});
+    </script>
+  </body>
+</html>
