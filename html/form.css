@@ -1,22 +1,36 @@
-#bk{
-    background-color: rgb(9, 3, 63);
-    color: snow;
-    font-family: 'Courier New', Courier, monospace;
-
+#bk {
+  background-color: rgb(9, 3, 63);
+  color: snow;
+  font-family: "Courier New", Courier, monospace;
 }
-#container{
-    border: 20px groove green;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: gray;
-    color: black;
-    width: 590px;
-    margin: auto;
-
+#container {
+  border: 20px groove green;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+  color: black;
+  width: 590px;
+  margin: auto;
 }
 
-#container h2{
-    text-decoration: underline;
-    font-size: 1.57rem;
+#container h2 {
+  text-decoration: underline;
+  font-size: 1.57rem;
 }
+
+#address_error,
+#city_error,
+#zip_error,
+#check,
+#radio_check {
+  color: red;
+  background-color: aliceblue;
+  display: none;
+  margin-bottom: 0px;
+}
+/* #select_check {
+  color: red;
+  background-color: aliceblue;
+  display: none;
+} */
