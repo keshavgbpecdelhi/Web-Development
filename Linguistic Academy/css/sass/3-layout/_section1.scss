@@ -1,0 +1,108 @@
+.container__womenImage {
+  margin-top: 2rem;
+}
+
+.container__h1 {
+  color: $white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  max-width: 28ch;
+  text-align: center;
+}
+
+.container__btn {
+  width: 254px;
+  height: 62px;
+  background: #8c7ae6;
+  color: $white;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  margin-left: 14rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.container__btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.container__contents {
+  margin-top: -44rem;
+  margin-left: 56rem;
+}
+
+.container__womenImage {
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  height: 48rem;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1356px) {
+  .container__contents {
+    margin-top: -47rem;
+    margin-left: 24rem;
+  }
+}
+
+@media all and(max-width: 1050px ) {
+  .container__h1 {
+    font-size: 2rem;
+  }
+
+  .container__contents {
+    margin-top: -43rem;
+    margin-left: 19rem;
+  }
+
+  .container__btn {
+    margin-left: 10rem;
+    width: 170px;
+    height: 25px;
+    font-size: 12px;
+    margin-top: 2rem;
+  }
+}
+
+@media all and (max-width: 632px) {
+  .container__contents {
+    margin-top: -44rem;
+    margin-left: 2rem;
+  }
+  .container__h1 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
+
+  .container__btn {
+    margin-left: 9rem;
+
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .container__btn {
+    margin-left: 6rem;
+    font-size: 8px;
+    margin-top: 0.5rem;
+    width: 30%;
+    height: 25px;
+  }
+  .container__h1 {
+    font-size: 1rem;
+    max-width: 50ch;
+  }
+  .container__contents {
+    margin-top: -32rem;
+    margin-left: 2rem;
+  }
+}

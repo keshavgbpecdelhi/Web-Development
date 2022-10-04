@@ -1,0 +1,156 @@
+.section10 {
+  margin-top: 5rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+
+.container10__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+}
+
+.container10__p0 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: -2rem;
+  color: #000000;
+}
+
+.container10__programsList {
+  margin-top: 12rem;
+}
+
+.container10__programContents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-column-gap: 17rem;
+}
+.container10__listSection {
+  margin-top: 4rem;
+}
+
+.container10__thumb {
+  width: 523px;
+  height: 217px;
+
+  background: #24c298;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container10__h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  max-width: 22ch;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.container10__desc {
+  margin-top: 2rem;
+}
+
+.container10__p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 141.19%;
+  /* or 20px */
+
+  max-width: 68ch;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container10__btn {
+  margin-top: 1.5rem;
+}
+
+.container10__btnBlock {
+  width: 139px;
+  height: 30px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 141.19%;
+  /* or 20px */
+  text-transform: capitalize;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  border: none;
+  background: #8c7ae6;
+}
+
+.container10__btnBlock:focus {
+  outline: none;
+}
+
+@media all and (max-width: 1440px) {
+  .container10__programContents {
+    grid-column-gap: 10rem;
+  }
+  .container10__thumb {
+    width: 300px;
+    height: 150px;
+  }
+
+  .container10__h2 {
+    font-size: 20px;
+
+    max-width: 22ch;
+  }
+
+  .container10__p {
+    font-size: 14px;
+
+    max-width: 39ch;
+  }
+}
+
+@media all and (max-width: 880px) {
+  .container10__programContents {
+    grid-column-gap: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container10__programContents {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .section10 {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3.5rem;
+  }
+  .container10__programsList {
+    margin-top: 1rem;
+  }
+}

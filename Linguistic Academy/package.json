@@ -1,0 +1,21 @@
+{
+  "name": "linguisticCenter",
+  "version": "1.0.0",
+  "description": "> ## Website for Language institute. Data are presented on webPage through Public API stored in JSON format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alidhuniya/linguisticCenter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alidhuniya/linguisticCenter/issues"
+  },
+  "homepage": "https://github.com/Alidhuniya/linguisticCenter#readme",
+  "dependencies": {}
+}
