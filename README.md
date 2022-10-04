@@ -29,6 +29,7 @@ Web Development Demo Pages collection<br><br>
 | Text Replace | [replace](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/replace) | [replace](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/replace/index.html) |
 | CSS Padding | [css padding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-8/Padding%20css/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/) |
 | Landing Page | [Landing](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/landing-page/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/landing-page/) |
+| Simple Todo | [Todo](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/simple-todo) | [Todo ](https://keshavgbpecdelhi.github.io/Web-Development/simple-todo/) |
 |JS Calculator | [JS Calculator](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html) | [JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html) |
 |Animated Search| [Animated Search](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Animated%20Search%20Form) | [Search Animation](https://keshavgbpecdelhi.github.io/Web-Development/Animated%20Search%20Form/) |
 |CS/JS Hybrid | [Animation](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-JS%20Hybrid%20Animation) | [Animation](https://keshavgbpecdelhi.github.io/Web-Development/CSS-JS%20Hybrid%20Animation/) |
