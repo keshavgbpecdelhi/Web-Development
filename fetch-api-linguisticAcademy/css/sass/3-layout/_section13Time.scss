@@ -1,0 +1,123 @@
+.section13 {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  margin-top: 10rem;
+}
+
+.container13__schedule {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media all and (max-width: 843px) {
+    justify-content: center;
+  }
+}
+.container13__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+}
+
+.container13__h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  max-width: 22ch;
+  text-align: center;
+
+  // text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container13__p0 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  // text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container13__p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container13__h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 72px */
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #24c298;
+}
+
+.container13__btn {
+  display: flex;
+  justify-content: center;
+}
+
+.container13__btnBlock {
+  width: 203px;
+  height: 49px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  cursor: pointer;
+  border: none;
+
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+
+  background: #8c7ae6;
+}
+.container13__btnBlock:focus {
+  outline: none;
+}
+
+.container13__scheduleList {
+  margin-top: 3rem;
+}
+
+@media all and (max-width: 500px) {
+  .section13 {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 4rem;
+  }
+
+  .container13__schedule {
+    margin-top: 0rem;
+  }
+}

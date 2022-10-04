@@ -1,0 +1,105 @@
+.section8 {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  margin-top: 15rem;
+}
+
+.container8__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 15px;
+  /* identical to box height, or 31% */
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #6adabc;
+
+  @media all and (max-width: 800px) {
+    font-size: 24px;
+  }
+}
+
+.container8__p0 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 15px;
+  /* identical to box height, or 94% */
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.065em;
+  margin-top: -1rem;
+  color: #000000;
+}
+
+.container8__team {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-between;
+
+  @media all and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
+
+  @media all and (max-width: 500px) {
+    justify-content: center;
+  }
+}
+
+.container8__profile {
+  margin-top: 1rem;
+}
+
+.container8__img {
+  width: 122px;
+  height: 128px;
+
+  border-radius: 70px;
+}
+
+.container8__h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  /* identical to box height, or 94% */
+  margin-top: 1.5rem;
+
+  letter-spacing: 0.065em;
+
+  color: #000000;
+}
+
+.container8__p1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+  max-width: 12ch;
+  text-align: center;
+  letter-spacing: 0.065em;
+  margin-top: 0.3rem;
+  color: #000000;
+  margin-left: 2rem;
+}
+
+@media all and (max-width: 600px) {
+  .section8 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 7rem;
+  }
+
+  .container8__h1 {
+    font-size: 1rem;
+  }
+  .container8__p0 {
+    margin-top: 0rem;
+  }
+
+  .container8__team {
+    margin-top: 4rem;
+  }
+}

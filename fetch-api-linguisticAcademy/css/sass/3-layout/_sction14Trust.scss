@@ -1,0 +1,46 @@
+.section14 {
+  margin-top: 10rem;
+  // margin-left: 7.5rem;
+  // margin-right: 7.5rem;
+}
+
+.container14__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+}
+
+.container14__companies {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+
+  // padding-left: 0rem;
+  // padding-right: 7.5rem;
+
+  @media all and (max-width: 500px) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  width: 100%;
+  height: 230px;
+
+  background: #e6eaec;
+}
+.container14__imgs {
+  width: 82px;
+  height: 83px;
+  margin-top: 2rem;
+}

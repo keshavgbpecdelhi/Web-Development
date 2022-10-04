@@ -1,0 +1,142 @@
+.courses {
+  margin-top: 15rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+.container12__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 141.19%;
+  /* or 68px */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+}
+
+.container12__p0 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.33em;
+
+  color: #000000;
+  margin-top: -2rem;
+  text-transform: capitalize;
+}
+
+.container12__coursesSection {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media all and (max-width: 995px) {
+    justify-content: center;
+  }
+}
+
+.container12__img {
+  width: 370px;
+  height: 200px;
+}
+
+.container12__contents {
+  width: 370px;
+  height: 212px;
+
+  background: #e6eaec;
+}
+
+.container12__h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  text-align: center;
+
+  color: #000000;
+
+  margin-top: 3rem;
+}
+
+.container12__p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  margin-top: 2rem;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.container12__btn {
+  margin-top: 1.7rem;
+}
+
+.container12__btnBlock {
+  width: 127px;
+  height: 36px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #ffffff;
+  background: #8c7ae6;
+}
+.container12__btnBlock:focus {
+  outline: none;
+}
+
+.container12__course {
+  margin-top: 2rem;
+}
+
+.container12__contentsList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (max-width: 500px) {
+  .courses {
+    margin-top: 11rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .container12__h1 {
+    font-size: 20px;
+  }
+  .container12__p0 {
+    font-size: 16px;
+
+    margin-top: 0rem;
+  }
+
+  .container12__coursesSection {
+    margin-top: 3rem;
+  }
+
+  .container12__img {
+    width: 320px;
+    height: 171px;
+  }
+  .container12__contents {
+    width: 320px;
+  }
+}
