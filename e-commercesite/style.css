@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* this div css is use to resize everything in the website . it is useful for reponsive building */
+/* div{ */
+    /* resize: horizontal; */
+    /* overflow: auto; */
+/* } */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    padding: 20px;  
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+    
+}
+nav ul li:hover{
+    text-decoration: underline;
+    
+
+}
+/* .logo{ */
+    /* -webkit-mask-image: url(interstellar.png); */
+    /* mask-image: url(logo\ anime.png); */
+/* for this i need an transparent image to mask like full black is a transparent */
+/* } */
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding: right 25px;
+}
+.row{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+ 
+}
+.cart {
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor:grab;
+}
+
+.col2{
+    flex-basis: 40%;
+    min-width: 400px;
+
+}
+.col2 img{
+    max-width: 100%;
+    padding: 20px 0;
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block; 
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 40px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #010101;
+}
+
+.header{
+    background: radial-gradient(#fff,#ffd6d6);   
+}
+.category{
+    margin: 70px 0;
+    
+}
+.col3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col3 img{
+    width: 95%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.title {
+   text-align: center;
+   padding: 30px;
+   font-size: 200%;
+}
+.rows{
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+ 
+}
+
+.large-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+
+.col4{
+    flex-basis: 24%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 40px;
+    background: rgba(255, 0, 0, 0.08);
+    transition: transform 0.5s;
+    margin: 5px;
+}
+.demo{
+    width: 220px;
+    height: 250px;
+}
+
+/* i will do the underlined part after words */
+/* .title::after{ */
+    /* content: ''; */
+    /* background:#ff523b; */
+    /* width: 80px; */
+    /* height: 5px; */
+    /* border-radius: 5px; */
+    /* position:absolute; */
+    /* top: 20%; */
+    /* left: 50%; */
+    /* transform: translate(-50%);; */
+
+/* } */
+
+
+.title::after{
+    content: '';
+    background-color: #ff523b;
+    width: 100px;
+    height:5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 234%;
+    left:50%;
+    transform:  translate(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col4 p{
+    font-size: 15px;
+}
+.col4:hover{
+    transform: translateY(-5px);
+}
+.product{
+    width: 296px;
+    height: 253px;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+
+    margin-top: 80px;
+    padding: 50px 0;
+}
+
+
+.col-2 .offer-img{
+    padding: 50px;
+    margin-left:50%;
+    background-image:url(https://cdn.tutsplus.com/cdn-cgi/image/width=600/vector/uploads/legacy/qt/2012_QT/qt_69_space_background/space.jpg);
+}
+.col-2 p{
+    margin-right: 30%;
+}
+.small{
+    color: #555;
+}
+.col3 p,h3{
+    text-align: center;
+}
+.name{
+    text-align:start;
+}
+.testimonial{
+  padding-top: 90px;
+}
+.testimonial .col-3{
+    text-align: center;
+   padding-top: 20px;
+   flex-basis: 30%;
+   box-shadow: 0 0 20px 0px rgba(240, 22, 22, 0.1);
+   cursor: pointer;
+   transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 70px;
+    margin-top: 20px;
+    border-radius: 60%;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #f73116;
+}
+.col-3 p{
+    font-size: 12px;
+    padding: 10px;
+    margin: 12px 0;
+    color: #777;
+} 
+.name{
+    text-align: center;
+}
+.col-3 .fa fa-star{
+    color: #f73116;
+}
+/* ----brands----- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.brands{
+    margin:100px auto;
+
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+   width: 100%; 
+    cursor:pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+/* -----footer----- */
+.footer{
+    background: black;
+    color:aqua;
+    font-size: 15px;
+    padding: 20px 0 12px;
+}
+.footer p{
+    color:#8a8a8a;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col1, .footer-col2,.footer-col3,.footer-col4{
+    min-width:250px;
+    margin-bottom: 20px;
+   
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+    padding-right: 15px;
+  }
+.footer-col2 img{
+ width: 150px;
+ margin-bottom: 20px;
+}
+.footer-col3, .footer-col4{
+    flex-basis: 15%;
+    text-align: center;
+}
+ul {
+    list-style-type: none ;
+}
+.app-logo{
+    margin-top: 20px;
+    
+}
+.app-logo img{
+    width: 140px;  
+    border-radius: 5px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Copyright{
+    text-align: center;
+}
+.menu {
+    width: 60px;
+    height: 30px;
+    padding-left: 10px;
+    display: none;
+}
+h2{
+    transition-duration: 0.4s;
+}
+h2:hover{
+    color: #f73116;
+}
+.bt{
+    transition-duration: 0.4s;
+}
+.bt:hover{
+    color: #f73116;
+}
+
+/* media query for menu */
+
+@media only screen and (max-width: 800px){
+   
+    nav ul{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background:white;
+        width: 100%;
+        overflow: hidden; 
+         /* //when click on menu button background appears and disappears so we write overflow hidden to control the background */ 
+         transition: max-height 0.5s;
+     }
+
+     nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        display: block;
+        cursor:pointer;
+    }
+}
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 600px){
+
+    .row{
+        text-align: center;
+    }
+    
+}
