@@ -52,7 +52,7 @@ Web Development Demo Pages collection<br><br>
 | 2D Transform | [2D](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/2D_Transformation) | [Transformations](https://keshavgbpecdelhi.github.io/Web-Development/2D_Transformation/) |
 | CSS Adjuster | [CSS Adjuster](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-Adjuster) | [Live Adjuster](https://keshavgbpecdelhi.github.io/Web-Development/CSS-Adjuster/) |
 | Resume Builder | [Resume Builder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/resume_builder) | [Live Builder](https://keshavgbpecdelhi.github.io/Web-Development/resume_builder/) |
-| E-commerce Anime Website | [Website](C:\Users\OMKAR\Web-Development\e-commercesite) |
+| E-commerce Anime Website | [Website](C:\Users\OMKAR\Web-Development\e-commerce) |
 [live Website](https://omk-coder.github.io/first-web-project.io/) |
 
 ### :handshake: Our Contributors
