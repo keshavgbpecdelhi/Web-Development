@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    font-family: Raleway;
+    background-color: aliceblue;
+  }
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      letter-spacing: 2px;
+      padding: 8px;
+      margin: 3%;
+      margin-top: 0%;
+      color:  #369ca0;
+  }
+
+  .subheading {
+    text-align: center;
+      font-size: 1.0em;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      letter-spacing: 2px;
+      padding: 2px;
+      margin: 2%;
+  }
+  a {
+    color: #1c4446 ;
+    margin-left: 10px; margin-right: 10px;
+  }
+  
+  .gallery-image {
+    padding: 10px;
+    padding-left: 80px; padding-right: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px; margin-right: 50px;
+  }
+  
+  .gallery-image img {
+    height: 200px;
+    width: 250px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 11px;
+    height: 200px;
+    width: fit-content;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    border-color: black;
+    position: relative;
+    background-color: black;
+    border-width: medium;
+    border-radius: 4%;
+    border-right-style: solid; border-top-style: solid;
+    
+  }
+   .darkmode--activated .img-box {
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+  } 
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 200px;
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+  #campus {
+    height: 200px;
+    width: 400px;
+  }
+  #Crotonia {
+    height: 200px;
+    width: 400px;
+  }
+  #library {
+    height: 200px;
+    width: 400px;
+  }
+  .hyper
+  {
+    text-decoration: none;
+  }
+  .hyper:hover {
+    color:#35a4a8;
+  }
+  .hyp {
+    text-decoration: none;
+    color:#265A5C;
+  }
+  .hyp:hover {
+    color:#3F7B70;
+  }
+
+  .main-footer {
+    width: 100%;
+    background-color: #DDDDDD;
+    color:#265A5C;
+    padding-bottom :30px;
+  }
+  
+  .footer-sections {
+    text-align: left;
+    margin-top: 3%;
+  }
+  
+  .footer-content {
+    font-size: 12px;
+    padding-top: 3%;
+    margin: auto;
+  }
+  
+  .footer-about-us-content{
+    text-align: left;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: lightblue;
+  }
+  
+  .footer-content:nth-of-type(1) {
+    padding-right: 8%;
+  }
+  
+  .footer-ending {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* .footer-copyright {
+    padding-right: 50%;
+  } */
+  
+  .footer-social-media {
+    font-size: 25px;
+  }
+  .footer-about-heading
+  {
+    font-size: 25px;
+    color: #265A5C;
+  }
+  .footer-about-us-content
+  {
+    font-size: 14px;
+    color: #3F7B70;
+    font-weight: 400;
+  }
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 50%;
+    color: #3F7B70;
+    transition: all 0.2s ease-in;
+  }
+  .fa-facebook:hover {
+    color: rgb(24, 24, 214);
+  }
+  .fa-instagram:hover {
+    color: rgb(224, 57, 135);
+  }
+  .fa-twitter:hover {
+    color: rgb(47, 196, 255);
+  }
+  .fa-youtube:hover {
+    color: rgba(202, 17, 0, 0.904);
+  }
+  
