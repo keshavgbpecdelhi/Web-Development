@@ -23,14 +23,18 @@ The steps to follow to contribute to any projects:
     git clone "url you just copied"
     ```
 
-4.  ### Add a upstream link to main branch in your cloned repo
+4.  ### Move to the folder
+    ```
+    cd Web-Development
+    ```
+5.  ### Add a upstream link to main branch in your cloned repo
     ```
     git remote add upstream <original repository>
     ```
-5.  ### Keep your cloned repo upto date by pulling from upstream
+6.  ### Keep your cloned repo upto date by pulling from upstream
     This will also avoid any merge conflicts while committing new changes
     ```
-    git pull upstream main
+    git pull upstream master
     ```
 6.  ### Create your feature branch
     Always create new branch
