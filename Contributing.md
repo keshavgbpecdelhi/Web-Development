@@ -25,7 +25,7 @@ The steps to follow to contribute to any projects:
 
 4.  ### Move to the folder
     ```
-    cd ./Web-Development
+    cd Web-Development
     ```
 5.  ### Add a upstream link to main branch in your cloned repo
     ```
