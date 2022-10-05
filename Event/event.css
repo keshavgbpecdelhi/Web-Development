@@ -1,6 +1,6 @@
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -8,143 +8,153 @@ body{
     background-image: url("background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'IBM Plex Mono', monospace;
 
 }
 
-h1{
-    color:white;
-}
-
-.main-head{
-    font-family: 'Orbitron' , sans-sherif;
-    font-size:5vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align:center;
-    padding:5vh;
+    font-family: 'IBM Plex Mono', monospace;
 
+}
 
+h1 {
+    color: white;
+    margin: 30px 0px 30px 0px;
+    font-size: 40px;
 }
 
 span{
     color:rgb(255, 217, 1);
     text-decoration: underline;
+    text-underline-offset: 5px;
     
 }
 
 
-
-
-.btn{
-    
-    position: absolute;
-    color:black;
+.btn {
+    text-align: center;
+    margin-bottom: 30px;
     background-color:white;
-    width:30vh;
-    left:45%;
-    
-    
+    width:50vh;
     border-radius:20px 30px 20px 30px;
-    font-family: 'Orbitron' , sans-sherif;
-    text-align: center;
-    font-size:4vh;
-    margin-bottom:2rem;
-    
-    
-    align-items:center;
+    padding:1vh 5vh 1vh 3.5vh;
+    box-shadow: 0 3px 10px 0 rgb(255, 217, 1);
+    /* border: 2px solid rgb(255, 217, 1); */
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: rgb(255, 217, 1);
+    border-radius:30px 20px 30px 20px;
+    transform: rotate(5deg);
+}
+
+.heading {
+    color: white;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding:0 5vh 0 3.5vh;
-    border:4px solid rgb(255, 217, 1);
-   
-    
-
-}
-.btn:hover{
-    background-color:rgb(255, 217, 1);
-    border:4px solid white;
-
-
-
-
-}
-.container{
-    max-width:1100px;
-    margin:auto;
-    overflow:auto;
-    padding:0 2rem;
-    margin-top:4rem;
+    flex-direction: column;
+    gap: 40px;
 }
 
-h3,p{
-    font-family:'Orbitron' , sans-sherif;
-    color:grey;
 
+.card {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 3px 10px 0 rgb(255, 217, 1);
+    border-radius: 30px;
+    color: white;
 }
 
-h3{
-    text-decoration: underline;
+.card:hover {
+    cursor: pointer;
+}
+
+.card img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.card div {
+    width: 70%;
+}
+
+.card div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card div p {
+    line-height: 150%;
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.img{
-    width:100%
-}
+footer h2 {
 
-.card{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap:2vh;
-    row-gap: 5vh;
-    background-color:thistle;
-    opacity:0.9;
-    margin-bottom:2rem;
-    
-}
-
-.card,img{
-    height:400px;
-    
-}
-
-.card>div{
-    padding:3rem;
-}
-
-
-
-
-
-h2{
-    
-    color:white;
-    text-align:center;
-    
-    font-family: 'Orbitron' , sans-sherif;
-    margin-bottom:2rem;
-
+    font-weight: 300;
+    font-size: 20px;
 }
 
 @media (max-width:800px){
-    .btn{
-        left:35%;
+    .btn {
+        width: 60%;
+        text-align: center;
     }
-    section{
-        margin:10px;
 
+    .title {
+        font-size: 30px;
+        text-align: center;
+        padding: 0px 50px 0px 50px;
     }
+
+    .heading {
+        font-size: 20px;
+    }
+
     .card{
         display:flex;
         flex-direction:column;
-        margin-bottom:20rem;
-        
-        
+        margin-bottom: 2rem;
+        height: 100%;
+        padding: 30px 0px 30px 0px;
         
     }
-    .p{
-        width:300px;
-        background-color: thistle;
+
+    .card div {
+        width: 80%;
+    }
+
+    .card p{
+        width:100%;
     }
 }
 
@@ -152,14 +162,4 @@ h2{
     p{
         font-size:0.7rem;
     }
-}
-
-.heading{
-    margin-top:9rem;
-    color:white;
-    text-align:center;
-    font-family: 'Orbitron' , sans-sherif;
-    font-size:2.5rem;
-    text-decoration: underline;
-
 }
