@@ -1,0 +1,152 @@
+.section3 {
+  margin-top: 12rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+.container3 {
+  display: flex;
+  @media all and (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.container3__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+
+  letter-spacing: 0.065em;
+
+  color: #6adabc;
+}
+
+.container3__p0 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  /* or 22px */
+  max-width: 79ch;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container3__p1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 150%;
+  /* or 22px */
+  margin-top: 2.5rem;
+  max-width: 75ch;
+  letter-spacing: 0.05em;
+
+  color: #000000;
+}
+
+.container3__p2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+  letter-spacing: 0.12em;
+  margin-top: 1rem;
+  color: #000000;
+}
+
+.container2__h4 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  color: #777e8b;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.container3__btn {
+  margin-top: 3rem;
+}
+
+.container3__btnBlock {
+  width: 223px;
+  height: 62px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: $white;
+  background: #8c7ae6;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+}
+
+.container3__btnBlock:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.container3__right {
+  margin-top: 2rem;
+}
+.container3__rightImg {
+  width: 500px;
+  height: 333.2px;
+  border-radius: 35px;
+}
+.container3__rightp0 {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+
+  color: #6adabc;
+}
+
+.container3__left + .container3__right {
+  margin-left: 12rem;
+
+  @media all and (max-width: 1100px) {
+    margin-left: 0rem;
+  }
+}
+
+@media all and (min-width: 745px) and (max-width: 1100px) {
+  .container3__right {
+    margin-right: 11rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .section3 {
+    margin-top: 3rem;
+
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+  }
+
+  .container3__h1 {
+    font-size: 36px;
+  }
+
+  .container3__btnBlock {
+    width: 50%;
+
+    height: 38px;
+    font-size: 22px;
+    color: #fff;
+  }
+
+  .container3__btn {
+    margin-top: 2rem;
+  }
+
+  .container3__rightp0 {
+    font-size: 16px;
+
+    margin-top: -1rem;
+  }
+}

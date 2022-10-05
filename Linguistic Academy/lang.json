@@ -1,0 +1,380 @@
+{
+  "_comments": "// Linguistic Institute JSON data as Public API",
+  "topNav": "Every Three Months, site keeps on updating",
+  "navBar": [
+    {
+      "logoImg": "./img/graduation-cap.svg",
+      "logoHeading": " Linguistic Center"
+    },
+    [
+      {
+        "home": "home"
+      },
+      {
+        "about": "about"
+      },
+      {
+        "whyUs": "why Us?"
+      },
+      {
+        "programs": "programs"
+      },
+      {
+        "upcoming": "upcoming"
+      },
+      {
+        "schedule": "schedule"
+      },
+      {
+        "contact": "contact"
+      },
+      {
+        "phoneNumber": "+977-9845444567"
+      }
+    ]
+  ],
+  "mainContainerImg": "./img/women.svg",
+  "containerHeading": "Learn Interaction with Languages",
+  "containerBtn": "choose language",
+  "chooseLangHeading": "featured language",
+  "languages": [
+    {
+      "flagImg": "./img/nep.svg",
+      "flagHeading": " Nepali"
+    },
+    {
+      "flagImg": "./img/eng 1.svg",
+      "flagHeading": " English "
+    },
+    {
+      "flagImg": "./img/ch 1.svg",
+      "flagHeading": " chinese "
+    },
+    {
+      "flagImg": "./img/de 1.svg",
+      "flagHeading": " german"
+    },
+    {
+      "flagImg": "./img/it 1.svg",
+      "flagHeading": " italian "
+    },
+    {
+      "flagImg": "./img/sp 1.svg",
+      "flagHeading": " spanish "
+    },
+    {
+      "flagImg": "./img/fr 1.svg",
+      "flagHeading": " french"
+    },
+    {
+      "flagImg": "./img/ja 1.svg",
+      "flagHeading": " japanese"
+    },
+    {
+      "flagImg": "./img/che 1.svg",
+      "flagHeading": " chech "
+    },
+    {
+      "flagImg": "./img/por 1.svg",
+      "flagHeading": " portugee"
+    },
+    {
+      "flagImg": "./img/india 1.svg",
+      "flagHeading": " Hindi"
+    }
+  ],
+  "aboutHeading": "About Us",
+  "aboutParag0": "Our Linguistic Center is establish in 2005 with the motive of inspiring youths to speak the language of what they want in terms of career success or any kind of purpose. We teach several languages from past 15 years",
+  "aboutParag1": "Each Year from Linguistic Center, around 250 students pass the test and have proper understanding with speaking capabilities. Not only that our institute provides the way ro access foreign visa based on student performance ",
+  "aboutLocation": "Rupandehi, Bhairahwa",
+  "aboutBtn": "why us",
+  "aboutImg": "./img/man.svg",
+  "aboutTeach": "David Brian Teaching English",
+  "tourImg": "./img/interiorClass.svg",
+  "tourHeading": "Take A Tour of Our Center - Linguistic ",
+  "tourDec": "State-of-the-art language learning facilities and online resource",
+  "testHeading": "Take Our Free Language Test",
+  "testDesc": "This quick and free online test will tell your language level and help choose the best group course",
+  "testBtn": "start now",
+  "folksHeading": "welcome, folks",
+  "folksDesc": "Why Study With Us",
+  "welcomeList": [
+    {
+      "iconImg": "./img/wel1.svg",
+      "heading": "Certification",
+      "desc": "Get certification from a respected organization"
+    },
+    {
+      "iconImg": "./img/wel2.svg",
+      "heading": "Teaching Materials",
+      "desc": "Use modern learning materials for over 15 language courses"
+    },
+    {
+      "iconImg": "./img/wel3.svg",
+      "heading": "Career Upgrade",
+      "desc": "Enhance your professional and academic CV as you travel the world"
+    },
+    {
+      "iconImg": "./img/wel4.svg",
+      "heading": "Superior Accomodation ",
+      "desc": "Over 100 rooms in premium residences and welcoming homestays"
+    }
+  ],
+  "chooseHeading": "Why Choose Us?",
+  "chooseDes": "Simple Reason",
+  "choose": [
+
+    {
+      "iconImg": "./img/choose1.svg",
+      "heading": "Over 20 Years of Experience",
+      "desc": "In 2000 our centre became an academic department within the school of languages."
+    },
+    {
+      "iconImg": "./img/choose2.svg",
+      "heading": "Exclusive Learning Materials",
+      "desc": "Our learning materials include text with multimedia on all areas of the curriculum."
+    },
+    {
+      "iconImg": "./img/choose3.svg",
+      "heading": "Career Upgrade",
+      "desc": "Learning a new language is a fascinating thing that can lead to great opportunities."
+    },
+    {
+      "iconImg": "./img/choose4.svg",
+      "heading": "Certification",
+      "desc": "At the end of course you will get the certificate and valuable skills and experience."
+    },
+    {
+      "iconImg": "./img/choose5.svg",
+      "heading": "Friendly Learning Environment",
+      "desc": "Our method based on learning a language in a friendly and open atmosphere."
+    },
+    {
+      "iconImg": "./img/choose6.svg",
+      "heading": "Professional Teachers ",
+      "desc": "Our team consist of high-quality and certified teachers with big experience."
+    }
+
+  ],
+
+  "instructorHeading": "Featured Instructors",
+  "instructorDesc": "meet the team",
+  "instructorProfiles": [
+    {
+      "img": "./img/team1.svg",
+      "name": "Barbara Russell",
+      "title": "Chinese and Greek"
+    },
+    {
+      "img": "./img/team2.svg",
+      "name": "Brandon Martin",
+      "title": "Italian and French"
+    },
+    {
+      "img": "./img/team3.svg",
+      "name": "Susan Matthews",
+      "title": "English and Russian"
+    },
+    {
+      "img": "./img/team4.svg",
+      "name": "William Stanley",
+      "title": "German and Spanish"
+    }
+  ],
+  "testimonialsHeading": "Testimonials",
+  "testimonialsDesc": "client say",
+  "testimonials": [
+    {
+      "testimonialsQuote": "Teachers here are open, patient and very helpful, which represents an asset to learning a language in a friendly environment. Thank you. I have a solid language base that allows me to speak fluently.",
+      "testimonialsProfileImg": "./img/client1.svg",
+      "clientName": "Emma Boston",
+      "clientStatus": "student"
+    },
+    {
+      "testimonialsQuote": "Teachers here are open, patient and very helpful, which represents an asset to learning a language in a friendly environment. Thank you. I have a solid language base that allows me to speak fluently.",
+      "testimonialsProfileImg": "https://avatars1.githubusercontent.com/u/39728698?s=460&u=1434ef3d76ef7b7bf26bb868123e33d98aa031cb&v=4",
+      "clientName": "Ali Dhuniya",
+      "clientStatus": "Teacher"
+    },
+    {
+      "testimonialsQuote": "Teachers here are open, patient and very helpful, which represents an asset to learning a language in a friendly environment. Thank you. I have a solid language base that allows me to speak fluently.",
+      "testimonialsProfileImg": "https://www.delhimindclinic.com/wp-content/uploads/2019/03/IMG-20190311-WA0007-251x300.jpg",
+      "clientName": "Asmita Sharma",
+      "clientStatus": "Teacher"
+    }
+  ],
+  "programsHeading": "Programs",
+  "programsDesc": "what we offer",
+  "programsList": [
+    {
+      "heading": "IELTS/TOEFL Preparation",
+      "desc": "The International English Language Testing System,[6] or IELTS (/ˈaɪ.ɛlts/), is an international standardised test of English language proficiency for non-native English language speakers. It is jointly managed by the British Council, IDP: IELTS Australia and Cambridge Assessment English,[6] and was established in 1989. IELTS is one of the major English-language tests in the world, others being the TOEFL, TOEIC, PTE:A, and OPI/OPIc.",
+      "btn": "read more"
+    },
+    {
+      "heading": "Middle East Arabic Accent",
+      "desc": "The Arabic accents materials include recordings of AccentHelp coach Jim Johnson guiding you through the basics of accents throughout the region surrounding the Middle East and Northern Africa using the text, including tracks of Jim leading you through a monologue in the accent, and additional examples of speaking with the accent from coach Carolyn Johnson.",
+      "btn": "read more"
+    },
+    {
+      "heading": "Assian Accents",
+      "desc": "A number of distinct dialects of English are spoken in South Asia. There are many languages spoken in South Asia like Nepali, Hindi, Punjabi, Rajasthani, Sindhi, Balochi, Pashto, Assamese, Bengali, Gujarati, Kannada, Kashmiri, Marathi, Odia, Maithili, Malayalam, Sinhala, Tamil, Telugu, Tulu, Urdu and many more, creating a variety of accents of English. Accents originating in this part of the world tend to display several distinctive features, including:",
+      "btn": "read more"
+    },
+    {
+      "heading": "African Accents",
+      "desc": "South African accents also vary between major cities (particularly Cape Town, Durban and Johannesburg) and provinces (regions).[17] Accent variation is also observed within respective cities—for instance, Johannesburg, where the northern suburbs (Parkview, Parkwood, Parktown North, Saxonwold, etc.) tend to be less strongly influenced by Afrikaans. These suburbs are more affluent and populated by individuals.",
+      "btn": "read more"
+    }
+  ],
+  "professionalsImg": "./img/prof.svg",
+  "professionalsHeading": "Language Courses For Professionals",
+  "professionalsDesc": "Our qualified and experienced language trainers created special programmes to meet your specific needs.",
+  "professionalsBtn": "start now",
+  "coursesHeading": "upcoming courses",
+  "coursesDes": "wait for a while",
+  "coursesList": [
+    {
+      "img": "./img/course1.svg",
+      "price": "$620",
+      "heading": "General English Fluency",
+      "btn": "book now"
+    },
+    {
+      "img": "./img/course2.svg",
+      "price": "$385",
+      "heading": "Crash Course for Travellers",
+      "btn": "book now"
+    },
+    {
+      "img": "./img/course3.svg",
+      "price": "$415",
+      "heading": "Spanish Past Tennis Review",
+      "btn": "book now"
+    }
+  ],
+  "scheduleHeading": "Schedule",
+  "scheduleList": [
+    {
+      "heading": "Standard General English",
+      "desc": "Standard General English Course for Adults",
+      "weeks": [
+        {
+          "week0": "1-11 weeks $195"
+        },
+        {
+          "week1": "1-11 weeks $195"
+        },
+        {
+          "week2": "1-11 weeks $195"
+        },
+        {
+          "week3": "1-11 weeks $195"
+        }
+      ],
+      "lessonPerWeek": "20 lessons/week",
+      "btn": "start now"
+    },
+    {
+      "heading": "Intensive General English",
+      "desc": "Standard General English Course for Adults",
+      "weeks": [
+        {
+          "week0": "1-11 weeks $195"
+        },
+        {
+          "week1": "1-11 weeks $195"
+        },
+        {
+          "week2": "1-11 weeks $195"
+        },
+        {
+          "week3": "1-11 weeks $195"
+        }
+      ],
+      "lessonPerWeek": "30 lessons/week",
+      "btn": "start now"
+    },
+    {
+      "heading": "FCE Exam Preparation Standard 13 Weeks",
+      "desc": "Standard General English Course for Adults",
+      "weeks": [
+        {
+          "week0": "1-11 weeks $195"
+        },
+        {
+          "week1": "1-11 weeks $195"
+        },
+        {
+          "week2": "1-11 weeks $195"
+        },
+        {
+          "week3": "1-11 weeks $195"
+        }
+      ],
+      "lessonPerWeek": "26 lessons/week",
+      "btn": "start now"
+    },
+    {
+      "heading": "Young Learner Teacher Training",
+      "desc": "Standard General English Course for Adults",
+      "weeks": [
+        {
+          "week0": "1-11 weeks $195"
+        },
+        {
+          "week1": "1-11 weeks $195"
+        },
+        {
+          "week2": "1-11 weeks $195"
+        },
+        {
+          "week3": "1-11 weeks $195"
+        }
+      ],
+      "lessonPerWeek": "20 lessons/week",
+      "btn": "start now"
+    }
+  ],
+  "trustedHeading": "trusted by",
+  "trustedPartners": [
+    {
+      "img": "./img/trust1.svg"
+    },
+    {
+      "img": "./img/trust2.svg"
+    },
+    {
+      "img": "./img/trust3.svg"
+    },
+    {
+      "img": "./img/trust4.svg"
+    },
+    {
+      "img": "./img/trust5.svg"
+    },
+    {
+      "img": "./img/trust6.svg"
+    }
+  ],
+  "appHeading": "download our app",
+  "appDesc": "For Classes and Assignment Updates",
+  "appIcon": "./img/appIcon.png",
+  "contactHeading": "contact",
+  "emailIcon": "./img/email.svg",
+  "emailBtn": "send email",
+  "footerIcons": [
+    {
+      "icon": "./img/facebook.svg"
+    },
+    {
+      "icon": "./img/youtube.svg"
+    },
+    {
+      "icon": "./img/instagram.svg"
+    },
+    {
+      "icon": "./img/twitter.svg"
+    }
+  ]
+}

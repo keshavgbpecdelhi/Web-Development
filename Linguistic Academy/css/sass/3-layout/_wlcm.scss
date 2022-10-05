@@ -1,0 +1,132 @@
+.section6 {
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+.container6 {
+  margin-top: 12rem;
+}
+
+.container6__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #6adabc;
+}
+
+.container6__p0 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #000000;
+}
+
+.container6__wlcmList {
+  display: flex;
+  margin-top: 10rem;
+
+  // @media all and (min-width: 1538px) {
+  //   justify-content: space-evenly;
+  // }
+  
+  @media all and (max-width: 1250px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ 
+}
+
+.container6__wlcmFeature {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  @media all and (max-width: 1250px) {
+    margin-top: 2rem;
+  }
+}
+
+.container6__h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 1rem;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #6adabc;
+}
+
+.container6__iconSize {
+  width: 70px;
+  height: 68px;
+}
+
+.container6__img {
+  text-align: center;
+  width: 183px;
+  height: 183px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6eaec;
+  border: 1px solid #b3b7bb;
+}
+
+.container6__p1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: center;
+  letter-spacing: 0.065em;
+  margin-top: 0.3rem;
+  color: #000000;
+}
+
+.container6__wlcmFeature + .container6__wlcmFeature {
+  margin-left: 1rem;
+}
+
+.container6__img:hover {
+  background-color: #24c298;
+  .container6__iconSize:hover {
+    background: $white;
+    width: 70px;
+    height: 68px;
+    border-radius: 50%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .section6 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .container6 {
+    margin-top: 5rem;
+  }
+
+  .container6__h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .container6__wlcmList {
+    margin-top: 4rem;
+  }
+}

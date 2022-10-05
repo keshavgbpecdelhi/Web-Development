@@ -1,0 +1,72 @@
+.section5 {
+  margin-top: 18rem;
+
+  @media all and (max-width: 1100px) {
+    margin-top: 12rem;
+  }
+
+  @media all and (max-width: 500px) {
+    margin-top: 12rem;
+  }
+}
+
+.container5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container5__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 150%;
+  /* or 72px */
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+
+  @media all and (max-width: 500px) {
+    font-size: 24px;
+  }
+}
+
+.container5__p0 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  max-width: 52ch;
+  color: #000000;
+  text-align: center;
+}
+
+.container5__btn {
+  cursor: pointer;
+  margin-top: 2.5rem;
+}
+
+.container5__btnBlock {
+  width: 178px;
+  height: 51px;
+
+  background: #8c7ae6;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  letter-spacing: 0.05em;
+  border: none;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.container5__btnBlock:focus {
+  outline: none;
+}

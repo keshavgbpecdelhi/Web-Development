@@ -1,0 +1,79 @@
+.section11 {
+  margin-top: 14rem;
+}
+.container11__img {
+  height: 525px;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container11__container {
+  margin-top: -28rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container11__h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 141.19%;
+  /* or 68px */
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.container11__h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 141.19%;
+  /* or 34px */
+  max-width: 50ch;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.container11__btnBlock {
+  width: 212px;
+  height: 62px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 141.19%;
+  /* or 34px */
+  background: #8c7ae6;
+  text-align: center;
+  letter-spacing: 0.05em;
+  border: none;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-top: 7rem;
+}
+
+.container11__btnBlock:focus {
+  outline: none;
+}
+
+@media all and (max-width: 500px) {
+  .container11__container {
+    margin-top: -32rem;
+  }
+
+  .container11__h1 {
+    font-size: 28px;
+  }
+  .container11__h4 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,130 @@
+.container7 {
+  margin-top: 14rem;
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+}
+.container7__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6eaec;
+  border: 1px solid #b3b7bb;
+}
+
+.container7__imgIcon {
+  width: 58px;
+  height: 60px;
+}
+
+.container7__h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #6adabc;
+}
+
+.container7__p0 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  margin-top: -2rem;
+
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #000000;
+}
+
+.container7__choose {
+  margin-top: 9rem;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  // grid-auto-rows: 1fr;
+  grid-gap: 2rem 4rem;
+
+  @media all and (max-width: 500px) {
+    display: block;
+  }
+}
+
+.container7__lists {
+  display: flex;
+  @media all and (max-width: 1400px) {
+    display: block;
+  }
+
+  @media all and (max-width: 500px) {
+    margin-top: 2rem;
+  }
+}
+
+.container7__h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+
+  letter-spacing: 0.065em;
+  // text-align: center;
+  color: #6adabc;
+}
+
+.container7__p1 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+  max-width: 50ch;
+  letter-spacing: 0.065em;
+  // text-align: center;
+  color: #000000;
+}
+
+.container7__img:hover {
+  background-color: #24c298;
+
+  .container7__imgIcon {
+    background-color: $white;
+    width: 58px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+.container7__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+
+  @media all and (max-width: 1400px) {
+    margin-left: 0rem;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .container7 {
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .container7__h1 {
+    font-size: 23px;
+  }
+
+  .container7__p0 {
+    margin-top: -1rem;
+  }
+  .container7__choose {
+    margin-top: 5rem;
+  }
+}

@@ -1,0 +1,11 @@
+.header__topBar {
+  background-color: #24c298;
+  height: 2.2rem;
+  @include flex(center, column, center);
+  .header__h4 {
+    color: $white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+}

@@ -29,8 +29,10 @@ Web Development Demo Pages collection<br><br>
 | Text Replace | [replace](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/jQuery/replace) | [replace](https://keshavgbpecdelhi.github.io/Web-Development/jQuery/replace/index.html) |
 | CSS Padding | [css padding](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/css-8/Padding%20css/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/css-8/Padding%20css/) |
 | Landing Page | [Landing](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/landing-page/index.html) | [Responsive ](https://keshavgbpecdelhi.github.io/Web-Development/landing-page/) |
+| Simple Todo | [Todo](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/simple-todo) | [Todo ](https://keshavgbpecdelhi.github.io/Web-Development/simple-todo/) |
 |JS Calculator | [JS Calculator](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/javascript/js-calculator/index.html) | [JS Calcutor](https://keshavgbpecdelhi.github.io/Web-Development/javascript/js-calculator/index.html) |
 |Animated Search| [Animated Search](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Animated%20Search%20Form) | [Search Animation](https://keshavgbpecdelhi.github.io/Web-Development/Animated%20Search%20Form/) |
+|CS/JS Hybrid | [Animation](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-JS%20Hybrid%20Animation) | [Animation](https://keshavgbpecdelhi.github.io/Web-Development/CSS-JS%20Hybrid%20Animation/) |
 | Car Animation| [Car Animation](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/car-animation/index.html) | [Live Car](https://keshavgbpecdelhi.github.io/Web-Development/car-animation/) |
 | Fluid Webpage| [Fluid Webpage](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/fluid-webpage/Fluid-Webpage/index.html) | [Blue Bubble](https://keshavgbpecdelhi.github.io/Web-Development/fluid-webpage/Fluid-Webpage/index.html) |
 | Gradient Generator | [Gradient Generator](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Gradient-generator) | [Gradient Generator](https://keshavgbpecdelhi.github.io/Web-Development/Gradient-generator/bggenerator.html)  |
@@ -48,7 +50,12 @@ Web Development Demo Pages collection<br><br>
 | Webpage API | [DevFinder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/webpage-using-api) | [DevFinder Live](https://keshavgbpecdelhi.github.io/Web-Development/webpage-using-api/) |
 | Social Icons | [Social_Icons](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/awesome_Social_icons) | [Demo Socials](https://keshavgbpecdelhi.github.io/Web-Development/awesome_Social_icons/mysocial.html) |
 | 2D Transform | [2D](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/2D_Transformation) | [Transformations](https://keshavgbpecdelhi.github.io/Web-Development/2D_Transformation/) |
-
+| CSS Adjuster | [CSS Adjuster](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-Adjuster) | [Live Adjuster](https://keshavgbpecdelhi.github.io/Web-Development/CSS-Adjuster/) |
+| Resume Builder | [Resume Builder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/resume_builder) | [Live Builder](https://keshavgbpecdelhi.github.io/Web-Development/resume_builder/) |
+| A beautiful gallery | [Gallery](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/simpleDarkmode) | [gallery](https://keshavgbpecdelhi.github.io/Web-Development/simpleDarkmode/ex.html) |
+| E-commerce Anime Website | [Website](C:\Users\OMKAR\Web-Development\e-commerce) | [live Website](https://omk-coder.github.io/first-web-project.io/) |
+| Roll The Dice| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Roll-the-Dice) | [Demo]() |
+| Drum Kit| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/drum-kit) | [Demo](https://biniltomjose1278.github.io/drum-kit/) |
 ### :handshake: Our Contributors
 <a href="https://github.com/keshavgbpecdelhi/Web-Development">
   <img style="height:90px; width=90px;" src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" />

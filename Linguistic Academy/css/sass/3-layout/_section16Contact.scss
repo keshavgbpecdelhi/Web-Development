@@ -1,0 +1,53 @@
+.contact {
+  margin-top: 15rem;
+}
+
+.container16__h1 {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #6adabc;
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container16__img {
+  width: 256px;
+  height: 256px;
+  margin: 5rem auto 0 auto;
+}
+
+.container16__btn {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.container16__btnBlock {
+  width: 185px;
+  height: 56px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+  border: none;
+  text-transform: capitalize;
+  background: #8c7ae6;
+}
+
+.container16__btnBlock:focus {
+  outline: none;
+}

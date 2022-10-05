@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scoped CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="whole">
+      <div class="controler controls">
+        <h2>CSS Adjuster</h2>
+        <label for="spacing">Size:</label>
+        <input
+          id="spacing"
+          type="range"
+          name="size"
+          min="300"
+          max="600"
+          value="450"
+          data-sizing="px"
+        />
+        <label for="blur">Visibility:</label>
+        <input
+          id="blur"
+          type="range"
+          name="visibility"
+          min="0"
+          max="25"
+          value="0"
+          data-sizing="px"
+        />
+        <label for="border">Border Color</label>
+        <input id="border" type="color" name="border" value="#80b8e0" />
+      </div>
+      <img src="download.jpg" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

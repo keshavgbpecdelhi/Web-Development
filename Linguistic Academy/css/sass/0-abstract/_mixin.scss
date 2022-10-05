@@ -1,0 +1,7 @@
+// flexbox
+@mixin flex ($hr, $dir, $vr) {
+    display: flex;
+    justify-content: $hr;
+    flex-direction: $dir;
+    align-items: $vr;
+}
