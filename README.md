@@ -57,7 +57,10 @@ Web Development Demo Pages collection<br><br>
 | Roll The Dice| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Roll-the-Dice) | [Demo]() |
 | Drum Kit| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/drum-kit) | [Demo](https://biniltomjose1278.github.io/drum-kit/) |
 | FAQ Section | [FAQ_Section](https://github.com/hansupadhyay007/Web-Development/tree/master/FAQ_Section) | [Demo]()
-### :handshake: Our Contributors
+
+# :handshake: Our Contributors
+
 <a href="https://github.com/keshavgbpecdelhi/Web-Development">
-  <img style="height:90px; width=90px;" src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" />
+  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="width:100%;" />
 </a>
+
