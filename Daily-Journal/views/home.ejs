@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs'); -%>
+<h1>HOME</h1>
+<p><%= StartingContent %> </p>
+<br>
+
+
+<h2>What are you in the mood for?</h2>
+<br>
+
+<%# for( let i = 0; i < posts.length; i++ ) { %>
+<%# displaying every logged post on home page by storing it into posts array%>
+<%#using substring to truncate post content%>
+<%# rendering post.title to direct on that blogs particular page%>
+
+
+<% posts.forEach(function(post){ %>
+
+<h3> <%= post.title %> </h3>
+
+<p> 
+    <%= post.content.substring(1, 100) +" ..." %> 
+    <a href="/posts/<%= post.title %> ">Read more</a>
+</p>
+<br>
+
+<% }) %>
+
+
+<%- include('partials/footer.ejs'); -%>
