@@ -6,7 +6,7 @@ Web Development Demo Pages collection<br><br>
 | ----- | ---- | --------- |
 | Headings | [Headings](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html) |
 | Tables | [Table](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html) |
-| Basic Form | [Basic Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html) | [Tution Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html) |
+| Basic Form | [Basic Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html) | [Tuition Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html) |
 | Survey Form | [HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/survey-form.html) | [Employee Interests](https://keshavgbpecdelhi.github.io/Web-Development/html/survey-form.html) |
 | Video Embed | [Video Embed ](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/video_embedding.html) | [Video in a Page](https://keshavgbpecdelhi.github.io/Web-Development/html/video_embedding.html) |
 | Meta | [Meta Tag](https://raw.githubusercontent.com/keshavgbpecdelhi/Web-Development/master/html/meta_tag.html) | [Meta Page](https://keshavgbpecdelhi.github.io/Web-Development/html/meta_tag.html) |
