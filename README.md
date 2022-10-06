@@ -54,7 +54,7 @@ Web Development Demo Pages collection<br><br>
 | Resume Builder | [Resume Builder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/resume_builder) | [Live Builder](https://keshavgbpecdelhi.github.io/Web-Development/resume_builder/) |
 | A beautiful gallery | [Gallery](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/simpleDarkmode) | [gallery](https://keshavgbpecdelhi.github.io/Web-Development/simpleDarkmode/ex.html) |
 | E-commerce Anime Website | [Website](C:\Users\OMKAR\Web-Development\e-commerce) | [live Website](https://omk-coder.github.io/first-web-project.io/) |
-| Roll The Dice| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Roll-the-Dice) | [Demo]() |
+| Roll The Dice| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Roll-the-Dice) | [Demo](https://keshavgbpecdelhi.github.io/Web-Development/Roll-the-Dice) |
 | Drum Kit| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/drum-kit) | [Demo](https://biniltomjose1278.github.io/drum-kit/) |
 | FAQ Section | [FAQ_Section](https://github.com/hansupadhyay007/Web-Development/tree/master/FAQ_Section) | [Demo]()
 
