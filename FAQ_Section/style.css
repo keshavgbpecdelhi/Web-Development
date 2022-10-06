@@ -1,0 +1,30 @@
+*{
+    background-color: gainsboro;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    padding: 5%;
+}
+.accordion{
+    padding: 2%;
+    border-radius: 3%;
+}
+h1{
+    
+    padding: 3%;
+    color: deeppink;
+    text-align: center;
+    font-family: cursive;
+}
+.mb-0{
+    padding: 2%;
+    
+}
+.collapse{
+     color: black;
+     
+}
+.yun{
+    color: black;
+}
