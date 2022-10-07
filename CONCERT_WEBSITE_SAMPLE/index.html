@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="screen and (max-width: 1493px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 758px)" href="phone2.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="div1">
+            <p>Rocking-Rocks</p>
+        </div>
+        <div id="div2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#serv">Services</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div id="div3">
+            <span id="time"></span>
+        </div>
+    </nav>
+    <section id="about">
+        <h3 id="head">Who we Are!!!</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto optio itaque dolor accusantium dolorum
+            debitis voluptatibus obcaecati, quos perferendis facilis dicta odio libero ea nisi, laboriosam corporis quis
+            voluptatem incidunt pariatur! Rerum, maiores beatae quos, nisi consequatur id quo illo voluptatibus neque
+            repellendus ad, ut tempore! Repellat velit dolores saepe!</p>
+    </section>
+    <section class="services">
+        <h3 id="serv">What We Do &nbsp;!!!!!!!!</h3>
+        <div class="boxs">
+            <div id="box1" class="box">
+                <h3 class="heads">Concerts</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe est architecto fugit maxime aliquam quasi laboriosam minima eos quos quia quaerat quisquam nostrum praesentium placeat provident aut iste expedita, in, vel dolore rem totam vitae sunt. A, ipsam odio.</p>
+            </div>
+            <div id="box2" class="box">
+                
+            </div>
+        </div>
+        <div class="boxs">
+            <div id="box3" class="box">
+                
+            </div>
+            <div id="box4" class="box">
+                <h3 class="heads">DJ Parties</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aut debitis fuga dolor quisquam iusto quos possimus eos, dolore officia eum provident aliquam libero officiis, earum praesentium facilis dicta excepturi dolorem delectus molestiae magnam ipsam voluptatibus sapiente! Beatae, id delectus.</p>
+            </div>
+        </div>
+         <h3 id="serv">And Many More.....</h3>
+    </section>
+    <section id="register">
+        <h3 id="serv">Register Now to Host An Event....</h3>
+        <form action="backend.php">
+            <p>Name:</p><input type="text" placeholder="Enter Your Name">
+            <p>Mobile number:</p><input type="number" placeholder="Enter Your Mobile Number">
+            <p>City:</p><input type="text" placeholder="Enter your city"><br>
+            <button id="btn">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p id="f">&copyCopyright.All Rights Reserved</p>
+    </footer>
+    <script>
+        function dispalyTime() {
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(dispalyTime , 1000);
+    </script>
+</body>
+
+</html>

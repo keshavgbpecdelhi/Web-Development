@@ -1,0 +1,16 @@
+#div2 li a{
+    text-decoration: none;
+    padding: 2px 15px;
+    border-radius: 10px;
+    color: snow;
+}
+#navbar{
+    font-size: 1.2rem
+}
+#about{
+    font-size: 1.2rem;
+    padding: 10px 202px;
+}
+#box1,#box4{
+    font-size: 1.1rem;
+}
