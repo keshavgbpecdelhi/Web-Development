@@ -1,0 +1,62 @@
+#navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+#about{
+    font-size: 1rem;
+    padding: 8px 50px;
+}
+#div2 li a{
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: snow;
+}
+.boxs{
+    flex-direction: column;
+    height: 540px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 10px 0px;
+}
+#box2,#box3{
+    height:300px;
+    width: 58%;
+}
+#box1,#box4{
+    font-size: 0.6rem;
+}
+#serv{
+    font-size: 1.2rem;
+    
+}
+.heads{
+    font-size: 1rem;
+    
+}
+.services::before{
+    content: "";
+    background: url("bg2.webp") no-repeat center center/cover;
+    /* background-color: rgb(70, 70, 170); */
+    
+    height:1400px;
+    position: absolute;
+    top: 481px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.box{
+    width: 50%;
+}
+#f {
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    font-family: cursive;
+}
