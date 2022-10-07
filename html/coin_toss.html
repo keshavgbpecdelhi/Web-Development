@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>Toss</title>
+    <style>
+        #container {
+            border: 30px ridge rgb(57, 32, 69);
+            background-color: lightgray;
+            /* margin: 10px; */
+        }
+
+        #container p {
+            border: 14px groove rgb(31, 49, 77);
+            border-radius: 20px;
+            margin: 50px;
+            padding: 20px;
+            width: 500px;
+            margin-left: 400px;
+            /* align-items: center; */
+            font-family: cursive;
+            font-size: 1.8rem;
+            color: rgb(46, 45, 73);
+            background-color: lightgray;
+        }
+
+        .but {
+            /* border: 4px solid black; */
+            padding: 50px;
+            margin: 200px;
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #button1,
+        #button2 {
+            padding: 80px;
+            border-radius: 100px;
+            font-family: cursive;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        #toss {
+            /* border: 4px solid black; */
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: center;
+            /* display: none; */
+        }
+
+        #tos {
+            margin-left: 206px;
+            padding: 20px;
+            font-size: 1.4rem;
+            font-family: cursive;
+            border: 2px solid black;
+            border-radius: 20px;
+
+        }
+
+        #table {
+            width: 400px;
+            margin: auto;
+            font-family: cursive;
+            font-size: 1.2rem;
+        }
+
+        .col1 {
+            width: 180px;
+        }
+
+        .col2 {
+            width: 180px;
+        }
+
+        table {
+            margin: 10px;
+            height: 140px;
+        }
+    </style>
+    <script>
+        var b =0;
+        var c =0;
+        var p1 =0;
+        var p2 = 0;
+        function display() {
+            
+            var a = Math.floor(Math.random() * 2);
+            
+            switch (a) {
+                case 0:
+                    document.getElementById("head").style.backgroundColor = "green"
+                    document.getElementById("tossb").style.backgroundColor = "red"
+                    b = b+1;
+                    p1 = (b/(c+b))*100;
+                    p2 = (c/(c+b))*100;
+                    document.getElementById("hc").innerHTML = b;
+                    document.getElementById("p1").innerHTML = p1;
+                    document.getElementById("p2").innerHTML = p2;
+                    break;
+                case 1:
+                    document.getElementById("tossb").style.backgroundColor = "green"
+                    document.getElementById("head").style.backgroundColor = "red"
+                    c =c+1;
+                    p2 = (c/(c+b))*100;
+                    p1 = (b/(c+b))*100;
+                    document.getElementById("tc").innerHTML = c;
+                    document.getElementById("p2").innerHTML = p2;
+                    document.getElementById("p1").innerHTML = p1;
+                    break;
+            }
+            function bgco() {
+                document.getElementById("tossb").style.backgroundColor = "lightgray"
+                document.getElementById("head").style.backgroundColor = "lightgray"
+            }
+            
+            setTimeout(bgco, 1000);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <p>
+            Toss a coin and Count frequency
+        </p>
+        <div class="but" id="head">
+            <button id="button1">Head</button>
+        </div>
+        <div class="but" id="tossb">
+            <button id="button2">Tail</button>
+        </div>
+        <div id="toss">
+            <button id="tos" onclick="display()">
+                Toss
+            </button>
+        </div>
+        <div id="table">
+            <table border="1">
+                <tr>
+                    <th class="col1">Face</th>
+                    <th class="col2">Frequency</th>
+                    <th class="col2">Probability</th>
+                </tr>
+                <tr>
+                    <td class="col1">Head</td>
+                    <td class="col2" id="hc">0</td>
+                    <td class="col2" id="p1">0</td>
+                </tr>
+                <tr>
+                    <td class="col1">Tail</td>
+                    <td class="col2" id="tc">0</td>
+                    <td class="col2" id="p2">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
