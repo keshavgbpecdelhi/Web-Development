@@ -1,0 +1,236 @@
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(34, 33, 33);
+    margin: 0;
+    padding: 1rem;
+    font-size: clamp(.5rem, 2.5vmin, 1.5rem);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(20, minmax(auto, 1.25em));
+    grid-auto-rows: 3em;
+    gap: .25em;
+    justify-content: center;
+}
+
+.key {
+    font-size: inherit;
+    grid-column: span 2;
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl( var(--hue, 200), var(--saturation, 1%), calc(var(--lightness-offset, 0%) + var(--lightness, 50%)));
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    border-radius: 2px;
+}
+
+.key.large {
+    grid-column: span 3;
+}
+
+.key:hover,
+.key:focus {
+    --lightness-offset: 10%;
+}
+
+.key.wrong {
+    --lightness: 30%;
+}
+
+.key.wrong-location {
+    --hue: 50;
+    --saturation: 50%;
+    --lightness: 50%;
+}
+
+.key.correct {
+    --hue: 115;
+    --saturation: 30%;
+    --lightness: 50%;
+}
+
+.input-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    grid-template-columns: repeat(5, 3em);
+    grid-template-rows: repeat(6, 3em);
+    gap: .25em;
+    margin-bottom: 1em;
+}
+
+.tile {
+    font-size: 1.5em;
+    color: white;
+    border: .05em solid hsl(240, 1%, 27%);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    transition: transform 250ms linear;
+}
+
+.tile[data-state="active"] {
+    border-color: hsl(0, 1%, 70%);
+}
+
+.tile[data-state="wrong"] {
+    border: none;
+    background-color: hsl(200, 1%, 30%);
+}
+
+.tile[data-state="wrong-location"] {
+    border: none;
+    background-color: hsl(50, 50%, 50%);
+}
+
+.tile[data-state="correct"] {
+    border: none;
+    background-color: hsl(115, 30%, 50%);
+}
+
+.tile.shake {
+    animation: shake 250ms ease-in-out;
+}
+
+.tile.dance {
+    animation: dance 500ms ease-in-out;
+}
+
+.tile.flip {
+    transform: rotateX(90deg);
+}
+
+@keyframes shake {
+    10% {
+        transform: translateX(-5%);
+    }
+    30% {
+        transform: translateX(5%);
+    }
+    50% {
+        transform: translateX(-7.5%);
+    }
+    70% {
+        transform: translateX(7.5%);
+    }
+    90% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes dance {
+    20% {
+        transform: translateY(-50%);
+    }
+    40% {
+        transform: translateY(5%);
+    }
+    60% {
+        transform: translateY(-25%);
+    }
+    80% {
+        transform: translateY(2.5%);
+    }
+    90% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.alert-container {
+    position: fixed;
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alert {
+    pointer-events: none;
+    background-color: hsl(200, 7%, 85%);
+    padding: .7em;
+    border-radius: .25em;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+    margin-bottom: .5em;
+}
+
+.alert:last-child {
+    margin-bottom: 0;
+}
+
+.alert.hide {
+    opacity: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.navbar .heading {
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.reset-btn {
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    color: white;
+    background-color: hsl(200, 1%, 30%);
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    padding: 8px 20px;
+}
+
+.reset-btn:hover {
+    background-color: hsl(180, 1%, 55%);
+}
+
+@media screen and (max-width: 480px) {
+    .input-grid {
+        grid-template-columns: repeat(5, 4em);
+        grid-template-rows: repeat(6, 4em);
+    }
+
+    .keyboard {
+        display: grid;
+        grid-template-columns: repeat(20, minmax(auto, 1.5em));
+        grid-auto-rows: 4em;
+        gap: .25em;
+        justify-content: center;
+    }
+}
