@@ -44,7 +44,7 @@ The steps to follow to contribute to any projects:
 7.  ### Track your changes
     ```
     git add .
-    ```
+    ```.
 8.  ### Check for your changes.
     ```
     git status
