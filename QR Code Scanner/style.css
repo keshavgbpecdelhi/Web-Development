@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#AD1DEB,#6E72FC)
+}
+
+.wrapper {
+    height: 270px;
+    width: 420px;
+    border-radius: 7px;
+    background-image: linear-gradient(to right,#AD1DEB,#6E72FC);
+    padding: 30px 30px 35px;
+    transition: height 0.4s ease;
+}
+
+.wrapper.active{
+    height: 525px;
+}
+
+.wrapper form{
+    background: #fff;
+    height: 210px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.wrapper.active form{
+    height: 225px;
+    pointer-events: none;
+}
+
+form img{
+    display: none;
+    max-width: 150px;
+}
+
+.wrapper.active form img{
+    display: block;
+}
+
+.wrapper.active form .content{
+    display: none;
+}
+
+form .content i{
+    color: #AD1DEB;
+    /* background: linear-gradient(to right,#AD1DEB,#6E72FC); */
+    font-size: 55px;
+}
+
+form .content p{
+    color: #6E72FC;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.wrapper .details{
+    margin-top: 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper.active .details{
+    /* margin-top: 25px; */
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.5s ease;
+}
+
+#toasts {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: #fff;
+    color: rebeccapurple;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    color: rgb(38, 230, 38);
+    margin: 0.5rem;
+}
+
+
+.details textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 15px;
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.details .buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    outline: none;
+    border: none;
+    color: #AD1DEB;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background: #fff;
+    height: 55px;
+    width: calc(100% / 2 - 10px);
+}
+
+@media (max-width: 410px) {
+    .wrapper {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 385px) {
+    .wrapper {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 335px) {
+    .wrapper {
+        max-width: 295px;
+    }
+}
