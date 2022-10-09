@@ -1,0 +1,10 @@
+logo.png -> https://www.flaticon.com/free-icon/event_980214
+flowers.jpg -> https://unsplash.com/photos/hQjOHS-m3wI
+herbs.jpg -> https://unsplash.com/photos/JBNd7NZSSBQ
+mountains.jpg -> https://unsplash.com/photos/LGaWh1Ff4qo
+girl.jpg -> https://unsplash.com/photos/8hahNyw5EtU
+boy.jpg -> https://unsplash.com/photos/39rOgBwNjXo
+shoes.jpg -> https://unsplash.com/photos/wH63OABrR4E
+dp.jpg -> https://unsplash.com/photos/SE4Xc1WvIkU
+girl_with_light.jpg -> https://unsplash.com/photos/xE87C_OvVO4
+model.jpg -> https://unsplash.com/photos/mEZ3PoFGs_k
