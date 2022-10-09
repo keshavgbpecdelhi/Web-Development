@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.gamecontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #212845;
+    width: 100vw;
+    height: calc(100vh - 65px);
+}
+
+.navbar{
+    position: relative;
+    padding: 0 12px;
+    background-color:#181b2e;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .yellow{
+    color: yellow;
+}
+
+@media only screen and (max-width:850px){
+    .gamecontainer{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container{
+        width: fit-content;
+    }
+    .gameinfo{
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width:850px){
+    .gameinfo{
+        margin-left: 100px;
+    }
+}
+.container{
+    position: relative;
+    display: grid;
+    border: 2px solid #2167ec;
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(3, 12vw);
+    height: fit-content;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    overflow: hidden;
+}
+ .tile{
+    background-color: #212845;
+    border: 2px solid #2167ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    cursor: pointer;
+    /* -webkit-text-stroke: 2px black; */
+}
+
+.hover:hover{
+    background-color: rgba(33, 103, 236,0.1);
+
+}
+.boxtext{
+    font-weight: bold;
+    color: white;
+}
+.gameinfo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.5vw;
+    color: white;
+}
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#reset{
+    width: fit-content;
+    margin: 20px;
+    padding: 5px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;                     
+}
+.image img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.line{
+    background-color: rgb(255, 0, 0);
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    position: absolute;
+    height: 0.2vw;
+    top: 49%;
+    left: 14%;
+    overflow:visible;
+}
+.background{
+    background: #26d074;
+}
+.gameinfo h1{
+    position: relative;
+}
+.gameinfo h1::after{
+    content: "";
+    position: absolute;
+     bottom: 0%;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: #2167ec;
+}
