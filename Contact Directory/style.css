@@ -1,0 +1,155 @@
+#head{
+    position: absolute;
+    font-family: 'Bangers', cursive;
+    left: 40%
+
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --bg-color: #cfcde2;
+    --color: rgb(227, 219, 219);
+    --togglebg: #333;
+    --contactIconColor: rgb(26, 2, 6);
+    --inputTextColor: #111;
+    --deleteIconColor: #111;
+    --filter: drop-shadow(-8px -8px 12px #bfc4f7)
+      drop-shadow(8px 8px 12px #17407c);
+    --roundcolor: #d7c9c9;
+    --toggleslider: #111;
+    --togglesliderColor: #111;
+  }
+  
+  body {
+    font-family: 'Bangers', cursive;
+    line-height: 1.4;
+    background: var(--bg-color);
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--bg-color);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .ListContainer {
+    width: 50%;
+    margin: 56px 30px 0 51px;
+    max-width: 500px;
+    border-radius: 0.25rem;
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    background: var(--bg-color);
+    border: 12px solid var(--bg-color);
+    filter: var(--filter);
+  }
+  
+  .person {
+    display:flexbox;
+    
+    column-gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+  
+  .person img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactdetail {
+    margin-right: 5rem;
+  }
+  
+  .contactIcon {
+    margin: 0 10px 0 5px;
+    font-size: 14px;
+    color: var(--contactIconColor);
+  }
+  
+  .person h4 {
+    margin-bottom: 0.35rem;
+  }
+  
+  .person p {
+    margin-bottom: 0;
+  }
+  
+  .delete-contact {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    display: block;
+    position: absolute;
+    right: 10%;
+  }
+  
+  .delete-contact svg {
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    fill: var(--deleteIconColor);
+  }
+  
+  form {
+    width: 50%;
+    left: 50%;
+    margin-top: 15%;
+    margin-left: 7%;
+    position: fixed;
+  }
+  
+  .name,
+  .number,
+  .email,
+  .img {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 30%;
+    align-items: center;
+    margin-bottom: 30px;
+    background: var(--bg-color);
+    border: 5px solid var(--bg-color);
+    filter: var(--filter);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="tel"] {
+    width: 240px;
+    background: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: var(--inputTextColor);
+    font-weight: bold;
+  }
+  
+  .submitbtn {
+    display: none;
+  }
