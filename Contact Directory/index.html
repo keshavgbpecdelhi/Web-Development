@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact Directory/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Contact Directory</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="head">
+        <h1>Contact Directory</h1></div>
+        <div class="container row">
+            <section class="ListContainer column">
+                <div id="people" class="Contact_list"></div>
+            </section>
+            <br>
+            <form autocomplete="off" class="js-form column">
+                <div class="name">
+                    <i class="far fa-user"></i>
+                    <input type="text" required id="fullName" placeholder="Enter name" />
+                </div>
+                <div class="email">
+                    <i class="fas fa-at"></i>
+                    <input type="email" required id="myEmail" placeholder="Enter email" />
+                </div>
+
+                <div class="number">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" required id="myTel" placeholder="Enter number" />
+                </div>
+
+                <div class="img">
+                    <i class="far fa-image"></i>
+                    <input type="url" required id="imgurl" placeholder="Enter image url" />
+                </div>
+                <button type="submit" class="submitbtn"></button>
+            </form>
+        </div>
+    </main>
+
+    <script src="Contact Directory/script.js"></script>
+    <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+        const toggleSwitch = document.querySelector(
+            '.theme-switch input[type="checkbox"]'
+        );
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme) {
+            document.documentElement.setAttribute("data-theme", currentTheme);
+
+            if (currentTheme === "dark") {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute("data-theme", "dark");
+                localStorage.setItem("theme", "dark");
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        toggleSwitch.addEventListener("change", switchTheme, false);
+    </script>
+</body>
+
+</html>
