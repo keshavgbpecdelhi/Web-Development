@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.png"
+  type = "png">
+  <title>MDown Editor - A markdown editor playground made in Anhular with html5, css3 and javascript.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css'>
+<link rel='stylesheet' href='https://cdn.rawgit.com/isagalaev/highlight.js/master/src/styles/github.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body ng-app="app" ng-controller="ctrl">
+    <div class="left">
+        <textarea id="txt" ng-model="my_markdown"></textarea>
+    </div>
+    <div class="right">
+        <div class="markdown-body" marked="my_markdown"></div>
+    </div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js'></script>
+<script src='https://cdn.rawgit.com/Hypercubed/angular-marked/master/dist/angular-marked.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
