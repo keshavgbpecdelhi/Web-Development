@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="4265826.ico" />
+  <title>Random Jokes Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <!-- Link for fonts-->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Link CSS -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="toggle" id="toggle">
+      <!-- to switch between light and dark mode-->
+      <i class="far fa-moon"></i>
+    </div>
+    <h1 id="main-joke-heading-in-h1" class="heading">Random Jokes Generator</h1>
+    <hr style="width: 50%; color: black" />
+    <div id="joke" class="joke"><b>Here's the joke for you</b></div>
+    <div class="copy-popup"></div>
+    <button id="btn" class="btn"><b>Get another joke</b></button>
+    <button id="copy_joke" class="copy_btn btn">
+      <i class="fa-regular fa-copy"></i>
+    </button>
+  </div>
+  <div class="lds-ring" id="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script src="script.js"></script>
+  <!-- Link JS -->
+</body>
+
+</html>
