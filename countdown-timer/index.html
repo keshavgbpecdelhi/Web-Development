@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a5a5d4c734.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Countdown timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="timer-section">
+            <p class="timer-display">
+                <span class="hours">00<span class="time-unit">H</span></span><span class="separator">:</span><span
+                    class="minutes">00<span class="time-unit">M</span></span><span class="separator">:</span><span
+                    class="seconds">00<span class="time-unit">S</span></span>
+            </p>
+        </section>
+
+        <section class="timer-ctrls">
+            <button type="button" class="btn timer-start"><i class="fa-solid fa-play"></i></button>
+            <button type="button" class="btn timer-stop"><i class="fa-solid fa-stop"></i></button>
+            <button type="button" class="btn timer-pause"><i class="fa-solid fa-pause"></i></button>
+        </section>
+
+        <section class="timer-value-input">
+            <div>
+                <label for="set-hours">Set hours</label>
+                <input type="range" min="00" max="23" step="1" value="00" id="set-hours" autofocus>
+            </div>
+            <div>
+                <label for="set-minutes">Set minutes</label>
+                <input type="range" min="00" max="59" step="1" value="00" id="set-minutes">
+            </div>
+            <div>
+                <label for="set-seconds">Set seconds</label>
+                <input type="range" min="00" max="59" step="1" value="00" id="set-seconds">
+            </div>
+        </section>
+    </div>
+
+    <audio src="assets/tones/Alarm05.wav" id="timer-audio">
+        Your browser does not support audio playback
+    </audio>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
