@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: #607D8B;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: #CFD8DC;
+  letter-spacing: 4px;
+}
+
+.color-container {
+  width: 100%;
+  font-size: 0px;
+  line-height: 0px;
+}
+
+.color {
+  display: inline-block;
+  background: #607D8B;
+  width: 50px;
+  height: 50px;
+}
+
+.color-on {
+  background-color: #37474F;
+}
+
+.color-off {
+  animation-name: coloroff;
+  animation-duration: 2s;
+}
+
+@keyframes coloroff {
+  0% {
+    background-color: #37474F;
+  }
+  100% {
+    background-color: #607D8B;
+  }
+}
