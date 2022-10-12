@@ -1,0 +1,74 @@
+<!--
+Lets start with a single html5 progress element. Currently our progress bar is in the indeterminate state. Lets change the status by adding 'max' and 'value' attribute to our progress element.
+
+We are almost done styling a single progress bar, except adding fallback technique for browsers that do not support progress element. The idea is to simulate the visual styles of the progress bar using `div` and `span`.
+
+Note:- To imitate the older browsers and help us style the fallback technique, we wil temporarily comment-out the progress tag.
+-->
+
+<ul>
+	<li>
+		<h2>Frontend</h2>
+		
+		<!-- HTML5 -->
+    <p style="width:80%" data-value="80">HTML5</p>
+		<progress max="100" value="80" class="html5">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 80%">80%</span>
+			</div>
+		</progress>
+		
+		<!-- CSS3 -->
+    <p style="width:60%" data-value="60">CSS3</p>
+		<progress max="100" value="60" class="css3">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 60%">60%</span>
+			</div>
+		</progress>
+		
+		<!-- jQuery -->
+    <p style="width:50%" data-value="50">jQuery</p>
+		<progress max="100" value="50" class="jquery">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 50%">50%</span>
+			</div>
+		</progress>
+		
+	</li>
+	<li>
+		<h2>Backend</h2>
+		
+    <!-- Python -->
+    <p style="width:75%" data-value="75">Python</p>
+		<progress max="100" value="75" class="python">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 75%">75%</span>
+			</div>
+		</progress>
+		
+		<!-- PHP -->
+    <p style="width:65%" data-value="65">PHP</p>
+		<progress max="100" value="65" class="php">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 65%">65%</span>
+			</div>
+		</progress>
+		
+		<!-- Node.js -->
+    <p style="width:35%" data-value="35">Node.js</p>
+    <progress max="100" value="35" class="node-js">
+			<!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+			<div class="progress-bar">
+				<span style="width: 35%">35%</span>
+			</div>
+		</progress>		
+		
+	</li>
+</ul>
+
+<p>Article - <a href="https://css-tricks.com/html5-progress-element/">https://css-tricks.com/html5-progress-element/</a></p>
