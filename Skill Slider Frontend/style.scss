@@ -1,0 +1,224 @@
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin transition {
+    -moz-transition:    0.3s ease-in-out all;
+    -o-transition:      0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition:         0.3s ease-in-out all;
+}
+
+@mixin filter($filter) {
+   -webkit-filter: $filter;
+   -moz-filter: $filter;
+   -o-filter: $filter;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,900);
+
+$sm: 480px;
+$md: 768px;
+$lg: 992px;
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+.header, .footer {
+   //height: 350px;
+   background: #2e2e2e;
+   color: #fff;
+   padding: 30px;
+   text-align:center;
+   
+   a {
+      color: #fff;
+   }
+   //box-sizing: border-box;
+   
+   @media (min-width: $md) {
+      padding: 100px 30px;
+   }
+   
+   h1 {
+      font-size: 4em;
+      font-weight: 300;
+   }
+   
+   i.fa {
+      font-size: 4em;
+   }
+   
+   .bounce {
+      -webkit-animation-name: bounce;
+      animation-name: bounce;
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+   }
+   
+   .animated {
+     -webkit-animation-duration: 2s;
+     animation-duration: 2s;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both;
+   }
+}
+
+.section {
+   width: 100%;
+   position: relative;
+   //height: 300px;
+   
+   .left, .middle, .right {
+      width:100%;
+      display: block;
+      color: #fff;
+      box-sizing: border-box;
+      left: 0;
+      padding: 30px;
+      text-align:center;
+      overflow:hidden;
+      
+      @include transition;
+      
+      .content {
+         @media (min-width: $sm) {
+            @include vertical-align();
+         }
+      }
+      
+      @media (min-width: $sm) {
+         width: 50%;
+         font-size:0.9em;
+         padding: 10px;
+         left: 0;
+         float: left;
+         position: absolute;
+      }
+      
+      @media (min-width: $md) {
+         width: 33.33333%;
+         left: 33.33%;
+         padding: 10px;
+      }
+      
+      @media (min-width: $lg) {
+         padding: 30px;
+         font-size: 1em;
+      }
+   }
+   
+   &.animate {
+      .left {
+         left:0;
+         
+         @media (min-width: $sm) {
+            left: 50%;
+         }
+         
+         @media (min-width: $md) {
+            left:0;
+         }
+      }
+      
+      .right {
+         left:0;
+         
+         @media (min-width: $sm) {
+            left: 50%;
+         }
+         
+         @media (min-width: $md) {
+            left:66.66%;
+         }
+      }
+      
+      
+   }
+   
+   .title {
+      background: tomato;
+      
+      h2 {
+         margin-top:0;
+      }
+      
+      p {
+         line-height:1.55em;
+         margin-bottom: 0.75em;
+      }
+      
+      .btn-primary {
+         color: #fff;
+         background: darken(tomato, 10%);
+         padding: 10px;
+         text-decoration:none;
+         border-radius: 3px;
+         display:inline-block;
+         @include transition;
+         
+         &:hover {
+            background: darken(tomato, 15%);
+         }
+         
+      }
+   }
+   
+   .tiles {
+      padding:0;
+      background: #fff;
+      clear:both;
+      display:none;
+      float:none;
+      
+      img {
+         width:50%;
+         float:left;
+         height:auto;
+         opacity: 0.7;
+         @include transition;
+         @include filter(grayscale(100%)); 
+         
+         
+         &:hover {
+            opacity:1;
+            @include filter(grayscale(0%));
+         }
+      }
+      
+      @media (min-width: $md) {
+           display:block;
+      }
+   }
+   
+   .middle {
+      background: slategray;
+      z-index: 2;
+      padding:0;
+      
+      img {
+         width: 100%;
+         height: auto;
+         display:block;
+      }
+   }
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+    40% {-webkit-transform: translateY(-20px);}
+    60% {-webkit-transform: translateY(-10px);}
+} 
+ 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+} 
