@@ -1,0 +1,70 @@
+/* style.css */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.menu {
+  width: 1000px;
+  margin: auto;
+  background-color: black;
+}
+.menu > ul {
+  color: white;
+  display: flex;
+}
+.menu > ul > li {
+  padding: 15px 25px;
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  width: 120px;
+  left: -85%;
+  top: 100%;
+  color: black;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.submenu li {
+  padding: 12px;
+  border: 1px solid orangered;
+}
+.active {
+  background-color: orangered;
+}
+.menu > ul li:hover {
+  background-color: orangered;
+}
+.submenu li:hover {
+  color: white;
+}
+
+.menu > ul > li:hover .submenu {
+  opacity: 1;
+  left: 0px;
+  visibility: visible;
+}
+.submenu > li {
+  position: relative;
+}
+.submenuchild {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.submenuchild li {
+  padding: 12px;
+}
+.submenu li:hover .submenuchild {
+  color: black;
+  opacity: 1;
+  visibility: visible;
+  top: 0px;
+}
