@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 18px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.main {
+  font-size: larger;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
