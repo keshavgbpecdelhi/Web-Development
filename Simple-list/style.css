@@ -2,16 +2,22 @@
 body {
   margin: 0;
   padding: 18px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .main {
-  width: 250px;
+  font-size: larger;
+  width: 300px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
+}
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
 }
 .list {
   display: flex;
