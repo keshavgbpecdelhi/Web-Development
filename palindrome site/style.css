@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;700&family=Ubuntu:wght@300&display=swap");
+
+* {
+  font-family: "Baloo Bhai 2", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background: linear-gradient(
+    90deg,
+    rgba(36, 0, 18, 1) 0%,
+    rgba(35, 70, 213, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.container {
+  background-color: white;
+  max-width: 400px;
+  padding: 30px 30px;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  line-height: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#infield {
+  width: 99%;
+  height: 40px;
+  margin: 20px 0px 20px 0px;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  background: rgb(36, 0, 18);
+  background: linear-gradient(
+    90deg,
+    rgb(31, 13, 189) 0%,
+    rgb(15, 61, 247) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 5px;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.text-info {
+  line-height: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: none;
+}
+
+span {
+  color: rgb(31, 13, 189);
+  font-size: 1.5rem;
+}
