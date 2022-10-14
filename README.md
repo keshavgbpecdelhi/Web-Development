@@ -65,6 +65,7 @@ Web Development Demo Pages collection<br><br>
 | Wordle=Clone| [Code](https://github.com/25zeeshan/Wordle_Clone) | [Live](https://25zeeshan.github.io/Wordle_Clone/) |
 | mediabook| [Code](https://github.com/keshavgbpecdelhi/mediabook) | [Live](https://keshavgbpecdelhi.github.io/Web-Development/mediabook/index.html) |
 | MDown Editor| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/mdown-editor) | [Demo](https://rededge.is-a.dev/mdown-editor) |
+| Food Ordering Website| [Code](https://github.com/Ishukumarpathak/food_ordering_website.git) | [Demo](https://ishukumarpathak.github.io/food_ordering_website/) |
 
 ## :handshake: Our Contributors
 
