@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="mainheader">Weather</div>
+    <div class="weatherbox">
+        <div class="inputform">
+            <input type="text" id="city-input" class="citysearch" placeholder="Enter City">
+            <button onclick="searchCity()" class="btncity">Search</button>
+            <div id="weather-output" class="weatheroutput">
+                <div class="weathercard">
+                    <div class="weathercardheader">
+                        <h4 id="city-name" class="cardnature">-&nbsp;-&nbsp;-&nbsp;-</h4>
+                    </div>
+                    <div class="weathercardbody">
+                        <h1 id="weather-type" class="cardtitle">----</h1>
+                        <div class="weather-temp">
+                            <div class="tempbox">Temp: <span id="temp" class="tempa">--</span>°</div>
+                            <div class="tempbox">Min Temp: <span id="min-temp" class="tempa">--</span>°</div>
+                            <div class="tempbox">Max Temp: <span id="max-temp" class="tempa">--</span>°</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+        <button type="button" onclick="searchCity()" class="btn btn-lg btn-dark">Search</button>
+        <div id="weather-output" class="mt-3">
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 id="city-name" class="my-0 font-weight-normal">----</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 id="weather-type" class="card-title">----</h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Temp: <span id="temp">--</span>°</li>
+                            <li>Min Temp: <span id="min-temp">--</span>°</li>
+                            <li>Max Temp: <span id="max-temp">--</span>°</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+</body>
+
+</html>
