@@ -1,0 +1,120 @@
+/* Google Font 'Poppins'  */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #d8d5d5 !important;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 500px;
+  height: 280px;
+  background: #3b3b3b;
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+  border-radius: 10px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.inner-div {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  position: relative;
+}
+.front-div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: #3b3b3b;
+  box-shadow: 20px 20px 60px #000000, -20px -20px 60px #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.map-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.row2 {
+  margin: 8px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row3 {
+  margin: 0px 25px 0px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-no {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: white;
+}
+
+.row4 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.inner-row4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.row4 p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.expire-date {
+  font-size: 22px !important;
+}
+
+.row5 {
+  margin: 6px 0px 25px 6px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row5 h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
