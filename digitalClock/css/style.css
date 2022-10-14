@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  /* background: #000; */
+  margin: 0px;
+  overflow: hidden;
+  color: #222;
+  background: #fff;
+}
+
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme a {
+  color: #809fff;
+}
+
+
+.wrapper{
+  height: 100px;
+  width: 420px;
+  position: relative;
+  border: 8px double orange;
+  border-radius: 10px;
+  cursor: default;
+  animation: animate 1.5s linear infinite;
+}
+.wrapper .display{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  height: 85px;
+  width: 450px;
+  background: transparent;
+  border-radius: 6px;
+  text-align: center;
+}
+.display #time{
+  line-height: 85px;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1.5s linear infinite;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes animate {
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+#TimeZone{
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+button{
+  margin: 10px 30%;
+  padding: 5px 20px;
+  background: rgb(106, 106, 231);
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+button:hover{
+  background: rgb(214, 106, 106);
+}
