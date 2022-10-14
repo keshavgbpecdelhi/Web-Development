@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/Weather.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.inputform {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.citysearch {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid blue;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background: transparent;
+}
+
+.btncity {
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border: 2px solid white;
+    background: rgb(67, 67, 202);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainheader {
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    color: rgb(67, 67, 202);
+    font-weight: bold;
+}
+
+.weatheroutput {
+    width: 30vw;
+}
+
+.weathercardheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 50px;
+}
+
+.weathercardbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(67, 67, 202);
+    padding:10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 232);
+}
+
+.tempbox {
+    /* display: grid; */
+    text-align: center;
+    font-size: 20px;
+    margin:10px;
+}
+
+.tempa {
+    padding: 10px;
+}
