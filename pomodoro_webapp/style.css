@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(bg_pomodoro.png);
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+h1 {
+  margin-top: 80px;
+  color: #464a67;
+  font-size: 40px;
+  text-align: center;
+}
+
+#container {
+  margin-top: 50px;
+  height: 300px;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0px 12px 1px -5px #CDDAF3;
+}
+
+.first{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.second{
+  width: 100%;
+  display: flex;
+  /*margin: 0 20px 0 20px;*/
+}
+
+.third{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/*timers*/
+.label {
+  color: #464a67;
+  align-self: center;
+  justify-self: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.timer {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  color: #464a67;
+  margin: 0;
+  padding: 0;
+}
+
+#counter {
+  margin: 0 125px 0 ;
+  color: red;
+}
+
+#work-timer {
+  margin: 0 0 0 82px;
+}
+
+/*buttons*/
+
+.btn {
+  align-self: center;
+  justify-self: center;
+
+  width: 100px;
+  height: 30px;
+
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#start{
+  background: #639B1B;
+}
+
+#stop{
+  background: #e52424;
+}
+
+#reset{
+  background: #f5e45f;
+}
+
+.btn:hover{
+  cursor: pointer;
+  width: 102px;
+  height: 31px;
+}
+
+#start:hover{
+  background: #558517;
+}
+
+#stop:hover{
+  background: #d32525;
+}
+
+#reset:hover{
+  background: #e9d74b;
+}
