@@ -1,0 +1,29 @@
+/*=============== STORY ===============*/
+.story{
+    &__container{
+        row-gap: 7.5rem;
+    }
+    &__title{
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--mb-1);
+    }
+    &__description{
+        margin-bottom: var(--mb-2-5);
+    }
+    &__images{
+        position: relative;
+    }
+    &__img,
+    &__square{
+        width: 250px;
+    }
+    &__square{
+        height: 250px;
+        background-color: var(--first-color);
+    }
+    &__img{
+        position: absolute;
+        left: 3rem;
+        top: -3rem;
+    }
+}

@@ -1,0 +1,91 @@
+/*=============== TESTIMONIAL ===============*/
+.testimonial{
+    &__container{
+        row-gap: 4rem;
+    }
+    &__quote{
+        display: inline-flex;
+        background-color: var(--container-color);
+        padding: .5rem .75rem;
+        font-size: 1.5rem;
+        color: var(--first-color);
+        box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+        margin-bottom: var(--mb-2);
+    }
+    &__description{
+        margin-bottom: var(--mb-1);
+    }
+    &__date{
+        font-size: var(--normal-font-size);
+        margin-bottom: var(--mb-2);
+    }
+    &__perfil{
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+        margin-bottom: 7rem;
+
+        &-img{
+            width: 60px;
+            height: 60px;
+            border-radius: 3rem;
+        }
+        &-data{
+            display: flex;
+            flex-direction: column;
+            row-gap: .5rem;
+        }
+        &-name{
+            font-size: var(--h3-font-size);
+            font-weight: var(--font-medium);
+            color: var(--title-color);
+        }
+        &-detail{
+            font-size: var(--small-font-size);
+        }
+    }
+    &__images{
+        position: relative;
+    }
+    &__img,
+    &__square{
+        width: 250px;
+    }
+    &__square{
+        height: 250px;
+        background-color: var(--first-color);
+        margin-left: auto;
+    }
+    &__img{
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+    }
+    &-swiper{
+        margin-left: initial;
+        margin-right: initial;
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: '';
+}
+
+.swiper-button-next, 
+.swiper-button-prev{
+    top: initial;
+    bottom: 5%;
+    width: initial;
+    height: initial;
+    background-color: var(--container-color);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, .1);
+    padding: .25rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+}
+
+.swiper-button-next{
+    right: initial;
+    left: 4rem;
+}

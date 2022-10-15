@@ -1,0 +1,65 @@
+/*=============== FEATURED ===============*/
+.featured{
+    &__container{
+        row-gap: 2.5rem;
+    }
+
+    &__card{
+        position: relative;
+        text-align: center;
+        background-color: var(--container-color);
+        padding-top: 2rem;
+        border: 1px solid var(--border-color);
+        overflow-y: hidden;
+        transition: .3s;
+
+        &:hover{
+            box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
+            padding: 2rem 0 3rem 0;
+        }
+
+        &:hover .featured__button{
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        &:hover .featured__price{
+            margin-bottom: var(--mb-1-5);
+        }
+    }
+    &__tag{
+        background-color: var(--first-color);
+        padding: .5rem 1rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        position: absolute;
+        transform: rotate(-90deg);
+        left: -1rem;
+        top: 3rem;
+    }
+    &__img{
+        height: 214px;
+        margin-bottom: var(--mb-1);
+    }
+    &__title,
+    &__price{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-bold);
+    }
+    &__title{
+        text-transform: uppercase;
+        margin-bottom: var(--mb-0-75);
+    }
+    &__price{
+        display: block;
+        color: var(--first-color);
+        transition: .3s;
+    }
+    &__button{
+        font-size: var(--small-font-size);
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+}

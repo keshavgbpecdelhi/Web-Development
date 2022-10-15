@@ -1,0 +1,29 @@
+/*=============== NEWSLETTER ===============*/
+.newsletter{
+    &__bg{
+        background-color: var(--first-color);
+        padding: 3rem 1.5rem;
+        text-align: center;
+        row-gap: 2.5rem;
+    }
+    &__title{
+        font-size: var(--h1-font-size);
+        color: hsl(0, 0%, 15%);
+        margin-bottom: var(--mb-1-5);
+    }
+    &__description{
+        color: hsl(0, 0%, 35%);
+    }
+    &__subscribe{
+        display: flex;
+        flex-direction: column;
+        row-gap: .75rem;
+    }
+    &__input{
+        border: none;
+        outline: none;
+        background-color: hsl(0, 0%, 94%);
+        padding: 1.25rem 1rem;
+        color: hsl(0, 0%, 15%);
+    }
+}
