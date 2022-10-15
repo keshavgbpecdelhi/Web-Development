@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Two Div Parallel</title>
+    <style>
+        .LeftDiv,
+        .RightDiv {
+            width: calc(50% - 80px);
+            margin: 10px;
+            min-width: 80px;
+            display: inline-block;
+            padding: 20px;
+            max-height: 100px;
+            overflow-y: scroll;
+        }
+
+        .LeftDiv {
+            background: #eee;
+        }
+
+        .RightDiv {
+            background: #faebd7;
+        }
+
+        .LeftDiv div,
+        .RightDiv div {
+            padding: 12px;
+            font-size: 16px;
+            margin: 4px;
+            border: 1px solid #bbb;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="LeftDiv" class="LeftDiv" onscroll="parallelScrollRightDiv(this)">
+        LEFT DIV
+        <div>Table 2 - Row1</div>
+        <div>Table 2 - Row2</div>
+        <div>Table 2 - Row3</div>
+        <div>Table 2 - Row4</div>
+        <div>Table 2 - Row5</div>
+        <div>Table 2 - Row6</div>
+        <div>Table 2 - Row7</div>
+        <div>Table 2 - Row8</div>
+        <div>Table 2 - Row9</div>
+        <div>Table 2 - Row10</div>
+    </div>
+
+    <div id="RightDiv" class="RightDiv" onscroll="parallelScrollLeftDiv()">
+        RIGHT DIV
+        <div>Table 1 - Row1</div>
+        <div>Table 1 - Row2</div>
+        <div>Table 1 - Row3</div>
+        <div>Table 1 - Row4</div>
+        <div>Table 1 - Row5</div>
+        <div>Table 1 - Row6</div>
+        <div>Table 1 - Row8</div>
+    </div>
+    <script>
+
+        function parallelScrollLeftDiv() {
+            document.getElementById('LeftDiv').scrollTop = document.getElementById('RightDiv').scrollTop;
+        }
+
+
+        function parallelScrollRightDiv(elem) {
+            document.getElementById('RightDiv').scrollTop = elem.scrollTop;
+            document.getElementById('RightDiv').scrollLeft = elem.scrollLeft;
+        }
+
+    </script>
+</body>
+
+</html>
