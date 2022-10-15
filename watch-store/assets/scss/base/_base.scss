@@ -1,0 +1,45 @@
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    margin: 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: .4s; /*For animation dark mode*/
+}
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-medium);  
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
