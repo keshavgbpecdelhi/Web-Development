@@ -4,10 +4,7 @@ Web Development Demo Pages collection<br><br>
 
 | Title | Code | Live Demo |
 | ----- | ---- | --------- |
-| Flipkart Clone | [Countdown](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/flipkart%20clone) | [flipkart] |
-| Countdown Timer | [Countdown](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/countdown-timer) | [countdown] |
 | Headings | [Headings](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html) |
-| Ball Game | [Ball Game](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/ball%20game) | [Game] |
 | Tables | [Table](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html) |
 | Basic Form | [Basic Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html) | [Tuition Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html) |
 | Survey Form | [HTML](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/survey-form.html) | [Employee Interests](https://keshavgbpecdelhi.github.io/Web-Development/html/survey-form.html) |
@@ -56,7 +53,7 @@ Web Development Demo Pages collection<br><br>
 | CSS Adjuster | [CSS Adjuster](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/CSS-Adjuster) | [Live Adjuster](https://keshavgbpecdelhi.github.io/Web-Development/CSS-Adjuster/) |
 | Resume Builder | [Resume Builder](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/resume_builder) | [Live Builder](https://keshavgbpecdelhi.github.io/Web-Development/resume_builder/) |
 | A beautiful gallery | [Gallery](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/simpleDarkmode) | [gallery](https://keshavgbpecdelhi.github.io/Web-Development/simpleDarkmode/ex.html) |
-| E-commerce Anime Website | [Website](C:\Users\OMKAR\Web-Development\e-commerce) | [live Website](https://omk-coder.github.io/first-web-project.io/) |
+| Anime Website | [Website](https://github.com/omk-coder/first-web-project.io/) | [live Website](https://omk-coder.github.io/first-web-project.io/) |
 | Roll The Dice| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Roll-the-Dice) | [Demo](https://keshavgbpecdelhi.github.io/Web-Development/Roll-the-Dice) |
 | Drum Kit| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/drum-kit) | [Demo](https://biniltomjose1278.github.io/drum-kit/) |
 | FAQ Section | [FAQ_Section](https://github.com/hansupadhyay007/Web-Development/tree/master/FAQ_Section) | [Demo]()
@@ -66,10 +63,18 @@ Web Development Demo Pages collection<br><br>
 | mediabook| [Code](https://github.com/keshavgbpecdelhi/mediabook) | [Live](https://keshavgbpecdelhi.github.io/Web-Development/mediabook/index.html) |
 | MDown Editor| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/mdown-editor) | [Demo](https://rededge.is-a.dev/mdown-editor) |
 | Food Ordering Website| [Code](https://github.com/Ishukumarpathak/food_ordering_website.git) | [Demo](https://ishukumarpathak.github.io/food_ordering_website/) |
+| Memory Game | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Memory-game) | [Demo](https://dimple-choudhary.github.io/Memory-game/) |
+| Watch Store | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/watch-store/assets) | [Demo](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/watch-store/assets/index.html) |
+| Quote Generator | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Quote-generator/Quote-generator) | [Demo](https://dimple-choudhary.github.io/Quote-generator/Quote-generator/.index.html) |
+| Spotify | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Spotify) | [Demo](https://dimple-choudhary.github.io/Spotify/index.html) |
+| Flipkart Clone | [Flipkart](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Flipkart%20clone) | [flipkart](https://keshavgbpecdelhi.github.io/Web-Development/Flipkart%20clone/index.html) |
+| Countdown Timer | [Countdown](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/countdown-timer) | [countdown](https://ayushknath.github.io/countdown-timer/) |
+| Ball Game | [Ball Game](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/ball%20game/index.html) | [Game](https://keshavgbpecdelhi.github.io/Web-Development/ball%20game/index.html) |
+
 
 ## :handshake: Our Contributors
 
-<a href="https://github.com/keshavgbpecdelhi/Web-Development">
-  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="width:100%;" />
+<a href="https://github.com/keshavgbpecdelhi/Web-Development"><p align="center">
+  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="float:none;" /></p>
 </a>
 

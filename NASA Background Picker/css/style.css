@@ -1,0 +1,104 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background-image: url('../images/cockpit.png'), url('../images/stars.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-attachment: fixed, fixed;
+  background-size: cover, cover;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+
+}
+
+li {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+img {
+  width: 40px;
+  height: auto;
+}
+
+.bgChoices {
+  display: flex;
+  justify-content: center;
+}
+
+.credits {
+  z-index: calc(var(--omnibox-z-index) - 1);
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  position: fixed;
+  width: 200px;
+}
+
+.credits span {
+  font-size: 20px;
+}
+
+li {
+  list-style-position: inside;
+
+}
+
+
+h1 {
+  background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  text-align: center;
+  padding: 5px;
+  font-size: 83px;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
+  -webkit-text-stroke: 2px black;
+  /* margin: 450px 0px 0px 0px; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  z-index: calc(var(--omnibox-z-index) - 1);
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  position: fixed;
+  width: 200px;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
