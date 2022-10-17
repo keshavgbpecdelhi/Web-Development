@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+        .question-block,
+        .quizTimerClock {
+            font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .qus-header {
+            white-space: pre-wrap;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eeeeee;
+            font-weight: 600;
+        }
+
+        .sol-answer {
+            border-radius: 5px;
+            border: 2px solid #22a1c4;
+            padding: 20px;
+            height: auto;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .question-block .qus-ftr {
+            padding: 15px;
+        }
+
+        .question-block {
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+            margin: 10px 15px;
+            padding: 16px;
+        }
+
+
+        .question-block .qus-ftr .view-answer,
+        .showResultBtn {
+            background-color: #1abb9c;
+            border-color: #1abb9c;
+            color: #fff;
+            text-transform: uppercase;
+            font: 600 .95rem/normal "Open Sans", sans-serif;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+
+        .showResultBtn {
+            width: 100%;
+            margin: auto;
+            max-width: 200px;
+        }
+
+        #resueltQuiz {
+            margin: 36px 0;
+            text-align: center;
+        }
+
+        .question-block label:hover {
+            background-color: #efefef;
+        }
+
+        .question-block.Qsuccess label.correctAns {
+            color: green;
+            font-weight: bold;
+        }
+
+        .question-block.Qsuccess label.wrongAns {
+            color: #da1a1a;
+            font-weight: bold;
+        }
+
+
+        .question-block.Qsuccess label.wrongAns {
+            color: #da1a1a;
+            font-weight: bold;
+        }
+
+
+        .question-block label {
+            display: block;
+            position: relative;
+            padding: 10px 5px 10px 45px;
+            cursor: pointer;
+        }
+
+        .question-block label:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            background: #fff;
+            border: 2px solid #ddd;
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            -o-transition: all 0.2s;
+        }
+
+        .question-block.Qsuccess label.correctAns:before {
+            border-color: #009688;
+            border-width: 0 2px 2px 0;
+            width: 8px;
+            height: 16px;
+            top: 12px;
+            left: 7px;
+            -moz-transform: rotate(31deg);
+            -ms-transform: rotate(31deg);
+            -webkit-transform: rotate(31deg);
+            transform: rotate(31deg);
+        }
+
+
+
+        .hide-sol .sol-answer {
+            display: none;
+        }
+
+        .show-sol .sol-answer {
+            display: block;
+        }
+
+
+        .quizTimerClock {
+            position: fixed;
+            z-index: 1000000000;
+            bottom: 12px;
+            right: 12px;
+            border: 1px solid #c9c9c9;
+            border-radius: 4px;
+            padding: 10px 14px;
+            background: #fff;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 0 6px, rgba(0, 0, 0, 0.15) 0 1px 6px;
+            display: none;
+        }
+
+        .quizTimerClock img,
+        .quizTimerClock span {
+            vertical-align: middle;
+        }
+
+        .quizTimerClock span {
+            margin-left: 12px;
+            font-size: 22px;
+            font-family: roboto, sans-serif, Arial, Helvetica;
+        }
+
+        .quizResultCard {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #e1e1e1;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="question-block">
+
+        <div class="qus-header">
+            Q.1 वर्ष 2020के ओलंपिक खेलों का आयोजन कहाँ होगा?
+            The 2020 Olympic Games will be held where?
+        </div>
+
+        <label onclick='chkAns(this)'>कनाडा Canada</label>
+        <label class="correctAns" onclick='chkAns(this)'>टोक्यो Tokyo </label>
+        <label onclick='chkAns(this)'>ग्लास्गो Glasgow</label>
+        <label onclick='chkAns(this)'>इंग्लैण्ड England</label>
+
+
+        <div class="qus-ftr hide-sol">
+            <span class="view-answer" onclick='viewAns(this)'>View Answer</span>
+            <div class="sol-answer">
+                <span style="color: #4caf50;">Ans. टोक्यो Tokyo</span>
+                <br />
+                Sorry, no explanation available!
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="question-block">
+
+        <div class="qus-header">
+            Q.1 वर्ष 2020के ओलंपिक खेलों का आयोजन कहाँ होगा?
+            The 2020 Olympic Games will be held where?
+        </div>
+
+        <label onclick='chkAns(this)'>कनाडा Canada</label>
+        <label onclick='chkAns(this)'>टोक्यो Tokyo </label>
+        <label onclick='chkAns(this)'>ग्लास्गो Glasgow</label>
+        <label class="correctAns" onclick='chkAns(this)'>इंग्लैण्ड England</label>
+
+
+        <div class="qus-ftr hide-sol">
+            <span class="view-answer" onclick='viewAns(this)'>View Answer</span>
+            <div class="sol-answer">
+                <span style="color: #4caf50;">Ans. टोक्यो Tokyo</span>
+                <br />
+                Sorry, no explanation available!
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="quizTimerClock"><img
+            src='https://1.bp.blogspot.com/-2AapmSwyXdA/X1ejUybyFxI/AAAAAAAAGgU/3qozWGY7xRMnMN0Gr17ewQ0KpvG8zb4NACLcBGAsYHQ/s0/watch.png' /><span
+            id="qtcMinSec">0:00</span></div>
+
+    <div id="resueltQuiz">
+        <div class='showResultBtn' onclick='quizResultGenerate()'>Show Result</div>
+    </div>
+    <script>
+        var quizCorrectQ = 0;
+        var quizWrongQ = 0;
+        var quizStartAt;
+        var quizTimeClock;
+        var quizTimeClockSec = 0;
+
+        function startQuizTimeClock() {
+            if (quizTimeClock) return;
+            if (quizTimeClockSec == 0) {
+                quizStartAt = new Date().getTime();
+                document.querySelectorAll('.quizTimerClock')[0].style.display = "block";
+                quizTimeClock = setInterval(function () { updateQuizTimeClock(); }, 1000);
+            }
+        }
+
+
+
+        function updateQuizTimeClock() {
+            var now = new Date().getTime();
+            var distance = now - quizStartAt;
+            quizTimeClockMS = distance / 1000;
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            if (seconds < 10) { seconds = '0' + seconds; }
+            document.getElementById('qtcMinSec').innerHTML = minutes + ':' + seconds;
+        }
+
+
+        function chkAns(resp) {
+            startQuizTimeClock();
+            var Qbox = resp.parentNode;
+
+            if (!Qbox.classList.contains('Qsuccess')) {
+                if (resp.classList.contains('correctAns')) {
+                    Qbox.classList.add('Qsuccess');
+                    quizCorrectQ = quizCorrectQ + 1;
+                } else {
+                    Qbox.classList.add('Qsuccess');
+                    resp.classList.add('wrongAns');
+                    quizWrongQ = quizWrongQ + 1;
+                }
+            }
+        }
+
+
+        function viewAns(resp) {
+            startQuizTimeClock();
+            var Qbox = resp.parentNode.parentNode;
+            var solBox = resp.parentNode;
+            if (!Qbox.classList.contains('Qsuccess')) {
+                Qbox.classList.add('Qsuccess');
+            }
+
+            if (solBox.classList.contains('hide-sol')) {
+                solBox.classList.remove('hide-sol');
+                solBox.classList.add('show-sol');
+            } else {
+                solBox.classList.remove('show-sol');
+                solBox.classList.add('hide-sol');
+            }
+
+        }
+
+
+        function quizResultGenerate() {
+            clearInterval(quizTimeClock);
+            //var AllQ = document.querySelectorAll('.question-block .qus-body');
+            //var skipQ = AllQ.length - quizWrongQ - quizCorrectQ;
+
+            var timeClock = document.querySelectorAll('.quizTimerClock')[0];
+            timeClock.style.display = "none";
+
+            var timeQ = timeClock.innerText;
+            var accuracyQ = Math.floor(quizCorrectQ * 100 / (quizWrongQ + quizCorrectQ));
+
+            var htmlElm = '<div class="question-block"><div class="quizResultCard" >Time : ' + timeQ + '</div> <div class="quizResultCard" >Accuracy : ' + accuracyQ + '%</div><div class="quizResultCard" >Correct Answers : ' + quizCorrectQ + '</div><div class="quizResultCard" >Wrong Answers : ' + quizWrongQ + '</div></div>';
+
+            document.getElementById('resueltQuiz').innerHTML = htmlElm;
+
+        }
+    </script>
+</body>
+
+</html>
