@@ -1,0 +1,43 @@
+.container{
+    text-align: center;
+    margin:23px;
+    margin-bottom: 23;
+    background: url('https://cdn.pixabay.com/photo/2015/11/10/08/22/pay-1036469_960_720.jpg');
+}
+
+
+
+table{
+    margin: auto;
+}
+
+input{
+    border-radius: 27px;
+    border: 4px solid #0f4d47;
+    font-size: 34px;
+    height: 67px;
+    width: 484px;
+}
+
+button{
+    border-radius: 20px;
+    font-size: 40px;
+    background: #00bbd4b6;
+    width: 109px;
+    height: 81px;
+    margin: 5px;
+}
+
+.calculator{ 
+    border: 4px solid #1c505b;
+    background-color: #e82f22ad;
+    padding: 23px;
+    border-radius: 41px;
+    display: inline-block;
+}
+
+
+h1{
+    font-size: 38px;
+    font-family: 'Courier New', Courier, monospace;
+}
