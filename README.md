@@ -74,7 +74,7 @@ Web Development Demo Pages collection<br><br>
 
 ## :handshake: Our Contributors
 
-<a href="https://github.com/keshavgbpecdelhi/Web-Development">
-  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="width:50%; height:30%;" />
+<a href="https://github.com/keshavgbpecdelhi/Web-Development"><p align="center">
+  <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="float:none;" /></p>
 </a>
 
