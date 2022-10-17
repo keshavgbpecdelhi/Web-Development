@@ -1,0 +1,82 @@
+body{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+#Heading{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.progress-bar.active {
+    background-color: #fff;
+    height: 4px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 24%;
+    animation: grow 7s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes grow {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+#button-3 {
+    background-color: bisque;
+    margin-right: 25px;
+}
+
+#Color{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    margin: 10px auto;
+    padding-top: 20px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 8px #181717;
+}
+#Color p{
+    border-radius: 1em;
+    text-align: center;
+    font-size: 23px;
+    width: 190px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    display: block;
+    margin: 30px auto;   
+}
+.btn{
+    margin-top: 20px ;
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(230, 170, 215);
+    border-radius: 9px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 10px 10px 8px #181717;
+
+}
+#button-2{
+    background-color: bisque;
+}
+.button{
+     text-align: center;
+     
+}
+
+.btn:hover{
+    background-color: yellow; 
+    font-size: 25px;
+}
