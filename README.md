@@ -66,6 +66,13 @@ Web Development Demo Pages collection<br><br>
 | mediabook| [Code](https://github.com/keshavgbpecdelhi/mediabook) | [Live](https://keshavgbpecdelhi.github.io/Web-Development/mediabook/index.html) |
 | MDown Editor| [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/mdown-editor) | [Demo](https://rededge.is-a.dev/mdown-editor) |
 | Food Ordering Website| [Code](https://github.com/Ishukumarpathak/food_ordering_website.git) | [Demo](https://ishukumarpathak.github.io/food_ordering_website/) |
+| Memory Game | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Memory-game) | [Demo](https://dimple-choudhary.github.io/Memory-game/) |
+| Watch Store | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/watch-store/assets) | [Demo](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/watch-store/assets/index.html) |
+| Quote Generator | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Quote-generator/Quote-generator) | [Demo](https://dimple-choudhary.github.io/Quote-generator/Quote-generator/.index.html) |
+| Spotify | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Spotify) | [Demo](https://dimple-choudhary.github.io/Spotify/index.html) |
+
+
+
 
 ## :handshake: Our Contributors
 
