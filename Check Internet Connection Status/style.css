@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  height: 5rem;
+  width: 22rem;
+  box-sizing: border-box;
+}
+#message {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 30px 0;
+  border-radius: 8px;
+  font-size: 135%;
+}
