@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="DiscScheduling.css">
+    <title> Disc Scheduling </title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html
+        ">Home</a>
+    </div>
+
+    <h1 class="heading">What is meant by Disc Scheduling?</h1>
+    <p>
+        Disc Scheduling is done by operating systems to schedule I/O requests ariving for the disc. It is also known as
+        I/O scheduling.
+        Disk scheduling is important because: Multiple I/O requests may arrive by different processes and only one I/O
+        request can be served at a time by the disk controller.
+        The main aim of Disc Scheduling algorithm is to reduce or minimize the seek time for a set of requests.
+    </p>
+
+    <div class="list">
+        <h2>Here are some of the important terms used:</h2>
+        <ol>
+            <li>
+                <b>Seek Time:</b> The time taken for the disc arm to locate a specified data track where the data is to
+                be
+                read or write.
+            </li>
+            <li>
+                <b>Rotational Latency:</b> It is time taken by the desired sector of disc to rotate into a position such
+                that it can access read/write
+                heads.
+            </li>
+            <li>
+                <b>Transfer time:</b> The time taken to transfer the data.
+            </li>
+            <li>
+                <b>Disc access time:</b> Disc Access time = Seek time + Rotational latency + Transfer time
+            </li>
+            <li>
+
+                <b>Disc response time:</b> Response Time is the average of time spent by a request waiting to perform
+                its I/O operation.
+            </li>
+        </ol>
+    </div>
+
+    <br>
+
+
+    <h2>Disc Scheduling Algorithms:</h2>
+    <ul class="block">
+        <b>FCFS</b>
+        <p>First Come First Serve, as the name implies, addresses the requests in an orderly manner of which they arrive
+            in the disc.
+            It is one of the simplest of Disc Scheduling Algorithms.
+        </p>
+        <button class="button"><a href="fcfs1.html">Simulate</a></button>
+    </ul>
+
+    <ul class="block">
+        <b>SSTF</b>
+        <p>Shortest Seek time First; whose basic idea is the tracks which are closer to current disk 
+            head position should be serviced first in order to minimise the seek time operations.
+        </p>
+        <button class="button"><a href="sstf1.html">Simulate</a></button>
+    </ul>
+
+    <ul class="block">
+        <b>SCAN</b>
+        <p>SCAN is also known as <i>Elevator</i> algorithm. In this head starts from one end of the disk and moves towards the other end, 
+            servicing requests in between one by one and reach the other end. 
+            Then the direction of the head is reversed and the process continues as head continuously scan back and forth to access the disk.
+        </p>
+        <button class="button"><a href="scan1.html">Simulate</a></button>
+    </ul>
+
+    <ul class="block">
+        <b>CSCAN</b>
+        <p>The circular SCAN (C-SCAN) scheduling algorithm is a modified version of the SCAN disk scheduling algorithm. 
+            C-SCAN moves the head from one end servicing all the requests to the other end. However, as soon as the head reaches the other end, 
+            it immediately returns to the beginning of the disk without servicing any requests on the return trip and starts servicing again once reaches the beginning. 
+        </p>
+        <button class="button"><a href="cscan1.html">Simulate</a></button>
+    </ul>
+
+</body>
+
+</html>
