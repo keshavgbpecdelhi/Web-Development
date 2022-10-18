@@ -1,7 +1,7 @@
-@media(min-width:768px){
-    .mail-entry{
-        width: 50%;
-    }
+@media (min-width: 768px) {
+  .mail-entry {
+    width: 50%;
+  }
 }
 /* since we are fixing the nav top as fixed so 
 the img head is being overlapped by that , so we need space a bit */
@@ -9,14 +9,23 @@ the img head is being overlapped by that , so we need space a bit */
 first line or first character in the text, for further more 
 go to psuedo elents in css w3skls
 beffore r after are known as first elements*/
-body::before{
-    display: block;
-    content: '';
-    height: 60px;
-
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
 }
 #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.btn-submit:hover,
+.btn-submit:active,
+.btn-read-more:hover {
+  background-color: #343a40;
+}
+
+.btn-read-more:hover {
+  background-color: #ffa8a8;
+}
