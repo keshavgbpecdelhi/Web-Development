@@ -1,0 +1,254 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  margin: 0;
+  background: rgb(245, 245, 245);
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 0.875rem;
+  color: rgb(86, 90, 92);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/*
+ * Button styles
+*/
+
+.button {
+  background: rgb(255, 89, 95);
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem 5rem;
+  border-bottom: 1px solid rgb(227, 25, 29);
+  border-radius: 2px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+}
+
+.logo {
+  border-right: 2px solid gainsboro;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.info {
+  background-color: whitesmoke;
+  text-align: center;
+}
+.info .owner-details img {
+  border-radius: 50%;
+  margin: 5px;
+}
+.relationship {
+  color: brown;
+  margin-bottom: 5px;
+}
+.name {
+  color: green;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+h1 {
+  color: rgb(255, 183, 0);
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.icon {
+  float: left;
+  width: 33.3333%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+h1 + p {
+  font-size: 17px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+.booking h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.about h3 {
+  color: red;
+  font-size: 25px;
+  font-family: monospace;
+  font-weight: bolder;
+  margin: 5px;
+}
+
+.about p {
+  color: black;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin: 10px;
+  padding: 6px;
+}
+.about {
+  background-color: bisque;
+}
+.about h3 {
+  text-align: center;
+}
+.care {
+  text-align: justify;
+  background-color: palegreen;
+}
+.care h2{
+  font-size: 25px;
+  font-weight: 750;
+  font-family: initial;
+  color: black;
+}
+.care p {
+  margin-left: 15px;
+  padding-left: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 750;
+  font-family: initial;
+}
+.games {
+  background-color: lightblue;
+  height: 100%;
+}
+.games h2 {
+  color: red;
+  font-size: 23px;
+  font-weight: 900;
+  margin: 10px;
+}
+.game img,
+.game h5 {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 4px;
+  float: left;
+}
+.game img {
+  width: 50px;
+}
+.dogimg {
+  text-align: center;
+  background-color: rgb(180, 149, 149);
+}
+.dogimg img {
+  width: 90%;
+}
+.hirenimg{
+  width: 120px;
+  height: 120px;
+}
+
+
+/* media Query */
+@media only screen and (min-width: 1060px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+  .column {
+    float: left;
+  }
+  .profile {
+    width: 660px;
+    border-right: 2px solid #dce0e0;
+  }
+  .booking {
+    width: 380px;
+  }
+  .owner-details {
+    width: 20%;
+  }
+  .pet-details {
+    width: 80%;
+    text-align: left;
+  }
+  .button {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  h1 + p {
+    margin-top: 8px;
+  }
+  .info h1 {
+    margin-top: 7px;
+  }
+
+  .owner-details img {
+    margin: 5px;
+  }
+  .info .pet-details .icon {
+    width: inherit;
+    margin-right: 50px;
+  }
+  .info .pet-details .icon img {
+    display: block;
+    margin: 3px auto 3px;
+  }
+  .booking {
+    margin: auto;
+    text-align: center;
+  }
+  .care {
+    float: left;
+    width: 100%;
+    padding: 15px;
+  }
+  .favrites {
+    float: left;
+    margin-left: 13%;
+    
+  }
+  .timings {
+    float: left;
+  }
+  .games h2 {
+    float: left;
+    padding-right: 50px;
+  }
+  .GAME {
+    margin-left: 13%;
+  }
+  .dogimg img{
+    width: 33%;
+  
+  }
+}
