@@ -1,0 +1,85 @@
+<head>
+    <style>
+        *{text-align: center;
+        margin: 0px;
+
+        }
+        html{background: yellow;}
+        .calc{background: red;
+            padding: 20px;
+            color: yellow;
+        }
+         input{
+            background-color: blue;
+            color: yellow;
+        }
+        button{
+            background: green;
+            color: yellow;
+            width: 8%;
+            height: 30px;
+            margin-right: 20px;
+        }
+        button:hover{
+            background: yellow;
+            color: red;
+            scale :2;
+        }
+
+    </style> <script>   function sumthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              sum = x+y;
+              document.getElementById("display").innerHTML ="The Sum of Numbers "+x+"   and "+y+" is "+sum;
+          }
+          function subthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              sub = x-y;
+              document.getElementById("display").innerHTML ="The Difference of Numbers "+x+"   and "+y+" is "+sub;
+          }
+          function multthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              mult = x*y;
+              document.getElementById("display").innerHTML ="The product of Numbers "+x+"   and "+y+" is "+mult;
+          }
+          function divthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              q = x/y;
+              r= x%y;
+              document.getElementById("display").innerHTML ="The Quotient of Numbers "+x+" ÷ "+y+" is "+q+ " and remainder is "+r;
+
+          }   function sumthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              sum = x+y;
+              document.getElementById("display").innerHTML ="The Sum of Numbers "+x+"   and "+y+" is "+sum;
+          }
+          function subthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              sub = x-y;
+              document.getElementById("display").innerHTML ="The Difference of Numbers "+x+"   and "+y+" is "+sub;
+          }
+          function multthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              mult = x*y;
+              document.getElementById("display").innerHTML ="The product of Numbers "+x+"   and "+y+" is "+mult;
+          }
+          function divthem(){
+              var x,y,sum;
+              x =  Number(document.getElementById('a').value);
+              y =  Number(document.getElementById('b').value);
+              q = x/y;
+              r= x%y;
+              document.getElementById("display").innerHTML ="The Quotient of Numbers "+x+" ÷ "+y+" is "+q+ " and remainder is "+r;
