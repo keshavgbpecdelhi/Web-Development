@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 500ms;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111;
+    font-size: 7vmin;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(4, 20vmin);
+    grid-template-columns: repeat(4, 20vmin);
+    background-color: #ccc;
+    gap: 2vmin;
+    padding: 2vmin;
+    border-radius: 1vmin;
+    position: relative;
+}
+
+.tile {
+    border-radius: 1vmin;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    font-weight: bold;
+}
+
+.active {
+    background-color: hsl(10, 50%, 50);
+}
