@@ -1,0 +1,161 @@
+/**
+*	Ryan - Resume/CV/vCard Template (HTML)
+*	Version: 2.5
+*	Author: beshleyua
+*	Author URL: http://themeforest.net/user/beshleyua
+*	Copyright © Cvio by beshleyua. All Rights Reserved.
+**/
+
+.content.about .row .col.col-d-6 {
+	width: 100%;
+}
+
+.content.about .row .col.col-d-6:first-child {
+	padding-bottom: 0;
+}
+
+.content.about .row .col.col-d-6:nth-child(2) {
+	padding-top: 15px;
+}
+
+.info-list ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+}
+
+.info-list ul li {
+	padding: 0 0 5px 0;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	text-align: left;
+}
+
+.info-list ul li strong {
+	margin-right: 8px;
+	padding: 0;
+	background: none;
+	line-height: 1.8em;
+	color: #323232;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.info-list ul li:before {
+	display: none;
+}
+
+.info-list ul li strong:after {
+	position: relative;
+	content: ' . . . .';
+	background: #fff;
+	display: inline;
+	margin-left: -3px;
+	z-index: 2;
+}
+
+.blog-single .info-list ul li, .content.contacts .info-list ul li {
+	padding: 0 30px 5px 30px;
+}
+
+.blog-single .info-list ul li:first-child, .content.contacts .info-list ul li:first-child {
+    padding-top: 0;
+}
+
+.blog-single .info-list ul li:last-child, .content.contacts .info-list ul li:last-child {
+    padding-bottom: 5px;
+}
+
+.blog-single .info-list ul li:last-child:before, .content.contacts .info-list ul li:last-child:before {
+    display: none;
+}
+
+.blog-single .info-list ul {
+    margin: -11px -30px 11px -30px;
+}
+
+.service-items .service-item {
+	text-align: left;
+}
+
+.service-items .service-item .icon {
+	margin: 0;
+}
+
+.content .title .first-word {
+    color: #323232;
+}
+
+.content .title:first-letter {
+    color: #323232;
+}
+
+.post-comments .title .title_inner:first-letter {
+	color: #323232;
+}
+
+.content .post-comments .title .first-word {
+	color: #323232;
+}
+
+input, textarea, button, input[type="submit"] {
+	padding: 0;
+	border: none;
+	border-bottom: 1px solid #eeeeee;
+}
+
+input.error,
+textarea.error,
+input.wpcf7-not-valid,
+textarea.wpcf7-not-valid {
+	border: none!important;
+	border-bottom: 2px solid red!important;
+}
+
+input:focus,
+textarea:focus {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.button {
+	padding: 0;
+	background: transparent;
+}
+
+.button .text {
+	padding-left: 0;
+}
+
+@media (max-width: 1240px) {
+	.info-list ul li, .blog-single .info-list ul li, .content.contacts .info-list ul li {
+		display: block;
+		width: 100%;
+	}
+}
+
+@media (max-width: 680px) {
+	.content.contacts .info-list ul li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.content-sidebar h2.widget-title .first-word {
+    color: #323232;
+}
+
+.content-sidebar h2.widget-title:first-letter {
+    color: #323232;
+}
+
+@media (max-width: 1240px) {
+	.content.about .info-list ul {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+	}
+}

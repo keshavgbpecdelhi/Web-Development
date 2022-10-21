@@ -1,0 +1,150 @@
+/**
+*	Ryan - Resume/CV/vCard Template (HTML)
+*	Version: 2.5
+*	Author: beshleyua
+*	Author URL: http://themeforest.net/user/beshleyua
+*	Copyright © Cvio by beshleyua. All Rights Reserved.
+**/
+
+/* TABLE OF CONTENTS
+	1. Blog Post
+*/
+
+/*
+	1. Blog Post
+*/
+
+.post-box .blog-detail {
+	margin: 0 0 25px 0;
+	font-size: 13px;
+	color: #999999;
+}
+
+.post-box .blog-image {
+	margin: 0 0 25px 0;
+	font-size: 0;
+}
+
+.post-box .blog-image img {
+	width: 100%;
+}
+
+.post-box .blog-content {
+	margin: 0 0 40px 0;
+}
+
+.post-box .blog-content blockquote {
+	margin: 25px 0;
+	padding: 0 0 0 20px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #626262;
+	font-style: italic;
+	font-weight: 300;
+	border-left: 2px solid #78cc6d;
+}
+
+.post-box .blog-content ul.list-style {
+	margin: 25px 0;
+	list-style: none;
+}
+
+.post-box .blog-content .post-lightbox {
+	margin: 25px 0;
+}
+
+.post-box .blog-content .post-lightbox img {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.post-box .post-comments {
+	margin: 0 0 40px 0;
+}
+
+.post-box .post-comments li {
+	margin: 0 0 20px -20px;
+	padding: 0 0 20px 20px;
+	position: relative;
+	display: block;
+	list-style: none;
+}
+
+.post-box .post-comments li:last-child:before {
+	display: none;
+}
+
+.post-box .post-comments li:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: -moz-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: -webkit-radial-gradient(left, ellipse cover, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+	background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.post-box .post-comments li:after {
+	content: '';
+	position: relative;
+	clear: both;
+	display: block;
+}
+
+.post-box .post-comments li img {
+	width: 54px;
+	float: left;
+	border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	-khtml-border-radius: 100%;
+}
+
+.post-box .post-comments li .comment-info {
+	margin: 0 0 0 66px;
+	padding: 5px 0 0 0;
+}
+
+.post-box .post-comments li .comment-info .name {
+	margin: 0 0 10px 0;
+	position: relative;
+	font-size: 13px;
+	color: #171717;
+	font-weight: 500;
+}
+
+.post-box .post-comments li .comment-info .name a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+	color: #171717;
+	text-transform: uppercase;
+}
+
+.post-box .post-comments li .comment-info .name h6 {
+	margin: 0;
+	font-size: 14px;
+	line-height: 14px;
+	color: #78cc6d;
+}
+
+.post-box .post-comments li .comment-info .name h6 span {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 10px;
+	display: inline-block;
+	font-size: 12px;
+	line-height: 12px;
+	color: #999999;
+	font-weight: 400;
+	text-transform: none;
+	border-left: 1px solid #d8dbe2;
+}
+
+.post-box .post-comments li .comment-info p {
+	margin: 0;
+}
+
