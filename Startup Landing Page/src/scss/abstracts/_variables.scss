@@ -1,0 +1,83 @@
+// --------------------------------------------
+// Colors -------------------------------------
+// Usage example: color(primary, main)
+// --------------------------------------------
+$color: (
+	typography: (
+		1: #FFFFFF,
+		2: #8A94A7,
+		3: #3B404C
+	),
+	bg: (
+		1: #15181D,
+		2: #1D2026,
+		3: #242830,
+		4: #2C3039
+	),
+	primary: (
+		1: #0270D7,
+		2: #0F8AFD,
+		3: #0256A4
+ 	)
+);
+
+// --------------------------------------------
+// Typography ---------------------------------
+// --------------------------------------------
+$font__family: (
+	base: '"IBM Plex Sans", sans-serif', // font-family(base)
+	heading: '"IBM Plex Sans", sans-serif', // font-family(heading)
+	code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace', // font-family(code)
+	pre: '"Courier 10 Pitch", Courier, monospace' // font-family(pre)
+);
+
+$font__sizes: (
+	alpha:   ( 44px, 54px, 0px ),    // font-size, line-height, kerning (use '0' if don't want to output any kerning)
+	beta:    ( 38px, 48px, 0px ),
+	gamma:   ( 32px, 42px, 0px ),
+	delta:   ( 24px, 34px, 0px ),
+	epsilon: ( 20px, 30px, -0.1px ),
+	zeta:    ( 18px, 28px, -0.1px ),
+	eta:     ( 16px, 24px, -0.1px ),
+	theta:   ( 14px, 22px, 0px )
+);
+
+$font__scale: (
+	desktop: (                             // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
+		1: map-get($font__sizes, alpha),   // H1
+		2: map-get($font__sizes, beta),    // H2
+		3: map-get($font__sizes, gamma),   // H3
+		4: map-get($font__sizes, delta),   // H4, H5, H6
+		5: map-get($font__sizes, epsilon), // Body
+		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
+		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
+		8: map-get($font__sizes, theta)    // Footer area
+	),
+	mobile: (                              // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
+		1: map-get($font__sizes, beta),    // H1
+		2: map-get($font__sizes, gamma),   // H2
+		3: map-get($font__sizes, delta),   // H3
+		4: map-get($font__sizes, epsilon), // H4, H5, H6
+		5: map-get($font__sizes, epsilon), // Body
+		6: map-get($font__sizes, zeta),    // Text small (e.g. faq's)
+		7: map-get($font__sizes, eta),     // Text smaller (e.g. pricing, testimonials)
+		8: map-get($font__sizes, theta)    // Footer area
+	)
+);
+
+$font__weight: (
+	regular: 400, 	// font__weight(regular)
+	medium: 500,	// font__weight(medium)
+	semibold: 600,	// font__weight(semi-bold)
+	bold: 700		// font__weight(bold)
+);
+
+// --------------------------------------------
+// Structure ----------------------------------
+// --------------------------------------------
+$content__padding: (
+	mobile: 16px,
+	desktop:  24px
+);
+$container__width: 1080px;
+$container__width-sm: 800px;
