@@ -1,0 +1,69 @@
+.maintext {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: oblique;
+    background-color: rgb(105, 105, 237);
+    color: white;
+    width: max-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.txtdiv {
+    width: 60vw;
+}
+.mytxt {
+    margin: 20px 40px;
+    font-size: 19px;
+    width:55vw;
+    height:40vh;
+}
+
+.txtbtns {
+    margin: 10px 40px;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 4px;
+    background-color: rgb(105, 105, 237);
+    color: white;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.mytextsummary {
+    border: 4px solid rgb(105, 105, 237);
+    margin: 20px 10px 10px 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40vw;
+}
+
+.txtsummary {
+    color: rgb(105, 105, 237);
+    font-family: cursive;
+    text-align: center;
+}
+
+.wordsandchars,
+.minread {
+    font-family: cursive;
+    margin: 10px;
+}
+
+#minsread,
+#characters,
+#words {
+    color: rgb(105, 105, 237);
+}

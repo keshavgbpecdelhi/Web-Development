@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="maintext">Enter the text you want to analyze below.</div>
+    <div class="container">
+        <div class="txtdiv">
+            <textarea class="mytxt" id="txt"  placeholder="Enter text here."></textarea>
+            <div class="txtbtns">
+                <button onClick="upper()" class="btn">Convert to Uppercase</button>
+                <button onClick="lower()" class="btn">Convert to Lowercase</button>
+                <button onClick="cpytxt()" class="btn">Copy Text</button>
+                <button onClick="rmv()" class="btn">Remove Extra Space</button>
+                <button onClick="clrtxt()" class="btn">Clear Text</button>
+            </div>
+        </div>
+        <div class="mytextsummary">
+            <h1 class="txtsummary">Your text Summary</h1>
+            <div class="wordsandchars">
+                <span id="words">0</span>&nbsp;Words and
+                <span id="characters">0</span>&nbsp;characters
+            </div>
+            <div class="minread"><span id="minsread"></span>&nbsp;Minutes Read</div>
+            <h1 class="txtsummary">Preview</h1>
+            <p  class="wordsandchars" id="txtsmry"></p>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
