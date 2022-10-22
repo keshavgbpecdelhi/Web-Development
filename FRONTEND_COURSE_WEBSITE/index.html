@@ -111,7 +111,9 @@
             <!-- here mail-entry is a user defined class as we want 
                         the input form be 50% above or equal to medium-->
             <input type="text" class="form-control" placeholder="Enter Email" />
-            <button class="btn btn-dark btn-lg" type="button">Button</button>
+            <button class="btn btn-dark btn-lg btn-submit" type="button">
+              Submit
+            </button>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
                   eveniet quia. In officiis sed aliquam!
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
               </div>
             </div>
           </div>
@@ -188,7 +190,11 @@
             two things: one img on left adn next content on right
           -->
           <div class="col-md">
-            <img src="fundamentals.svg" alt="fundamentals-image" class="img-fluid" />
+            <img
+              src="fundamentals.svg"
+              alt="fundamentals-image"
+              class="img-fluid"
+            />
           </div>
           <div class="col-md p-5">
             <h2>Learn The Fundamentals</h2>
@@ -202,7 +208,7 @@
               accusamus voluptates provident dolorum sunt inventore quisquam
               sapiente neque beatae illum. Soluta, impedit dolorum!
             </p>
-            <a href="#" class="btn btn-light mt-3"
+            <a href="#" class="btn btn-light mt-3 btn-read-more"
               ><i class="bi bi-chevron-right"></i> Read More</a
             >
           </div>
@@ -233,7 +239,7 @@
               accusamus voluptates provident dolorum sunt inventore quisquam
               sapiente neque beatae illum. Soluta, impedit dolorum!
             </p>
-            <a href="#" class="btn btn-light mt-3"
+            <a href="#" class="btn btn-light mt-3 btn-read-more"
               ><i class="bi bi-chevron-right"></i> Read More</a
             >
           </div>
@@ -520,39 +526,61 @@
     </footer>
 
     <!-- Modal -->
-<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="enrollLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p class="lead">
-          Fill out this form and we will get back to you
-        </p>
-        <form action="">
-          <div class="mb-3">
-            <label for="first-name" class="col-form-label">First Name</label>
-            <input type="text" name="" class="form-control" id="first-name">
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
-          <div class="mb-3">
-            <label for="email" class="col-form-label">Email</label>
-            <input type="email" name="" class="form-control" id="email">
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  class="form-control"
+                  id="first-name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email</label>
+                <input type="email" name="" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone</label>
+                <input type="tel" name="" class="form-control" id="phone" />
+              </div>
+            </form>
           </div>
-          <div class="mb-3">
-            <label for="phone" class="col-form-label">Phone</label>
-            <input type="tel" name="" class="form-control" id="phone">
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

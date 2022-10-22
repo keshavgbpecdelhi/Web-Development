@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Dwi Agustianto">
+
+    <title>Lgin Form</title>
+    <!--   Font Awesome   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6f8;
+  font-family: system-ui, 'Segoe Ui';
+}
+
+input[type='text'], input[type='password'], input[type='submit'] {
+  padding: 0.5rem;
+  outline: none;
+}
+
+:-ms-input-placeholder, ::-ms-input-placeholder {
+  color: #95a5a6;
+  opacity: 1;
+}
+
+::-ms-input-placeholder, ::-ms-input-placeholder {
+  color: #95a5a6;
+  opacity: 1;
+}
+
+::placeholder, ::-ms-input-placeholder {
+  color: #95a5a6;
+  opacity: 1;
+}
+
+.login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.login-container .message-box {
+  padding: 10px 0;
+  width: 300px;
+  height: 38px;
+  font-family: system-ui;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #ffffff;
+}
+
+.login-container .message-box .error-message, .login-container .message-box .success-message {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.login-container .message-box .error-message {
+  background-color: #e74c3c;
+}
+
+.login-container .message-box .success-message {
+  background-color: #44bd32;
+}
+
+.login-container .form-login {
+  margin-top: -40px;
+  width: 300px;
+}
+
+.login-container .form-login .form-login-body {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: .625rem;
+  -webkit-box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+          box-shadow: 0 0.46875rem 2.1875rem rgba(90, 97, 105, 0.1), 0 0.9375rem 1.40625rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.53125rem rgba(90, 97, 105, 0.12), 0 0.125rem 0.1875rem rgba(90, 97, 105, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-container .form-login .form-logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+
+.login-container .form-login .form-logo img {
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.login-container .form-login .form-title {
+  font-size: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.login-container .form-login .btn-group {
+  position: relative;
+}
+
+.login-container .form-login .form-group {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-container .form-login .form-group .form-input {
+  font-size: 16px;
+  font-weight: 300;
+  width: 100%;
+  border-top-left-radius: none;
+  padding-left: 0;
+  border: 1px solid #e1e5eb;
+  border-top: none;
+  border-left: none;
+  border-right: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.login-container .form-login .form-group .form-input:focus, .login-container .form-login .form-group .form-input:focus + .icon {
+  border-color: #007bff;
+}
+
+.login-container .form-login .form-group .icon {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 1rem 0.5rem 1rem 0;
+  color: #7f8c8d;
+  border: 1px solid #e1e5eb;
+  border-top: none;
+  border-left: none;
+  border-right: 0;
+}
+
+.login-container .form-login .remember {
+  padding-top: 10px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-container .form-login .remember .remember-me {
+  position: absolute;
+  opacity: 0;
+}
+
+.login-container .form-login .remember .remember-me + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  color: #7f8c8d;
+  font-size: 12px;
+}
+
+.login-container .form-login .remember .remember-me + label:before {
+  content: '';
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 15px;
+  height: 15px;
+  background: #ebebeb;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  border-radius: 2px;
+}
+
+.login-container .form-login .remember .remember-me:hover + label:before {
+  background: #bdc3c7;
+}
+
+.login-container .form-login .remember .remember-me:focus + label:before {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+.login-container .form-login .remember .remember-me:checked + label:before {
+  background: #007bff;
+}
+
+.login-container .form-login .remember .remember-me:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+
+.login-container .form-login .remember .remember-me:disabled + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ddd;
+}
+
+.login-container .form-login .remember .remember-me:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg) scale(0.8);
+          transform: rotate(45deg) scale(0.8);
+}
+
+.login-container .form-login .btn-login {
+  outline: none;
+  position: relative;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  border-radius: 3rem;
+  padding: 10px 0;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.login-container .form-login .btn-login:hover {
+  opacity: 0.9;
+  -webkit-transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+  transition: width 0.3s 0.15s, font-size 0.1s 0.15s;
+}
+
+.login-container .form-login .btn-disabled {
+  color: white;
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+  .login-container .form-login {
+    width: 85% !important;
+  }
+}
+/*# sourceMappingURL=app.css.map */
+    </style>
+
+</head>
+
+<body>
+    <div class="login-container">
+        <form class="form-login">
+            <div class="message-box">
+                <div class="success-message">Success Message<i class="fas fa-exclamation-circle icon"></i></div>
+            </div>
+            <div class="form-login-body">
+                <div class="form-logo">
+                    <img alt="logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png?w=360"
+                        alt="dewacoding-logo006ba.png" border="0" />
+                </div>
+                <div class="form-title">
+                    Access Your Account
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="someone@gmail.com" name="email"
+                        autocomplete="off" />
+                    <label class="fas fa-user icon"></label>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-input" placeholder="password" name="password"
+                        autocomplete="off" />
+                    <label class="fas fa-lock icon"></label>
+                </div>
+                <div class="form-group">
+                    <div class="remember">
+                        <input class="remember-me" type="checkbox" value="remember" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn-login" type="button">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
