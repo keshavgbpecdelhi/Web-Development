@@ -1,0 +1,156 @@
+/*Scroll bar styles*/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/*Scroll line styles*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(19, 17, 34, 0.2);
+    border-radius: 25px;
+}
+
+
+/*Scroll bar styles*/
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(19, 17, 34);
+}
+
+@keyframes backgroundAnimi {
+    0% {
+        background-color: #260268;
+    }
+    25% {
+        background-color: #2e0085;
+    }
+    50% {
+        background-color: #5a004b;
+    }
+    75% {
+        background-color: #2e0085;
+    }
+    100% {
+        background-color: #260268;
+    }
+}
+
+body {
+    background-color: blueviolet;
+    animation-name: backgroundAnimi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    overflow-x: hidden;
+}
+
+.content {
+    border-radius: 30px;
+    background-color: rgb(6, 144, 103);
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content i {
+    font-size: 100px;
+    margin-top: 22px;
+    color: aliceblue;
+}
+
+.content p {
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+}
+
+.content:hover {
+    background-color: rgb(2, 200, 118);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: none;
+}
+
+.btns {
+    text-align: center;
+}
+
+.headingMain {
+    color: aliceblue;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+@media (max-width: 992px) {
+    .content {
+        max-width: 100%;
+        height: 90px;
+        border-radius: 20px;
+    }
+    .headingMain {
+        font-size: 40px;
+    }
+    .content i {
+        font-size: 30px;
+        text-align: center;
+    }
+    .content p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+/*New Responsive Codes here*/
+
+@media (max-width: 360px) {
+    .content {
+        max-width: 70%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 420px) {
+    .content {
+        max-width: 80%;
+        margin-left: 25%;
+    }
+    .btns p {
+        font-size: 20px;
+    }
+    .btns i {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 15%;
+    }
+    .headingMain {
+        font-size: 40px;
+    }
+    .specialBottom {
+        margin-bottom: 70px;
+    }
+    .specialBottom {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content {
+        margin-left: 13%;
+    }
+}

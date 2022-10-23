@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Capasitance Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: Thistle;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: rgb(66, 11, 66);
+            }
+            25% {
+                background-color: rgb(110, 2, 110);
+            }
+            50% {
+                background-color: rgb(184, 0, 184);
+            }
+            75% {
+                background-color: rgb(110, 2, 110);
+            }
+            100% {
+                background-color: rgb(66, 11, 66);
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Capasitance Conveter <i class="fas fa-industry"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="Farad" class="input animated bounceInRight" placeholder="Farad" oninput="capasitanceConverter(this.id,this.value)" onchange="capasitanceConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="nF" class="input animated bounceInLeft" placeholder="Nano Farad" oninput="capasitanceConverter(this.id,this.value)" onchange="capasitanceConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="pF" class="input animated bounceInRight" placeholder="Pico Farad" oninput="capasitanceConverter(this.id,this.value)" onchange="capasitanceConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function capasitanceConverter(weightType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var userFarad = document.getElementById("Farad");
+            var usernF = document.getElementById("nF");
+            var userpF = document.getElementById("pF");
+
+            if (weightType == "Farad") {
+                usernF.value = (userVal * 1000000000).toFixed();
+                userpF.value = (userVal * 1000000000000).toFixed();
+            }
+            if (weightType == "nF") {
+                userFarad.value = (userVal / 1000000000).toFixed(12);
+                userpF.value = (userVal * 1000).toFixed();
+            }
+            if (weightType == "pF") {
+                userFarad.value = (userVal / 1000000000000).toFixed(15);
+                usernF.value = (userVal / 1000).toFixed(12);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
