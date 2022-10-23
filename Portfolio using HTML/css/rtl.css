@@ -1,0 +1,269 @@
+/**
+*   Ryan - Resume/CV/vCard Template (HTML)
+*   Version: 2.5
+*   Author: beshleyua
+*   Author URL: http://themeforest.net/user/beshleyua
+*   Copyright © Cvio by beshleyua. All Rights Reserved.
+**/
+
+/* TABLE OF CONTENTS
+	1. RTL
+*/
+
+/*
+	1. RTL
+*/
+
+body {
+	direction: rtl;
+}
+
+ol, ul {
+    padding-right: 0px;
+}
+
+.border-line-v:before {
+    left: auto;
+    right: 0;
+}
+
+.border-line-h:after {
+    transform: scale(-1);
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -o-transform: scale(-1);
+}
+
+.container.opened {
+    transform: translateX(240px);
+    -webkit-transform: translateX(240px);
+    -moz-transform: translateX(240px);
+    -o-transform: translateX(240px);
+}
+
+.header {
+    left: auto;
+    right: -80px;
+}
+
+.card-started:before {
+    left: auto;
+    right: 0;
+    transform: scale(-1);
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -o-transform: scale(-1);
+}
+
+.card-started:after {
+    left: auto;
+    right: -15px;
+}
+
+.lnk .ion, .button .ion, .lnk .arrow, .button .arrow {
+    margin: 0 8px 0 0;
+}
+
+.card-inner {
+    left: auto;
+    right: 95%;
+    transform-origin: center right;
+}
+
+.card-inner .card-wrap {
+    padding: 30px 60px 30px 30px;
+}
+
+.content .title:before {
+    left: auto;
+    right: -12px;
+}
+
+.content .title:after {
+    left: auto;
+    right: -60px;
+    transform: scale(-1);
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -o-transform: scale(-1);
+}
+
+.service-items .service-item {
+    text-align: right;
+}
+
+.resume-title:after, .skill-title:after {
+	left: auto;
+    right: -20px;
+}
+
+.resume-title .icon, .skill-title .icon {
+    float: right;
+}
+
+.resume-items .resume-item .date:before {
+	left: auto;
+    right: -25px;
+}
+
+.resume-items .resume-item:after {
+    left: auto;
+    right: -20px;
+}
+
+.skills-list ul li .progress .percentage {
+	left: auto;
+    right: 0;
+}
+
+.content.works .filter-menu {
+    right: auto;
+    left: 0;
+}
+
+.mfp-content {
+    text-align: right;
+}
+
+.post-box .blog-content ul.list-style li {
+    padding: 0 20px 0 0;
+}
+
+.post-box .blog-content ul.list-style li:before {
+    left: auto;
+    right: 0;
+}
+
+.post-box .blog-content blockquote {
+    padding: 0 20px 0 0;
+    border-left: none;
+    border-right: 2px solid #78cc6d;
+}
+
+.box-item .date {
+    left: auto;
+    right: 20px;
+}
+
+.align-left {
+    text-align: right !important;
+}
+
+.post-box .post-comments li {
+    margin: 0 -20px 20px 0;
+    padding: 0 20px 20px 0;
+}
+
+.post-box .post-comments li:before {
+    left: auto;
+    right: 0;
+    transform: scale(-1);
+    -webkit-transform: scale(-1);
+    -moz-transform: scale(-1);
+    -o-transform: scale(-1);
+}
+
+.post-box .post-comments li img {
+    float: right;
+}
+
+.post-box .post-comments li .comment-info {
+    margin: 0 66px 0 0;
+}
+
+.post-box .post-comments li .comment-info .name h6 span {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    border-left: none;
+    border-right: 1px solid #d8dbe2;
+}
+
+.post-box .post-comments li .comment-info .name a {
+    right: auto;
+    left: 0;
+}
+
+.background.gradient {
+    position: fixed;
+}
+
+@media (max-width: 1023px) {
+.container.opened {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+}
+.header {
+    right: 0;
+}
+.card-inner {
+    left: auto;
+    right: 0;
+    width: auto;
+}
+}
+
+/* Animations */
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
