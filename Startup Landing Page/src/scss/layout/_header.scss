@@ -1,0 +1,53 @@
+.site-header {
+    padding: 24px 0;
+}
+
+.site-header-inner {
+    position: relative; /* To display all elements above the background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: inline-flex;
+
+    li {
+        display: inline-flex;
+    }
+
+    a:not(.button) {
+        @include font-size(7, mobile, true, true, true);
+        @if ( get-font-size(7, desktop) != get-font-size(7, mobile) ) {
+            @include media( '>medium' ) {
+                @include font-size(7, desktop, true, true, true);
+            }
+        }
+        @include font-weight(semibold);
+        @include anchor-aspect(header);
+        line-height: 16px;
+        padding: 8px 24px;
+    }
+}
+
+@include media( '>medium' ) {
+
+	.site-header {
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 700px;
+		    background: color(bg, 3);
+		    background: linear-gradient(80deg, rgba(color(bg, 3), .5) 0%, rgba(color(bg, 3), 0) 100%);
+		    -webkit-transform-origin: 0;
+		    transform-origin: 0;
+		    -webkit-transform: skewY(-12deg);
+		    transform: skewY(-12deg);
+		}
+	}
+}

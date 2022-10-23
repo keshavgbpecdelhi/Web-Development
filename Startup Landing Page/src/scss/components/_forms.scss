@@ -1,0 +1,101 @@
+.input,
+.textarea {
+    background-color: color(typography, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: color(bg, 3);
+	border-radius: 2px;
+    color: color(typography, 2);
+    max-width: 100%;
+    width: 100%;
+
+    &::placeholder {
+        color: color(typography, 3);
+    }
+
+    &::-ms-input-placeholder {
+        color: color(typography, 3);
+    }
+
+    &:-ms-input-placeholder {
+        color: color(typography, 3);
+    }
+
+    &:hover {
+        border-color: darken(color(bg, 3), 5%);
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        border-color: color(bg, 3);
+    }
+
+    &[disabled] {
+        cursor: not-allowed;
+        background-color: color(bg, 2);
+        border-color: color(bg, 2);
+    }
+}
+
+.input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    @include font-size(7, mobile, true, false, true);
+    @if ( get-font-size(7, desktop) != get-font-size(7, mobile) ) {
+        @include media( '>medium' ) {
+            @include font-size(7, desktop, true, false, true);
+        }
+    }
+    line-height: 20px;
+    padding: 13px 16px;
+	height: 48px;
+    box-shadow: none;
+
+    .inline-input {
+        display: inline;
+        width: auto;
+    }
+}
+
+.textarea {
+    display: block;
+    min-width: 100%;
+    resize: vertical;
+
+    .inline-textarea {
+        display: inline;
+        width: auto;
+    }
+}
+
+.field-grouped {
+
+    > .control {
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@include media( '>medium' ) {
+
+    .field-grouped {
+        display: flex;
+
+        > .control {
+            flex-shrink: 0;
+
+            &.control-expanded {
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+                margin-right: 8px;
+            }
+        }
+    }
+}

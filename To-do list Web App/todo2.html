@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+
+            font-family: "Open Sans", "Roboto", Helvetica, Arial, sans-serif !important;
+        }
+
+        .outerdiv {
+            height: calc(100% - 54px);
+            border-radius: 1rem;
+            background: linear-gradient(rgb(62, 185, 222), rgb(58, 128, 222));
+            box-shadow: rgb(74 115 159 / 29%) 0px 10px 20px;
+            margin: 20px;
+            padding: 8px;
+            overflow: hidden;
+            flex: 1 1 100%;
+        }
+
+
+        .todoapp {
+            position: relative;
+            align-items: center;
+            height: auto;
+            min-height: 200px;
+            max-width: 100%;
+            background: rgb(255, 255, 255);
+            box-shadow: rgb(169 174 183 / 50%) 0px 1px 2px 0px;
+            border-radius: 8px;
+            margin: 10px;
+            overflow: hidden;
+            padding: 8px;
+        }
+
+        .todo-header {
+            margin: 14px 10px;
+            margin-bottom: 22px;
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 500;
+        }
+
+        .addTaskBtn {
+            padding: 8px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 14px;
+            font-weight: 400;
+            color: rgb(95, 99, 104);
+            letter-spacing: 0.15px;
+            transition: all 0.3s ease-out;
+        }
+
+        .addTaskBtn:hover .addBtn {
+            background: #4285f4;
+            stroke: #fff;
+        }
+
+        .addTaskBtn:hover {
+            color: #4285f4;
+        }
+
+
+        .addTaskBtn .addBtn {
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 12px;
+            padding: 2px;
+        }
+
+        .addTaskInput {
+            padding: 8px 10px;
+            display: none;
+        }
+
+        .addTaskInput input {
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: 400;
+            color: rgb(39, 39, 39);
+            letter-spacing: 0.15px;
+            outline: none;
+            border: none;
+            width: calc(100% - 32px);
+        }
+
+        .addBtn.btn {
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: middle;
+            padding: 2px;
+        }
+
+        .addBtn.btn:hover {
+            background: #4285f4;
+            stroke: #fff;
+        }
+
+        .tasklist .item:hover, .tasklist .item.active  {
+            box-shadow: rgb(60 64 67 / 14%) 0px 1px 4px 1px;
+            outline: 0px;
+            border-color: rgb(224, 224, 224);
+        }
+
+        .tasklist .item {
+            padding: 8px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            color: rgb(95, 99, 104);
+            letter-spacing: 0.15px;
+            transition: all 0.3s ease-out;
+
+        }
+
+        .tasklist .item .select {
+            cursor: pointer;
+            height: 22px;
+            margin-right: 8px;
+            vertical-align: top !important;
+            margin-top: 8px;
+        }
+
+        .tasklist .item .select:hover .round {
+            display: none;
+            transition: all 0.3s ease-out;
+        }
+
+        .tasklist .item .select:hover .chk {
+            display: block !important;
+            transition: all 0.3s ease-out;
+        }
+
+        .edittask,
+        .deletetask,
+        .savetask {
+            margin: 0 2px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .edittask:hover,
+        .deletetask:hover,
+        .savetask:hover {
+            stroke: #1e1e1e !important;
+            background: #eee;
+        }
+
+        .task-text {
+            width: calc(100% - 106px);
+        }
+
+        .tasklist .item div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        [contenteditable=true] {
+            outline: 0px solid transparent;
+            cursor: text;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outerdiv">
+        <div class="todoapp">
+            <div class="todo-header">
+                <div style="color: #545454; display: inline-block; vertical-align: middle;">To Do</div>
+                <div style=" display: inline-block; vertical-align: middle; float: right; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div id="addTaskBtn" onclick="showTaskInput()" class="addTaskBtn">                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="addBtn" width="19" height="19" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                Add a task
+            </div>
+
+            <div id="newTask" class="addTaskInput">
+                <input type="text" placeholder="New task" />
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="createNewTask()" class="addBtn btn" width="18" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </div>
+
+
+            <div id="tasklist" class="tasklist">
+
+                <div class="item">
+
+                    <div class="select" onclick="this.parentNode.outerHTML = ''">
+                        <svg class="round" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="#80868b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                        </svg>
+                        <svg class="chk" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="#4285f4" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+
+                    <div class="task-text">My first task.</div>
+
+                    <div>
+                        <sapn class="task-action-btn">
+                            <svg class="edittask"  onclick="editTask(this,event)" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                            </svg>
+                            <svg class="deletetask" onclick='this.parentNode.parentNode.parentNode.outerHTML = ""' xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="3 6 5 6 21 6"></polyline>
+                                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                                </path>
+                                <line x1="10" y1="11" x2="10" y2="17"></line>
+                                <line x1="14" y1="11" x2="14" y2="17"></line>
+                            </svg>
+                        </sapn>
+                        <svg class="savetask" onclick="saveTask(this)" style="display: none; margin-left: 37px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        <div>
+    </div>
+
+
+
+
+<script>
+
+    //var activeEditTask = 'none';
+
+    function showTaskInput(){
+        document.getElementById('addTaskBtn').style.display = "none";
+        document.getElementById('newTask').style.display = 'block';
+        document.querySelector('#newTask input').focus();
+    }
+
+    function createNewTask(){
+        var newtask = document.querySelector('#newTask input').value;
+
+        var templateTaskItem = `
+            <div class="item">
+                <div class="select" onclick="completeTask(this)">
+                    <svg class="round" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="#80868b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                    <svg class="chk" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="20" height="20"
+                        viewBox="0 0 24 24" fill="none" stroke="#4285f4" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <div class="task-text">${newtask}</div>
+                <div>
+                    <sapn class="task-action-btn">
+                        <svg class="edittask"  onclick="editTask(this,event)" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
+                        </svg>
+                        <svg class="deletetask" onclick='deteteTask(this)' xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
+                            </path>
+                            <line x1="10" y1="11" x2="10" y2="17"></line>
+                            <line x1="14" y1="11" x2="14" y2="17"></line>
+                        </svg>
+                    </sapn>
+                    <svg class="savetask" onclick="saveTask(this)" style="display: none; margin-left: 37px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="#515151" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                    </svg>
+                </div>
+            </div>
+        `;
+
+        document.getElementById('tasklist').innerHTML = templateTaskItem + document.getElementById('tasklist').innerHTML;
+
+        document.getElementById('addTaskBtn').style.display = "block";
+        document.getElementById('newTask').style.display = 'none';
+        document.querySelectorAll('#newTask input')[0].value = "";
+
+        saveTaskLocally();
+    }
+
+
+
+    function deteteTask(dltBtn){
+        dltBtn.parentNode.parentNode.parentNode.outerHTML = ""
+        saveTaskLocally(savebtn);
+    }
+
+    function completeTask(completeBtn){
+        completeBtn.parentNode.outerHTML = ""
+        saveTaskLocally(savebtn);
+    }
+
+
+    function editTask(elm,event){       
+        var itemTask = elm.parentNode.parentNode.parentNode;
+        var taskText = itemTask.querySelector('.task-text')
+        taskText.contentEditable = 'true';
+        taskText.focus();        
+        elm.parentNode.style.display = "none";
+        itemTask.querySelector('.savetask').style.display = 'block';
+        itemTask.classList.add('active');
+        //activeEditTask = taskText;
+    }
+
+
+    function saveTask(savebtn){
+        var itemTask = savebtn.parentNode.parentNode;
+        var taskText = itemTask.querySelector('.task-text')
+        taskText.contentEditable = 'false';            
+        itemTask.querySelector('.task-action-btn').style.display = 'block';
+        savebtn.style.display = 'none';
+        itemTask.classList.remove('active');
+    }
+
+    window.onload = function(){	
+       var addTaskBtn =  document.getElementById('addTaskBtn');
+       var newTask = document.getElementById('newTask');
+       document.onclick = function(e){
+            if(e.target.id != 'newTask' && e.target.id != 'addTaskBtn' && e.target.parentNode.id != 'newTask' && e.target.parentNode.id != 'addTaskBtn'){
+                addTaskBtn.style.display = 'block';
+                newTask.style.display = 'none';
+                document.querySelector('#newTask input').value = '';
+            }
+
+            var activeEditTask = document.querySelector('#tasklist .item.active');
+            if(activeEditTask){
+                if(e.target != activeEditTask && e.target.parentNode != activeEditTask && e.target.parentNode.parentNode != activeEditTask && e.target.parentNode.parentNode.parentNode != activeEditTask){
+                    var savebtn = activeEditTask.querySelector('.savetask');
+                    saveTaskLocally(savebtn);
+                }
+            }
+        // if(e.target != activeEditTask ){
+        //     activeEditTask = 'none';
+        //     var itemTask = e.target.parentNode;  
+        //     console.log(itemTask)         
+        //     e.target.contentEditable = 'false'; 
+        //     itemTask.querySelector('.task-action-btn').style.display = "block";
+        //     itemTask.querySelector('.savetask').style.display = 'none';
+        //     itemTask.classList.remove('active');
+        // }
+    };
+};
+
+
+window.onload = function(){
+    console.log('a0');
+    if(Storage.todoAppData){
+        console.log('a1');
+        document.querySelector('#taskList').innerHTML = Storage.todoAppData;
+    }
+};
+
+function saveTaskLocally() {
+    console.log('b0');
+    if(typeof(Storage) !== "undefined") {
+        console.log('b1');
+        var alltasks = document.querySelector('#tasklist').innerHTML;
+        console.log(alltasks);
+        Storage.todoAppData = alltasks; 
+        console.log('b2');
+    } else {
+    alert("Sorry, your browser does not support web storage...");
+    }
+}
+</script>
+
+</body>
+
+</html>
