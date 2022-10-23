@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Speed Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: TPaleGreen;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: TPaleGreen;
+            }
+            25% {
+                background-color: LimeGreen;
+            }
+            50% {
+                background-color: ForestGreen;
+            }
+            75% {
+                background-color: LimeGreen;
+            }
+            100% {
+                background-color: TPaleGreen;
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Speed Conveter <i class="fas fa-tachometer-alt"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="speedMph" class="input animated bounceInRight" placeholder="MPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="speedKph" class="input animated bounceInLeft" placeholder="KPH" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="speedKnots" class="input animated bounceInRight" placeholder="Knots" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function speedConverter(speedType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var userspeedMph = document.getElementById("speedMph");
+            var userspeedKph = document.getElementById("speedKph");
+            var userspeedKnots = document.getElementById("speedKnots");
+
+            if (speedType == "speedMph") {
+                userspeedKph.value = (userVal * 1.609344).toFixed(2);
+                userspeedKnots.value = (userVal / 1.150779).toFixed(2);
+            }
+            if (speedType == "speedKph") {
+                userspeedMph.value = (userVal / 1.609344).toFixed(2);
+                userspeedKnots.value = (userVal / 1.852).toFixed(2);
+            }
+            if (speedType == "speedKnots") {
+                userspeedMph.value = (userVal * 1.150779).toFixed(2);
+                userspeedKph.value = (userVal * 1.852).toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

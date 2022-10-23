@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Volume Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: Bisque;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: rgb(4, 43, 116);
+            }
+            25% {
+                background-color: rgb(22, 70, 158);
+            }
+            50% {
+                background-color: rgb(42, 109, 235);
+            }
+            75% {
+                background-color: rgb(22, 70, 158);
+            }
+            100% {
+                background-color: rgb(4, 43, 116);
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Volume Conveter <i class="fa fa-cube"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="volumeLi" class="input animated bounceInRight" placeholder="Liter" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="volumeMili" class="input animated bounceInLeft" placeholder="Mililiter" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="volumeCi" class="input animated bounceInRight" placeholder="Cubic inch" oninput="volumeConverter(this.id,this.value)" onchange="volumeConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function volumeConverter(valType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var uservolumeLi = document.getElementById("volumeLi");
+            var uservolumeMili = document.getElementById("volumeMili");
+            var uservolumeCi = document.getElementById("volumeCi");
+
+            if (valType == "volumeLi") {
+                uservolumeMili.value = (userVal * 1000).toFixed(2);
+                uservolumeCi.value = (userVal * 61.0237441).toFixed(4);
+            }
+            if (valType == "volumeMili") {
+                uservolumeLi.value = (userVal / 1000).toFixed(2);
+                uservolumeCi.value = (userVal * 0.061024).toFixed(4);
+            }
+            if (valType == "volumeCi") {
+                uservolumeLi.value = (userVal / 61.0237441).toFixed(2);
+                uservolumeMili.value = (userVal * 16.387064).toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

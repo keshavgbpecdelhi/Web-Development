@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Length Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: Indigo;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: Indigo;
+            }
+            25% {
+                background-color: SlateBlue;
+            }
+            50% {
+                background-color: DarkMagenta;
+            }
+            75% {
+                background-color: SlateBlue;
+            }
+            100% {
+                background-color: Indigo;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Length Conveter <i class="fas fa-ruler-horizontal"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="lengthKm" class="input animated bounceInRight" placeholder="Kilometers" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="lengthM" class="input animated bounceInLeft" placeholder="Meter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="lengthCm" class="input animated bounceInRight" placeholder="Centimeter" oninput="lengthConverter(this.id,this.value)" onchange="lengthConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function lengthConverter(lenType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var userlengthKm = document.getElementById("lengthKm");
+            var userlengthM = document.getElementById("lengthM");
+            var userlengthCm = document.getElementById("lengthCm");
+
+            if (lenType == "lengthM") {
+                userlengthKm.value = (userVal / 1000).toFixed(2);
+                userlengthCm.value = (userVal * 100).toFixed(2);
+            }
+            if (lenType == "lengthKm") {
+                userlengthM.value = (userVal * 1000).toFixed(2);
+                userlengthCm.value = ((userVal * 1000) * 100).toFixed(2);
+            }
+            if (lenType == "lengthCm") {
+                userlengthKm.value = (userVal / 100000).toFixed(2);
+                userlengthM.value = (userVal / 100).toFixed(2);
+            }
+        }
+    </script>
+</body>
+
+</html>

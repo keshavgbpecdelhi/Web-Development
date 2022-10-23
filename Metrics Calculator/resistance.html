@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Resistance Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: Thistle;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: rgb(36, 119, 87);
+            }
+            25% {
+                background-color: rgb(19, 172, 113);
+            }
+            50% {
+                background-color: MediumSpringGreen;
+            }
+            75% {
+                background-color: rgb(19, 172, 113);
+            }
+            100% {
+                background-color: rgb(36, 119, 87);
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Resistance Conveter <i class="fas fa-ticket-alt"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="Rohm" class="input animated bounceInRight" placeholder="Ohms" oninput="ResisConverter(this.id,this.value)" onchange="ResisConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="RKiloohm" class="input animated bounceInLeft" placeholder="Kilo Ohms" oninput="ResisConverter(this.id,this.value)" onchange="ResisConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="RMegaohm" class="input animated bounceInRight" placeholder="Mega Ohms" oninput="ResisConverter(this.id,this.value)" onchange="ResisConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function ResisConverter(weightType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var userRohm = document.getElementById("Rohm");
+            var userRKiloohm = document.getElementById("RKiloohm");
+            var userRMegaohm = document.getElementById("RMegaohm");
+
+            if (weightType == "Rohm") {
+                userRKiloohm.value = (userVal / 1000).toFixed(2);
+                userRMegaohm.value = (userVal / 1000000).toFixed(8);
+            }
+            if (weightType == "RKiloohm") {
+                userRohm.value = (userVal * 1000).toFixed(2);
+                userRMegaohm.value = (userVal / 1000).toFixed(4);
+            }
+            if (weightType == "RMegaohm") {
+                userRohm.value = (userVal * 1000000).toFixed(2);
+                userRKiloohm.value = (userVal * 1000).toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electric Current Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: Thistle;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: rgb(185, 116, 4);
+            }
+            25% {
+                background-color: rgb(221, 138, 5);
+            }
+            50% {
+                background-color: rgb(245, 183, 84);
+            }
+            75% {
+                background-color: rgb(221, 138, 5);
+            }
+            100% {
+                background-color: rgb(185, 116, 4);
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Electric Current Conveter <i class="fa fa-battery-half"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="mA" class="input animated bounceInRight" placeholder="Mili Ampere" oninput="currentConverter(this.id,this.value)" onchange="currentConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="ampere" class="input animated bounceInLeft" placeholder="Ampere" oninput="currentConverter(this.id,this.value)" onchange="currentConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="kA" class="input animated bounceInRight" placeholder="Kilo Ampere" oninput="currentConverter(this.id,this.value)" onchange="currentConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function currentConverter(weightType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var usermA = document.getElementById("mA");
+            var userampere = document.getElementById("ampere");
+            var userweightMg = document.getElementById("kA");
+
+            if (weightType == "mA") {
+                userampere.value = (userVal / 1000).toFixed(6);
+                userkA.value = (userVal / 1000000).toFixed(6);
+            }
+            if (weightType == "ampere") {
+                usermA.value = (userVal * 1000).toFixed(2);
+                userkA.value = (userVal / 1000).toFixed(6);
+            }
+            if (weightType == "kA") {
+                usermA.value = (userVal * 1000000).toFixed(2);
+                userampere.value = (userVal * 1000).toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

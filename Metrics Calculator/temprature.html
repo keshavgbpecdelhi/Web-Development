@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Temprature Conveter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendors/style.css">
+    <!--===============================================================================================-->
+    <style type="text/css">
+        body {
+            background-color: blueviolet;
+            animation-name: backgroundAnimi;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes backgroundAnimi {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: orangered;
+            }
+            50% {
+                background-color: orange;
+            }
+            75% {
+                background-color: orangered;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="heading animated bounceInDown">Temprature Conveter <i class="fa fa-fw fa-thermometer-empty"></i></h1>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="celciusVal" class="input animated bounceInRight" placeholder="Celcius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="fahrenheitVal" class="input animated bounceInLeft" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)"><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" id="kelvinVal" class="input animated bounceInRight" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+            </div>
+        </div>
+        <div class="back"><a href="index.html">Home <i class="fa fa-home"></i></a></div>
+    </div>
+
+    <script type="text/javascript">
+        function temperatureConverter(tempType, userVal) {
+
+            userVal = parseFloat(userVal);
+
+            var userCelsiusVal = document.getElementById("celciusVal");
+            var userFahrenheitVal = document.getElementById("fahrenheitVal");
+            var userKelvinVal = document.getElementById("kelvinVal");
+
+            if (tempType == "fahrenheitVal") {
+                userCelsiusVal.value = ((userVal - 32) / 1.8).toFixed(2);
+                userKelvinVal.value = (((userVal - 32) / 1.8) + 273.15).toFixed(2);
+            }
+            if (tempType == "celciusVal") {
+                userFahrenheitVal.value = ((userVal * 1.8) + 32).toFixed(2);
+                userKelvinVal.value = ((userVal) + 273.15).toFixed(2);
+            }
+            if (tempType == "kelvinVal") {
+                userFahrenheitVal.value = (((userVal - 273.15) * 1.8) + 32).toFixed(2);
+                userCelsiusVal.value = ((userVal) - 273.15).toFixed(2);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
