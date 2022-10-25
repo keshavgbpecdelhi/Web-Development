@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body {
+    @apply font-roboto scrollbar-thin scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 scrollbar-thumb-rounded-full scrollbar-track-mainBg bg-topNavBg;
+}
+.sidebar {
+    @apply hidden fixed w-60 bg-sideBarBg h-full lg:flex flex-col mt-12 pb-16 pr-4 pt-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-thumb-rounded-full scrollbar-track-sideBarBg;
+}
+.tags-container {
+    @apply relative sticky top-14 flex flex-auto items-center space-x-3 px-5 py-2.5 border-t border-b border-sideBarHoverBg bg-topNavBg bg-opacity-95 z-20 overflow-x-scroll overflow-y-hidden scrollbar-none;
+}
+.videos-container {
+    @apply grid grid-cols-1 gap-y-6 p-2 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-6 sm:p-4 md:grid-cols-3 md:gap-x-2 md:gap-y-6 md:p-4 lg:grid-cols-3 lg:gap-x-2 lg:gap-y-6 lg:p-4 xl:grid-cols-4 xl:gap-x-4 xl:gap-y-10 xl:p-6 h-full bg-mainBg mt-14 sm:mt-12;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-21 { font-size: 21px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+#sideBar {
+    overflow: hidden;
+}
+#sideBar:hover {
+    overflow-y: auto;
+}

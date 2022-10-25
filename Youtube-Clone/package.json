@@ -1,0 +1,19 @@
+{
+  "name": "youtube-ui-clone",
+  "version": "1.0.0",
+  "description": "YouTube Web UI Clone",
+  "main": "index.js", 
+  "scripts": {
+    "build:css": "tailwind build -i src/style.css -o public/assets/style.css",
+    "prod": "NODE_ENV=production tailwind build -i src/style.css -o public/assets/style.css"
+  },
+  "author": "Jigar Sable",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.2.7",
+    "win-node-env": "^0.4.0"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^1.3.1"
+  }
+}
