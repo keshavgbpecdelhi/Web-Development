@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+/* #anchor {
+    position: relative;
+} */
+
+#eyes img {
+    height: 115px;
+    width: 95px;
+}
+
+#eyes, #eyes img {
+    position: absolute;
+    top: 165px;
+    left: 420px;
+}
+
+.text {
+    background-color: #fff;
+    color: red;
+    position: absolute;
+    top: 534px;
+    left: 750px;
+}
