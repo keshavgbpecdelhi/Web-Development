@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="start_btn"><button>Let's Start Quiz</button></div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules for Quiz Competition</span>
+        </div>
+    
+        <div class="rule_list">
+            <div class="rule">a. You will have only 10 seconds per each question</div>
+            <div class="rule">b. Once you select your answer, you can't reselect</div>
+            <div class="rule">c. You can't select any option once time goes off</div>
+            <div class="rule">d. You'll get points on the basis of your correct answers.</div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz App</div>
+            <div class="timer">
+                <div class="time_left">Time Left</div>
+                <div class="timer_sec">10 sec</div>
+            </div>
+            <button class="submit">Submit</button>
+        </header>
+
+        <section>
+            <div class="quiz_text">
+            </div>
+                <div class="option_list">
+                    
+                </div>
+        </section>
+
+        <footer>
+            <button class="previous_btn">Previous ques</button>
+            <button class="next_btn">Next ques</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon"><i class="fa-solid fa-face-smile-wink"></i></div>
+        <div class="score">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>   
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="question.js"></script>
+    </script>
+</body>
+</html>
