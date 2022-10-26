@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    background-image: url("codeforces_logo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    <form action="">
+        <h1>Payment Form</h1>
+        <p>Required fields are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: *<input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender *</legend>
+            <p>
+            Male <input type="radio" name="gender" id="male" required>
+            Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="75" rows="6"></textarea></p>
+        <p>Email: *<input type="email" name="email" id="email" required></p>
+        <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type: * 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card number * <input type="number" name="card_number" id="card_number" required></p>
+        <p>
+            Expiration Date *<input type="date" name="expiry_date" id="expiry_date" required>
+        </p>
+        <p>CVV: *<input type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+
+    </form>
+</body>
+</html>
