@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert</title>
+    <link rel="icon" type="image/png" href="./public/favicon.png" />
+    <link rel="stylesheet" href="./public/style.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Convert</h1>
+    </header>
+    <main>
+      <nav>
+        <ul id="listQuantity">
+          <a href="#" onclick="loadQuantity('length'); return false;">
+            <li id="item0" class="" value="length">Length</li>
+          </a>
+          <a href="#" onclick="loadQuantity('mass'); return false;">
+            <li id="item1" class="" value="mass">Mass</li>
+          </a>
+          <a href="#" onclick="loadQuantity('time'); return false;">
+            <li id="item2" class="" value="time">Time</li>
+          </a>
+          <a href="#" onclick="loadQuantity('temperature'); return false;">
+            <li id="item3" class="" value="temperature">Temperature</li>
+          </a>
+          <a href="#" onclick="loadQuantity('angle'); return false;">
+            <li id="item4" class="" value="angle">Angle</li>
+          </a>
+          <a href="#" onclick="loadQuantity('area'); return false;">
+            <li id="item5" class="" value="area">Area</li>
+          </a>
+          <a href="#" onclick="loadQuantity('volume'); return false;">
+            <li id="item6" class="" value="volume">Volume</li>
+          </a>
+          <a href="#" onclick="loadQuantity('digital-storage'); return false;">
+            <li id="item7" class="" value="digital-storage">Digital Storage</li>
+          </a>
+        </ul>
+      </nav>
+      <div id="converterSpace">
+        <div>
+          <h2 id="quantityTitle"></h2>
+        </div>
+        <div>
+          <select id="optionQuantity" onchange="loadQuantity(this.value)">
+            <option value="length">Length</option>
+            <option value="mass">Mass</option>
+            <option value="time">Time</option>
+            <option value="temperature">Temperature</option>
+            <option value="angle">Angle</option>
+            <option value="area">Area</option>
+            <option value="volume">Volume</option>
+            <option value="digital-storage">Digital Storage</option>
+          </select>
+        </div>
+        <div id="converterTop" class="converter">
+          <div class="input">
+            <input id="inputTop" type="number" value="1" oninput="convert();" />
+          </div>
+          <div class="option">
+            <select id="optionTop" onchange="convert();"></select>
+          </div>
+        </div>
+        <div id="converterBottom" class="converter">
+          <div class="input">
+            <input
+              id="inputBottom"
+              type="number"
+              value
+              oninput="convertBack();"
+            />
+          </div>
+          <div class="option">
+            <select id="optionBottom" onchange="convert();"></select>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by dianyehezkiel</p>
+      <p>
+        Find me on <a href="https://www.facebook.com/dianyhzkl">Facebook</a>,
+        <a href="https://www.instagram.com/dianyehezkiel/">Instagram</a>, and
+        <a href="https://twitter.com/dianyehezkiel_">Twitter</a>
+      </p>
+    </footer>
+  </body>
+  <script src="./public/index.js"></script>
+</html>
