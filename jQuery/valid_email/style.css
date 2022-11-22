@@ -1,0 +1,9 @@
+body{
+    color: black;
+    background-image: linear-gradient(yellow , white);
+    text-align: center;
+    padding: 200px ;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
