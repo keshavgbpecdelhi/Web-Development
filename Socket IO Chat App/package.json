@@ -15,7 +15,7 @@
     "express": "^4.17.1",
     "moment": "^2.29.4",
     "redis": "^4.0.2",
-    "socket.io": "^4.4.1"
+    "socket.io": "^4.5.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
