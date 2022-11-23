@@ -12,21 +12,29 @@ body{
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     position: absolute;
+    animation: skyMove linear 100s infinite;
 }
 
 .trees{
     height: 100vh;
     width: 100%;
+    
+    padding:0px;
+    margin:0px;
     background-image: url(trees.png);
+  
+ 
     background-size: cover; 
     position: absolute;
     top: -144px;
+
+    animation: bgMove linear 80s infinite;
+ 
 }
 .track{
     height: 60vh;
     width: 800vw;
     background-image: url(track.png);
-    background-repeat: repeat-x; 
     position: absolute;
     top: 70vh;
     animation: carMove linear 13s infinite;
@@ -42,7 +50,7 @@ body{
     position: absolute;
     left: 1vw;
     bottom:30vh;
-    animation: shake linear .3s infinite;
+    animation: shake linear 1s infinite;
 
 }
 
@@ -78,16 +86,28 @@ body{
         transform: translateX(-500vw);
     }
 }
+@keyframes bgMove
+{
+    100%{
+        background-position: -1200px ;
+    }
+}
+@keyframes skyMove
+{
+    100%{
+        background-position: -1200px ;
+    }
+}
 
 @keyframes shake
 {
     0%{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
     50%{
-        transform: translateY(5px);
+        transform: translateY(3px);
     }
     100%{
-        transform: translateY(-5px);
+        transform: translateY(-3px);
     }
 }
