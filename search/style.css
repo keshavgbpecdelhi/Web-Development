@@ -1,0 +1,76 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    background-color: black;
+    color : white;
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+input{
+    margin-top: 2rem;
+    width: 30%;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+}
+
+::placeholder{
+    text-align: center;
+}
+
+button{
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+#recent{
+    color: white;
+    margin: 1rem;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.git_data{
+    height: 5rem;
+    border : 2px solid white;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.List{
+    z-index: 2;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 0.3rem;
+    
+}
+
+li:hover{
+    cursor: pointer;
+}
