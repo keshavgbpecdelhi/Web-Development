@@ -70,11 +70,10 @@ Web Development Demo Pages collection<br><br>
 | Flipkart Clone | [Flipkart](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/Flipkart%20clone) | [flipkart](https://keshavgbpecdelhi.github.io/Web-Development/Flipkart%20clone/index.html) |
 | Countdown Timer | [Countdown](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/countdown-timer) | [countdown](https://ayushknath.github.io/countdown-timer/) |
 | Ball Game | [Ball Game](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/ball%20game/index.html) | [Game](https://keshavgbpecdelhi.github.io/Web-Development/ball%20game/index.html) |
-
+| Notes | [Code](https://github.com/srbmaury/notes) | [Demo](https://srbmaury.github.io/notes/) |
 
 ## :handshake: Our Contributors
 
 <a href="https://github.com/keshavgbpecdelhi/Web-Development"><p align="center">
   <img src="https://contrib.rocks/image?repo=keshavgbpecdelhi/Web-Development" style="float:none;" /></p>
 </a>
-
