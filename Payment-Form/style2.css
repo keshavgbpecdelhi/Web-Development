@@ -1,33 +1,111 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
+    
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-}
-p {
-    font-size: 2-px;
-    color: rgb(2, 0, 131);
-}
+.h1>p{
+    font-size:30px;
+    font-weight: 700;
+    font-family:monospace;
+    letter-spacing: 10px;
 
-header {
-    padding: 40px;
-    background-color: rgb(17, 124, 143);
+    overflow: hidden;
+   
+    width: 320px;
+    margin-left: 40%;
+
 }
 
+.h1{
+    width: 100%;
+    overflow:hidden ;
+    padding: 40px 0px;
+    
+}
+/*Container*/
+.container{
+    display: flex;
+    align-items: center;
+    border: black 1px solid;
+    border-radius: 14px;
+    width: 70%;
+    margin-left: 15%;
+    
 
-main {
-    background-color: white;
-    text-align: center;
 }
 
-h2 {
+::placeholder{
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+    font-weight: 700;
+}
+.contact-info>p, .payment-info>p{
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+    font-weight: 700;
+}
+.contact-info>input, .payment-info>input{
+    padding: 10px;
+    margin: 5px
+}
+.contact-info>textarea, .payment-info>#expiry_date{
+    padding: 10px;
+    margin: 5px;
+}
+/*Contact-info*/
+.contact-info{
+    border-right: rgba(0, 0, 0, 0.492) dashed 1.5px;
+    width: 50%;
+    padding-right: 5%;
+    padding-left: 6%;
+    padding-bottom: 30px;
+    display:inline-block;
+    
+
+}
+
+
+/*Payment info*/
+.payment-info{
+    
+    width: 40%;
+    padding: 16px;
+    display: inline-block;
+    padding-left: 6%;
+}
+
+#card_type{
+    padding: 10px;
+    margin: 5px;
+    color: rgb(86, 86, 86);
+    font-size: 15px;
+    font-weight: 700;
+}
+/*submit button*/
+.submit{
+    padding-top: 7px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 14px;
+    width: 175px;
+    margin-left: 45%;
+    transition: all 0.3s ease;
+    
+}
+.submit>input{
+    font-size: 15px;
+    margin-left: 1%;
     padding: 20px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 10px;
+    background-color:rgba(250, 235, 215, 0);
+    
+}
+
+.submit:hover{
+    transform: translateY(-6px);
+    border-bottom: none;
+    box-shadow: 0px 5px 6px;
 }
