@@ -8,41 +8,47 @@
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    background-image: url("codeforces_logo.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    <div class="h1"><p> PAYMENT FORM</p></div>
     <form action="">
-        <h1>Payment Form</h1>
-        <p>Required fields are followed by *</p>
-        <h2>Contact Information</h2>
-        <p>Name: *<input type="text" name="name" required></p>
-        <fieldset>
-            <legend>Gender *</legend>
-            <p>
-            Male <input type="radio" name="gender" id="male" required>
-            Female <input type="radio" name="gender" id="female" required>
-            </p>
-        </fieldset>
-        <p>Address: <textarea name="address" id="address" cols="75" rows="6"></textarea></p>
-        <p>Email: *<input type="email" name="email" id="email" required></p>
-        <p>Pincode: *<input type="number" name="pincode" id="pincode" required></p>
-        <hr>
-        <h2>Payment Information</h2>
-        <p>Card Type: * 
-            <select name="card_type" id="card_type" required>
-                <option value="">--Select a Card Type--</option>
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="rupay">Rupay</option>
-            </select>
-        </p>
-        <p>Card number * <input type="number" name="card_number" id="card_number" required></p>
-        <p>
-            Expiration Date *<input type="date" name="expiry_date" id="expiry_date" required>
-        </p>
-        <p>CVV: *<input type="password" name="cvv" id="cvv" required></p>
-        <input type="submit" value="Pay Now">
-
+        <div class="container">
+            <div class="contact-info">
+                <div class="ci"><h2>Contact Information</h2></div>
+                <input type="text" name="name" placeholder="Name" required>
+                
+                   
+                    <p><input type="radio" name="gender" id="male" required>Male</p>
+                    <p><input type="radio" name="gender" id="female" required>Female</p>
+                    
+                
+                <textarea name="address" id="address" cols="39" rows="6" placeholder="Adderss"></textarea>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="number" name="pincode" id="pincode" placeholder="Pincode" required>
+            </div>
+            
+            
+    
+            <div class="payment-info">
+                <div class="pi"><h2>Payment Information</h2></div>
+                
+                    <select name="card_type" id="card_type" required>
+                        <option value="">--Select a Card Type--</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="rupay">Rupay</option>
+                    </select>
+                
+                <input type="number" name="card_number" id="card_number" placeholder="Card Number" required>
+                <p>Expiry Date:</p>
+                 <input type="date" name="expiry_date" id="expiry_date" placeholder="Expiration date" required>
+                
+                <input type="password" name="cvv" id="cvv" placeholder="cvv" required>
+                
+    
+            </div>
+        </div>
+        
+        <div class="submit"><input type="submit" value="Pay Now"></div>
+        
     </form>
 </body>
 </html>
