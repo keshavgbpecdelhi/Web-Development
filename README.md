@@ -71,6 +71,7 @@ Web Development Demo Pages collection<br><br>
 | Countdown Timer | [Countdown](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/countdown-timer) | [countdown](https://ayushknath.github.io/countdown-timer/) |
 | Ball Game | [Ball Game](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/ball%20game/index.html) | [Game](https://keshavgbpecdelhi.github.io/Web-Development/ball%20game/index.html) |
 | Notes | [Code](https://github.com/srbmaury/notes) | [Demo](https://srbmaury.github.io/notes/) |
+| Rock Paper Scissors Game | [Code](https://github.com/31Sanskrati/Web-Development/tree/master/Rock%20Paper%20Scissors) | [Demo](https://codepen.io/Sanskrati01/pen/gOWzvaO) |
 
 ## :handshake: Our Contributors
 
