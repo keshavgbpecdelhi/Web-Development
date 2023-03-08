@@ -4,6 +4,7 @@ Web Development Demo Pages collection<br><br>
 
 | Title | Code | Live Demo |
 | ----- | ---- | --------- |
+|Stopwatch| [Stopwatch](https://github.com/Husayn01/Stopwatch)| [See stopwatch](https://stopwatch-husayn01.vercel.app/)|
 | Headings | [Headings](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html) |
 | Tables | [Table](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html) |
 | Basic Form | [Basic Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/Basic_form.html) | [Tuition Form](https://keshavgbpecdelhi.github.io/Web-Development/html/Basic_form.html) |
