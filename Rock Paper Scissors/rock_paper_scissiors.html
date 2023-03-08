@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="container">
+      <h1 class="heading">Rock Paper Scissor</h1>
+      <h2>Choose your hand</h2>
+      <div id="rps-div">
+        <img
+          src="https://www.seekpng.com/png/detail/816-8161371_rock-paper-scissor-icon-png.png"
+          alt="rock"
+          id="rock"
+          onclick="game(this)"
+        />
+        <img
+          src="https://www.pngitem.com/pimgs/m/266-2667252_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png"
+          alt="paper"
+          id="paper"
+          onclick="game(this)"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4KAZtQUpeqelxjO89TJxMfAFtWsX1SCIwCXNaY3HNhfKSy5WTZKEF4K5nWX7upL5NvKo&usqp=CAU"
+          alt="scissor"
+          id="scissor"
+          onclick="game(this)"
+        />
+      </div>
+    </div>
+  </body>
+</html>
