@@ -8,7 +8,6 @@ Web Development Demo Pages collection<br><br>
 |Password Generator| [Code](https://github.com/Husayn01/password-generator)| [Demo](https://password-generator02.netlify.app/)|
 |Quote Generator | [Code](https://github.com/Husayn01/Random-Quote-Generator)| [Demo](https://app.netlify.com/sites/random-quote-generator01/)|
 |Calculator | [Code](https://github.com/Husayn01/Javascript-calculator)| [Demo](https://html-calculator.netlify.app/)|
-
 |Stopwatch| [Code](https://github.com/Husayn01/Stopwatch)| [Demo](https://stopwatch-husayn01.vercel.app/)|
 | Headings | [Headings](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/html/types_of_headings.html) |
 | Tables | [Table](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/html/a_simple_table_in_html.html) |
