@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort</title>
+    <style>
+        body {
+            margin: auto;
+            padding: auto;
+            background: url("Quick.jpg");
+            height: auto;
+            width: auto;
+            background-repeat: no-repeat;
+        }
+
+        section div {
+            font-size: 45px;
+            font-family: sans-serif;
+            color: rgb(163, 161, 161);
+            margin: 42px 190px 0px 60px;
+        }
+
+        article img {
+            width: 450px;
+            padding: 30px;
+            margin: 0px 0px 0px 35px;
+
+        }
+
+        .description {
+
+            color: rgb(163, 161, 161);
+            width: 961px;
+            margin: 8px 15px 0px 60px;
+        }
+
+        article p {
+            color: rgb(163, 161, 161);
+            float: right;
+            padding: 0px 0px 0px 0px;
+            margin: 100px 510px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            Quick Sort
+        </div>
+    </section>
+
+    <article>
+        <p>
+            Average Complexity O(n X log n) <br><br>
+            Best Case O(n X log n) <br><br>
+            Worst Case O(n2) <br><br>
+            Space Complexity O(n) <br><br>
+        </p>
+        <img src="quicksort.jpg" alt="sorting">
+    </article>
+
+    <div class="description">
+        Description:<br>
+        Quicksort is a divide-and-conquer algorithm. It works by selecting a 'pivot' element from the array and
+        partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the
+        pivot. For this reason, it is sometimes called partition-exchange sort.[4] The sub-arrays are then sorted
+        recursively. This can be done in-place, requiring small additional amounts of memory to perform the sorting.
+        <br><br>
+        Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation
+        (formally, a total order) is defined. Efficient implementations of Quicksort are not a stable sort, meaning that
+        the relative order of equal sort items is not preserved.
+        <br><br>
+        Mathematical analysis of quicksort shows that, on average, the algorithm takes {\displaystyle O(n\log
+        {n})}O(n\log {n}) comparisons to sort n items. In the worst case, it makes {\displaystyle O(n^{2})}O(n^{2})
+        comparisons.
+    </div>
+</body>
+
+</html>

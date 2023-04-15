@@ -1,0 +1,141 @@
+
+$no_algos: 6;
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav
+{
+    background-color: rgb(26, 28, 28);
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    padding: 0% 5%;
+    .array-inputs
+    {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-content: center;
+        padding: 5% 0%;
+        
+        
+        #a_size
+        {
+            padding: 5% 0%;
+        }
+        #a_speed
+        {
+            padding: 5% 0%;
+        }
+        #a_generate
+        {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: aqua;
+            padding: 4% 0% 0% 0%;
+            padding-left: 20%;
+            &:hover
+            {
+                cursor: pointer;
+            }
+        }
+    }
+    .header_right
+    {
+        display: flex;
+        flex-direction: column;
+
+        .nav-heading
+        {
+            display: inline-block;
+            //text-align: center;
+            font-size: xxx-large;
+            padding: 3% 0%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .algos
+        {
+            display: grid;
+            grid-template-columns: repeat($no_algos,(100%/$no_algos));
+            place-content: center;
+            padding: 2% 0%;
+            button
+            {
+                background-color: transparent;
+                border-radius: 3px;
+                color: rgb(22, 20, 20);
+                outline: none;
+                margin: 0 10px;
+                padding: 5% 0%;
+                font-size: x-large;
+                &:hover
+                {
+                    background-color: blue;
+                    cursor: pointer;
+                }
+            }
+
+            .butt_locked
+            {
+                background-color: transparent;
+                cursor: pointer;
+                &:hover
+                {
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+            }
+            .butt_selected
+            {
+                background-color: white;
+                color:green;
+                &:hover
+                {
+                    background-color: white;
+                    cursor: pointer;
+                }
+            }
+            .butt_unselected
+            {
+                &:hover
+                {
+                    background-color: blue;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+section
+{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    #Info_Cont1
+    {
+        padding: 20%;
+    }
+    #array_container
+    {
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+    #Info_Cont2
+    {
+        padding: 20%;
+    }
+}
+
+.hide
+{
+    display: none;
+}
