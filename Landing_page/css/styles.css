@@ -1,0 +1,318 @@
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+h1,h2,h3 {
+  font-family: "Montserrat";
+  
+}
+p{
+  color:#8f8f8f;
+}
+/*heading*/
+
+.big-heading{
+  font-family: "Montserrat";
+  font-size: 4rem;
+  line-height: 1.5;
+  color: #315098;
+}
+.navbar{
+  padding:0 0 4.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.navbar-brand img{
+  width: 150px;
+  height: 150px;
+}
+.nav-item{
+  padding: 0 18px;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  color: #315098;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #315098;
+}
+.download-button{
+  margin: 5% 3% 5% 0%;
+}
+#title {
+  background-color: #8ca8be;
+  color: #fff;
+  text-align: left;
+  border-radius: 0px 286px;
+}
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+}
+.title-image{
+  width:73%;
+  bottom:1px;
+  transform: rotate(20deg);
+  filter: drop-shadow(10px 10px 10px black);
+  position: absolute;
+  left:35%;
+}
+
+#features{
+  background-color: #315098;
+  position: relative;
+  border-radius: 283px 0px 0px;
+  z-index: 2;
+  
+}
+.features-box{
+  text-align: center;
+}
+svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #8ca8be;
+}
+.features-dog{
+  color: #8ca8be;
+}
+.features-title{
+    font-size: 1.5rem;
+    color: black;
+}
+.circle{
+  font-size:48px;
+  color:#ef8172;
+}
+.circle:hover{
+  color: #ff4c68;
+}
+.bullseye{
+  font-size:48px;
+  color:#ef8172;
+}
+.bullseye:hover{
+  color: #ff4c68;
+}
+.heart{
+  font-size:48px;
+  color:#ef8172;
+}
+.heart:hover{
+  color: #ff4c68;
+}
+
+#testimonials{
+  background-color:white;
+  color: #315098;
+}
+
+.testimonial-image{
+  width:10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+  
+}
+#press{
+  background-color:#8ca8be;
+  padding-bottom: 4%;
+  
+}
+.press-image{
+  width: 15%;
+  margin: 10px 20px 10px 10px;
+}
+#pricing{
+  padding: 100px;
+}
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-column{
+  padding: 3% 2%;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#cta{
+    background-color: #315098;
+    position: relative;
+    z-index: 1;
+    border-radius: 221px 221px 0px 0px;
+}
+.cta-dog{
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: white;
+
+}
+.big-heading1{
+  font-family: "Montserrat";
+  font-size: 4rem;
+  line-height: 1.5;
+  color: #8ca8be;
+}
+
+.social-fab{
+  margin: 20px 10px;
+}
+.p-dog{
+  color: grey;
+}
+
+@media (max-width:993px) {
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0);
+  }
+}
+h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE; 
+  font-size: 4rem;
+}
+
+.roller{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: #1D3557;
+}
+
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+  
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+  text-align:center;
+  text-transform: uppercase;
+  color: #F1FAEE; 
+  font-size: 2.125rem;
+}
+  
+  .roller{
+  height: 2.6rem; 
+  line-height: 2.125rem;  
+  }
+  
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .roller #rolltext {  
+  animation: slide-mob 5s infinite;  
+}
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
+}
+footer
+{
+  background-color: black;
+}
+body {background: #eee;}
+.title-image {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    
+}
+.title-image img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.title-image:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+   
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.title-image:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
