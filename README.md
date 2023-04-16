@@ -74,6 +74,7 @@ Web Development Demo Pages collection<br><br>
 | Notes | [Code](https://github.com/srbmaury/notes) | [Demo](https://srbmaury.github.io/notes/) |
 | Rock Paper Scissors Game | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Rock%20Paper%20Scissors) | [Demo](https://codepen.io/Sanskrati01/pen/gOWzvaO) |
 | Review Cards | [Code](https://github.com/31Sanskrati/keshavgbpecdelhi/tree/master/Review%20Cards) | [Demo](https://codepen.io/Sanskrati01/pen/yLbxboO) |
+| Sorting Visualizer | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Sorting_Visualizer) | [Demo](https://sortingvisualizera.netlify.app/) |
 
 ## :handshake: Our Contributors
 
