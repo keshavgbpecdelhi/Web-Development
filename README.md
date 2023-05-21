@@ -75,6 +75,7 @@ Web Development Demo Pages collection<br><br>
 | Rock Paper Scissors Game | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Rock%20Paper%20Scissors) | [Demo](https://codepen.io/Sanskrati01/pen/gOWzvaO) |
 | Review Cards | [Code](https://github.com/31Sanskrati/keshavgbpecdelhi/tree/master/Review%20Cards) | [Demo](https://codepen.io/Sanskrati01/pen/yLbxboO) |
 | Sorting Visualizer | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Sorting_Visualizer) | [Demo](https://sortingvisualizera.netlify.app/) |
+|Guess the Number Game| [Code](https://github.com/shantanunautiyal/Guess-the-number)| [Demo](https://shantanunautiyal.github.io/Guess-the-number/)|
 
 ## :handshake: Our Contributors
 

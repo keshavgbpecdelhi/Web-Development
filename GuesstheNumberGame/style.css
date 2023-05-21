@@ -1,0 +1,106 @@
+body {
+  background-color: #040035;
+}
+
+.box {
+  width: 100px;
+  height: 3rem;
+  padding-left: 41vw;
+}
+
+.click-button {
+  width: 15rem;
+  box-shadow: #0e025541 0px 0px 0.02rem;
+  backdrop-filter: blur(10px) saturate(120%) contrast(80%) brightness(130%);
+  border-radius: 0.4rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: 40.5vw;
+  margin-top: 3rem;
+}
+
+.againbutton {
+  width: 100px;
+  cursor: pointer;
+  box-shadow: #ffffff 0px 0px 0.02rem;
+  backdrop-filter: blur(10px) saturate(120%) contrast(80%) brightness(130%);
+  border-radius: 0.4rem;
+  border: #ffffff;
+  background-color: rgb(255, 87, 191);
+  top: 50px;
+  color: aliceblue;
+  height: 3rem;
+  position: absolute;
+}
+
+.home-h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  animation: anim 2s;
+}
+
+.home-h113 {
+  font-size: 3.5rem;
+  font-family: cursive;
+  text-align: center;
+  margin: -38px 0 -16px 0px;
+  color: aliceblue;
+  animation: anim 2s;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: rgb(50, 255, 118);
+}
+
+.home-h11,
+.home-h112 {
+  font-size: 2.5rem;
+  font-family: cursive;
+  text-align: center;
+  color: aliceblue;
+  animation: anim 2s;
+}
+
+input[type="text"] {
+  background-color: rgba(248, 149, 103, 0.5);
+  box-shadow: #0e025541 0px 0px 0.02rem;
+  backdrop-filter: blur(10px) saturate(120%) contrast(80%) brightness(130%);
+  border-radius: 0.4rem;
+  height: 2.75rem;
+  border: #000000;
+  text-align: center;
+  margin-left: -3vw;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  color: aliceblue;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+}
+
+.score,
+.scoree {
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  color: aliceblue !important;
+  color: var(--primary-color);
+}
+
+.highscore {
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  top: 220px;
+  color: aliceblue !important;
+  color: var(--primary-color);
+}
