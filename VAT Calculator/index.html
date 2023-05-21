@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VAT Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>VAT Calculator</h1>
+            <div class="vat-form">
+                <div class="input">
+                    <label for="price">Price</label>
+                    <input id="price" name="price" required>
+                </div>
+                <div class="input">
+                    <label for="vat">VAT (%)</label>
+                    <input id="vat-percent" name="vat-percent" required>
+                </div>
+                <div class="input">
+                    <label for="vat">VAT (€)</label>
+                    <input id="vat-price" name="vat-price" readonly required>
+                </div>
+                <div class="input">
+                    <label for="total">Price Without VAT</label>
+                    <input id="price-without-vat" name="price-without-vat" readonly required>
+                </div>
+            </div>
+            <div class="btns">
+                <button type="submit" id="calculate-btn" name="calculate-btn">Calculate</button>
+                <button type="reset" id="reset-btn" name="reset-btn">Reset</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
