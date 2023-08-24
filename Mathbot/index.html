@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat">
+        <div class="chat-header">
+            <h2>Math Bot</h2>
+        </div>
+        <div class="chat-body" id="chat-output"></div>
+        <div class="user-input">
+            <input type="text" id="user-message" placeholder="Type your math expression here...">
+<button onclick="sendMessage()">Send</button>
+<div id="chat-output"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
