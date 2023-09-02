@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:url(../Images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.eagle{
+    background:url(../Images/birdflying.png);
+    width: 240px;
+    height:207px;
+     animation: fly 1s steps(5) infinite ,
+                ahead 6s linear infinite;
+}
+.zoom-out{
+    zoom: 50%;
+}
+@keyframes fly{
+    0%{
+        background-position:0px;
+    }
+    100%{
+        background-position:1204px;
+    }
+
+}
+@keyframes ahead{
+    0%{
+        transform:translateX(-100px);
+    }
+    100%{
+        transform:translateX(3100px);
+    }
+
+}
