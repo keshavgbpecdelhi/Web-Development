@@ -1,0 +1,110 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('mathbg.jpg');
+  background-position: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Chat Box */
+.chat {
+  background: linear-gradient(to bottom, #b990f6, #42bbf3);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrollbars from appearing outside chat box */
+}
+
+.chat-header {
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto; /* Use auto to automatically show scrollbars when needed */
+  padding: 10px;
+}
+
+.chat-body .message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.chat-body .user-message {
+  background-color: #d3eaf5;
+  text-align: right;
+}
+
+.user-input {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.user-input input {
+  flex: 1;
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+.user-input button {
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Message animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
