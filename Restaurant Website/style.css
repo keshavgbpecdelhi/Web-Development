@@ -1,0 +1,339 @@
+*  color varibles for the page */
+
+/*------------------------------------------------------------------
+    style template for mexican resturant 
+    
+    author: cryptograghi 
+
+*/
+root {
+
+    --font: slategrey;
+    --background: wheat;
+    --menuColor: slategrey;
+}
+
+
+
+body {
+    width: auto;
+    background-image: url('https://images.unsplash.com/photo-1606625736768-f521ab7e23fb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jeswin-thomas-PtfRiBumfQU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: wheat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* nav bar styling */
+
+.navBar {
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.navBar a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    margin: 10px;
+}
+
+i {
+    font-size: 20px;
+}
+
+i:hover,
+a:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+.navBar nav li {
+    padding: 10px;
+    margin: 20px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+#hamMenu {
+    visibility: hidden;
+}
+
+/*  grid system for the webpage */
+
+.header {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.header>div {
+    margin-top: 10%;
+    max-width: 100%;
+
+}
+
+.IntroMsg {
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    left: 5%;
+    top: -20%;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    opacity: 0.9;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* for image seperation */
+
+
+.story {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.imgContainer {
+    width: 90%;
+    height: fit-content;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+
+
+}
+
+.imgContainer>div {
+    margin: 10px;
+}
+
+.menuIntro>img {
+    width: 75%;
+    border-radius: 10%;
+    height: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    filter: blur(0.5px);
+}
+
+.menuIntro {
+    text-align: center;
+    color: rgb(39, 39, 39);
+    border-radius: 10px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.9;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu,
+    .form {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        position: relative;
+        top: -5%;
+
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    html {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2,
+    h1 {
+        font-size: 18px;
+    }
+
+    .navBar,
+    .navBar nav li {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }  
+
+    #hamMenu {
+        visibility: visible;
+        color: white;
+        font-size: 25px;    
+        z-index: -1;
+    }
+
+}
+
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    width: 100%;
+    left: 0%;
+    top: 40px;
+    text-align: center;
+    padding: 20px;
+    opacity: 0.9;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    opacity: 0.9;
+    margin: 10px;
+
+}
+
+.form span {
+    margin: 10px;
+}
+
+.form button {
+    width: 60%;
+    position: relative;
+    left: 2%;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0.5px 0.5px black;
+    background-color: rgb(109, 103, 93);
+    padding: 10px;
+}
+
+.form button:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 6px slategray;
+}
+
+.form button:active {
+    background-color: rgba(30, 96, 161, 0.801);
+    border: none;
+}
+
+#home-menu ul {
+    background-color: white;
+    border-radius: 5px;
+    list-style: none;
+    padding: 30px;
+}
+
+#home-menu h2 {
+    text-shadow: 0.5px 0.5px black;
+}
+
+#home-menu ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#home-menu li {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+    border-bottom: 1px solid slategray;
+}
+.dish {
+    float: left;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding-right: 15px;
+}
+
+.Price {
+    float: right;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+.Description {
+    clear: both;
+    display: block;
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 10px;
+    position: relative;
+    top: -8px;
+}
+
+
+.logo {
+    animation: windowsFly ease-out 3s;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 4px rgb(255, 255, 255), 0.3em 0.3em 4em rgba(0, 0, 0, 0.3);
+}
+
+/*  image animation for resturant*/
+
+@keyframes windowsFly {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+        width: 0px;
+
+    }
+
+    50% {
+        filter: blur(5px);
+        opacity: 0.5;
+        width: 50%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
