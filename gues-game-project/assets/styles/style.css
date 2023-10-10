@@ -1,0 +1,91 @@
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    background-color: rgb(43, 43, 43);
+  }
+
+  .container {
+    border-radius: 20px;
+    margin: 5em auto;
+    width: 50em;
+    background-color: #ffee03;
+    padding: 50px;
+    text-align: center;
+    z-index: 0;
+    transition: all 0.5s;
+  }
+
+  .container:hover {
+    box-shadow: 0px 0px 74px -6px rgba(255, 255, 255, 0.35);
+    -webkit-box-shadow: 0px 0px 74px -6px rgba(255, 255, 255, 0.35);
+    -moz-box-shadow: 0px 0px 74px -6px rgba(255, 255, 255, 0.35);
+  }
+
+  h2 {
+    font-weight: 500;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .board {
+    box-sizing: border-box;
+    margin: 50px;
+    padding: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+  }
+
+  h3 {
+    margin: 10px;
+  }
+
+  .guessSubmit {
+    padding: 4px;
+    border: 2px solid black;
+    background-color: white;
+    text-align: center;
+    width: 9em;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 1em;
+  }
+
+  .guessSubmit:hover {
+    background-color: #ffee03;
+  }
+
+  .form input[type="number"] {
+    width: 200px;
+  }
+
+  .lastResult {
+    color: white;
+    padding: 3px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 5em auto;
+      width: 30em;
+      padding: 50px;
+      text-align: center;
+      z-index: 0;
+    }
+  }
+
+  @media (max-width: 678px) {
+    .container {
+      margin: 5em auto;
+      width: 20em;
+      padding: 50px;
+      text-align: center;
+      z-index: 0;
+    }
+  }
