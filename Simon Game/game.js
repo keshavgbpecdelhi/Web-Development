@@ -24,9 +24,7 @@ function nextSequence(){
    var randomNumber = Math.floor(Math.random() * 3);
    var randomChosenColour = buttonColours[randomNumber];
    gamePattern.push(randomChosenColour);
-
-   $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
-   playSound(randomChosenColour);
+    playGamePattern(0);
 
 }
 
@@ -39,6 +37,21 @@ $(".btn").click(function(){
     
     checkAnswer(userClickedPattern.length-1);
 });
+
+
+function playGamePattern(index) {
+  if (index < gamePattern.length) {
+    $("#" + gamePattern[index]).fadeIn(100).fadeOut(100).fadeIn(100);
+    playSound(gamePattern[index]);
+
+    
+    setTimeout(function () {
+      playGamePattern(index + 1);
+    }, 200); 
+  }
+} 
+
+playGamePattern(0);
 
 
 function checkAnswer(currentLevel) {
