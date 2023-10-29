@@ -1,0 +1,108 @@
+:root{
+    --primary: #FFEFBA;
+    --secondary: #FFFFFF;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html{
+    font-size: 10px;
+}
+.heading{
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+    padding-top: 10px;
+}
+.container{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(100deg,var(--primary),var(--tertiary));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calendar{
+    width: 400px;
+    background-color: rgb(14, 71, 69);
+    box-shadow: 0 0.5rem 3rem rgb(0, 0, 0);
+}
+.month{
+    width: 100%;
+    background-color: rgb(42, 207, 202);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 10px;
+}
+.month i{
+    cursor: pointer;
+    font-size: large;
+    font-weight: bolder;
+
+}
+.date h1{
+    font-weight: 800px;
+    text-transform: uppercase;
+}
+.date p{
+    font-size: large;
+    margin: 3px;
+}
+.week{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.week div{
+    justify-content: space-around;
+    font-weight: 700;
+    width: calc(100%/7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+
+}
+.days{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: larger;
+}
+.days div{
+    width: calc(72%/7);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 9px ;
+    margin: 2%;
+}
+.days div:hover:not(.today){
+    background-color: rgb(184, 244, 224);
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.next-date{
+    opacity: 0.5;
+}
+.prev-date{
+    opacity: 0.5;
+}
+.today{
+    background-color: aquamarine;
+    border-radius: 100%;
+    cursor: pointer;
+}
