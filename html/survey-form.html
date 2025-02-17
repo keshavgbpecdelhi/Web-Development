@@ -1,75 +1,102 @@
 <!DOCTYPE html>
-<!-- This is how HTML comments look like -->
 <html>
-  <!-- the title will appear on the page-->
-  <head>
+<head>
     <title>Employee Interests Survey</title>
-  </head>
-  <body>
-    <!-- as it is a survey form, we will need to submit the details, hence we use form -->
-    <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
-    <form action="http://google.co.in">
-      <!-- If we remove this, every thing will move to the left of the page-->
-      <div align="center">
-        <!--Adds a heading to the form-->
-        <h1>Employee Interests Survey form</h1>
-        Enter your name:
-        <!-- Input type text for small texts, specify size -->
-        <input
-          type="text"
-          name="UserName"
-          size="35"
-          maxlength="35"
-          value=""
-          required
-        />
-        <!--Adds spaces - remove and see what happens -->
-        <br /><br />
-        Enter your department:
-        <input
-          type="text"
-          name="Deptt"
-          size="35"
-          maxlength="35"
-          value=""
-          required
-        />
-        <br />
-        <br />
-        Tell us a little about yourself:
-        <!-- For writing lot of text like descriptions with text wrapping,
-               if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
-        <textarea name="Comments" cols="30" rows="4"></textarea>
-        <br />
-        <br />
-        Do you exercise at home?
-        <!-- Radio buttons help you choose one out of the many values -->
-        <input type="radio" name="exe" value="1" required />Yes
-        <input type="radio" name="exe" value="2" required />No
-        <p>How do you like to read about your favorite topics?</p>
-
-        <p>
-          <!--Checkbox lets you select multiple options -->
-          <input type="checkbox" name="Books" />Books
-          <input type="checkbox" name="Web" />Online resources
-          <input type="checkbox" name="Phone" />Phone apps
-          <input type="checkbox" name="Magazines" />Magazines
-        </p>
-        What genre of movies do you like?
-        <!--Select box lets you choose one of the multiple dropdown options-->
-        <select name="moviepref">
-          <option></option>
-          <option value="1" selected="true">comedy</option>
-          <option value="2">romance</option>
-          <option value="3">thriller</option>
-          <option value="4">horror</option>
-          <option value="5">biopic</option>
-        </select>
-
-        <br /><br />
-        <!--submits the information entered in the form by the user -->
-        <input type="submit" value="Submit form" />
-      </div>
-    </form>
-  </body>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(to right, #ff4b2b, #ff416c);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Interests Survey</h1>
+        <form action="http://google.co.in">
+            <label>Enter your name:</label>
+            <input type="text" name="UserName" required />
+            
+            <label>Enter your department:</label>
+            <input type="text" name="Deptt" required />
+            
+            <label>Tell us a little about yourself:</label>
+            <textarea name="Comments" rows="4"></textarea>
+            
+            <label>Do you exercise at home?</label><br>
+            <input type="radio" name="exe" value="1" required> Yes
+            <input type="radio" name="exe" value="2" required> No
+            
+            <p>How do you like to read about your favorite topics?</p>
+            <input type="checkbox" name="Books"> Books
+            <input type="checkbox" name="Web"> Online resources
+            <input type="checkbox" name="Phone"> Phone apps
+            <input type="checkbox" name="Magazines"> Magazines
+            
+            <label>What genre of movies do you like?</label>
+            <select name="moviepref">
+                <option value="" disabled selected>Select genre</option>
+                <option value="1">Comedy</option>
+                <option value="2">Romance</option>
+                <option value="3">Thriller</option>
+                <option value="4">Horror</option>
+                <option value="5">Biopic</option>
+            </select>
+            
+            <input type="submit" value="Submit form" class="submit-btn" />
+        </form>
+    </div>
+</body>
 </html>
