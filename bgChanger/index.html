@@ -4,16 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Keyboard</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #222;
+            color: white;
+            transition: background-color 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+        }
+        
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4px;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+        
         button {
-    background-color: yellow;
-}
+            flex: 1 0 auto;
+            min-width: 40px;
+            height: clamp(80px, 15vh, 150px);
+            margin: 0;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
+            border: none;
+            border-radius: 0 0 5px 5px;
+            background-color: white;
+            color: #222;
+            cursor: pointer;
+            transition: all 0.1s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .keyboard {
+                gap: 2px;
+            }
+            
+            button {
+                padding: 5px 2px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .keyboard {
+                max-height: 40vh;
+                overflow-y: auto;
+                padding: 5px;
+                gap: 5px;
+            }
+            
+            button {
+                min-width: 60px;
+                height: 60px;
+                margin-bottom: 5px;
+                flex: 0 0 calc(20% - 5px);
+            }
+        }
+        
+        button:active, button.active {
+            transform: translateY(5px);
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        
+        .visual-container {
+            width: 100%;
+            height: clamp(150px, 30vh, 300px);
+            position: relative;
+            background-color: #111;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: float 3s linear forwards;
+        }
+        
+        .instructions {
+            margin-top: 15px;
+            text-align: center;
+            opacity: 0.7;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            padding: 0 10px;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-300px) scale(0);
+                opacity: 0;
+            }
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .control-btn {
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: clamp(0.8rem, 2vw, 1rem);
+            transition: all 0.2s;
+        }
+        
+        .control-btn:hover {
+            background-color: #666;
+        }
+        
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+            justify-content: space-between;
+        }
     </style>
-    <title>Document</title>
 </head>
 <body>
+    <div class="app-container">
+        <header>
+            <h1>Musical Keyboard</h1>
+        </header>
+        
+        <main>
+            <div class="keyboard" id="keyboard"></div>
+            <div class="visual-container" id="visualContainer"></div>
+        </main>
+        
+        <footer>
+            <div class="controls">
+                <button class="control-btn" id="resetBtn">Reset</button>
+                <button class="control-btn" id="toggleModeBtn">Dark/Light Mode</button>
+            </div>
+            <div class="instructions">
+                Press keys a-z on your keyboard or tap the buttons to play notes
+            </div>
+        </footer>
+    </div>
     
-
     <script src="main.js"></script>
 </body>
 </html>
