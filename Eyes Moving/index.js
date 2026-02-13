@@ -13,7 +13,7 @@ document.addEventListener('mousemove', (e)=>{
 
    
 
-    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+    const angleDeg = eyeAngle(mouseX, mouseY, anchorX, anchorY);
 
     // console.log(angleDeg);
 
@@ -23,11 +23,12 @@ document.addEventListener('mousemove', (e)=>{
 
 })
 
-function angle(cx,cy,ex,ey) {
+function eyeAngle(cx,cy,ex,ey) {
     const dy = ey - cy;
     const dx = ex - cx;
     const rad = Math.atan2(dy, dx) // Range
     const deg = rad * 180 / Math.PI;
     return deg;
+
 
 }
