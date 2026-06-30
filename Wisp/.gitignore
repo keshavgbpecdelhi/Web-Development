@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/*.egg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test outputs (keep examples in docs/examples/)
+wisp-*.html
+wiki-*.html
+hn.html
+github.html
+wiki.css
+*.html.css
+
+# Build artifacts (keep dist/ minimal)
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db

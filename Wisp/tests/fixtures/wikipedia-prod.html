@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisp + Wikipedia (Production Test)</title>
+  <!-- Use minified Wisp -->
+  <link rel="stylesheet" href="../../dist/wisp.min.css">
+  <style>
+    /* Wikipedia-specific enhancements */
+    .infobox { 
+      float: right; 
+      margin: 0 0 var(--wisp-md) var(--wisp-md);
+      border: 1px solid var(--wisp-border);
+      padding: var(--wisp-sm);
+      max-width: 320px;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.02);
+    }
+    .infobox th { text-align: left; font-weight: 600; }
+    .wikitable { 
+      border-collapse: collapse; 
+      margin: var(--wisp-md) 0;
+      width: 100%;
+    }
+    .wikitable th { background: rgba(0,0,0,0.05); font-weight: 600; }
+    .wikitable th, .wikitable td { 
+      border: 1px solid var(--wisp-border); 
+      padding: var(--wisp-xs) var(--wisp-sm);
+    }
+    .thumb { margin: var(--wisp-md) 0; text-align: center; }
+    .thumbinner { 
+      display: inline-block; 
+      border: 1px solid var(--wisp-border);
+      padding: var(--wisp-sm);
+      background: var(--wisp-bg);
+    }
+    /* Ensure narrative mode looks great */
+    h1 { border-bottom: 2px solid var(--wisp-border); padding-bottom: var(--wisp-sm); }
+    h2 { border-bottom: 1px solid var(--wisp-border); padding-bottom: var(--wisp-xs); margin-top: var(--wisp-xl); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>Wiki</h1>
+        <p style="color: var(--wisp-muted); font-size: 0.9em;">From Wikipedia, the free encyclopedia</p>
+      </header>
+      
+      <aside class="infobox">
+        <table style="width: 100%;">
+          <tr><th colspan="2" style="text-align: center; font-size: 1.1em;">Wiki</th></tr>
+          <tr><td colspan="2" style="text-align: center;">Collaborative website</td></tr>
+          <tr><th>Created by</th><td>Ward Cunningham</td></tr>
+          <tr><th>First appeared</th><td>1994</td></tr>
+        </table>
+      </aside>
+      
+      <p>A <strong>wiki</strong> is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.</p>
+      
+      <p>Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined owner or leader, and wikis have little inherent structure, allowing structure to emerge according to the needs of the users.</p>
+      
+      <h2>Characteristics</h2>
+      <p>Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described wiki as "the simplest online database that could possibly work". "Wiki" (pronounced <em>wee-kee</em>) is a Hawaiian word meaning "quick".</p>
+      
+      <table class="wikitable">
+        <caption style="caption-side: top; font-weight: 600; margin-bottom: var(--wisp-xs);">Wiki characteristics</caption>
+        <thead>
+          <tr><th>Feature</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Collaborative editing</td><td>Multiple users can create and modify content</td></tr>
+          <tr><td>Version control</td><td>Complete history of all changes preserved</td></tr>
+          <tr><td>Linking</td><td>Easy creation of links between pages</td></tr>

@@ -1,0 +1,5 @@
+#!/bin/bash
+WISP_DIR="/Users/wot25kir/wisp"
+source "$WISP_DIR/venv/bin/activate"
+cd "$WISP_DIR"
+python -m src.core.fetcher "$@"

@@ -1,0 +1,371 @@
+stages:
+  - test
+  - build
+  - analyze
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+image: python:3.11-slim
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python --version
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
+
+test:
+  stage: test
+  script:
+    - python tests/test_scanner.py
+  artifacts:
+    paths:
+      - test-results.txt
+    expire_in: 1 week
+
+build:
+  stage: build
+  script:
+    - python scripts/build.py
+    - ls -lh dist/
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 month
+
+analyze:
+  stage: analyze
+  script:
+    # Create output structure
+    - mkdir -p public/analysis
+    - mkdir -p public/dist
+    - cp dist/* public/dist/
+    
+    # Generate HTML report
+    - |
+      cat > public/analysis/index.html << 'EOF'
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wisp Analysis Report</title>
+        <style>
+          :root {
+            --primary: #0066cc;
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666666;
+            --border: #e1e4e8;
+            --card-bg: #f6f8fa;
+            --code-bg: #f4f4f4;
+          }
+          @media (prefers-color-scheme: dark) {
+            :root {
+              --bg: #0d1117;
+              --text: #c9d1d9;
+              --muted: #8b949e;
+              --border: #30363d;
+              --card-bg: #161b22;
+              --code-bg: #21262d;
+            }
+          }
+          * { box-sizing: border-box; margin: 0; }
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+          }
+          h1 { border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-bottom: 20px; }
+          h2 { margin-top: 30px; color: var(--primary); }
+          h3 { margin-top: 20px; }
+          .meta { color: var(--muted); font-size: 0.9em; margin-bottom: 30px; }
+          .fixture {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+          }
+          .fixture h3 { margin-top: 0; }
+          .metric {
+            display: inline-block;
+            margin-right: 20px;
+            font-family: monospace;
+            background: var(--code-bg);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+          }
+          .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--primary);
+            text-decoration: none;
+          }
+          .back:hover { text-decoration: underline; }
+        </style>
+      </head>
+      <body>
+        <a href="/" class="back">← Back to Home</a>
+        <h1>🧪 Wisp Analysis Report</h1>
+        <div class="meta">
+          Generated: 
+      EOF
+      date -u '+%Y-%m-%d %H:%M:%S UTC' >> public/analysis/index.html
+      cat >> public/analysis/index.html << 'EOF'
+          <br>Pipeline: 
+      EOF
+      echo "$CI_PIPELINE_ID" >> public/analysis/index.html
+      cat >> public/analysis/index.html << 'EOF'
+        </div>
+        
+        <h2>Test Fixtures Analysis</h2>
+        <div id="fixtures">
+      EOF
+      
+      # Analyze each fixture
+      for fixture in tests/fixtures/*.html; do
+        name=$(basename "$fixture")
+        echo "<div class=\"fixture\"><h3>📄 $name</h3>" >> public/analysis/index.html
+        
+        python3 << EOF >> public/analysis/index.html
+      import sys
+      sys.path.insert(0, '.')
+      from src.core.scanner import WispScanner
+      
+      with open('$fixture') as f:
+          scanner = WispScanner(f.read())
+          a = scanner.analyze()
+      
+      print(f'<div class="metric"><strong>Context:</strong> {a.context}</div>')
+      print(f'<div class="metric"><strong>Pattern:</strong> {a.pattern}</div>')
+      print(f'<div class="metric"><strong>Density:</strong> {a.density:.4f}</div>')
+      print(f'<div class="metric"><strong>Depth:</strong> {a.depth}</div>')
+      print('</div>')
+      EOF
+      done
+      
+      # Close fixtures div and add live URL section
+      cat >> public/analysis/index.html << 'EOF'
+        </div>
+        
+        <h2>🌐 Live URL Tests</h2>
+        <div class="fixture">
+          <h3>Wikipedia - Wiki</h3>
+      EOF
+      
+      python -m src.core.fetcher https://en.wikipedia.org/wiki/Wiki --css-only -o public/analysis/wiki.css 2>&1 | tee -a public/analysis/index.html || true
+      
+      cat >> public/analysis/index.html << 'EOF'
+        </div>
+        
+        <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9em;">
+          Generated by GitLab CI
+        </footer>
+      </body>
+      </html>
+      EOF
+    
+    # Generate dashboard
+    - python scripts/generate_dashboard.py
+    
+    # Create main index.html
+    - |
+      cat > public/index.html << 'EOF'
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wisp - Context-Aware UI Engine</title>
+        <style>
+          :root {
+            --primary: #0066cc;
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --muted: #666666;
+            --border: #e1e4e8;
+            --card-bg: #f6f8fa;
+          }
+          @media (prefers-color-scheme: dark) {
+            :root {
+              --bg: #0d1117;
+              --text: #c9d1d9;
+              --muted: #8b949e;
+              --border: #30363d;
+              --card-bg: #161b22;
+            }
+          }
+          * { box-sizing: border-box; margin: 0; }
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+          }
+          header { text-align: center; margin-bottom: 40px; }
+          h1 { font-size: 3em; margin-bottom: 10px; letter-spacing: -1px; }
+          .subtitle { color: var(--muted); font-size: 1.2em; }
+          .badges { margin: 20px 0; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+          .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+          }
+          .badge.secondary { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+          .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+          .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+          }
+          .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+          .card h3 { margin-bottom: 10px; color: var(--primary); }
+          .card p { color: var(--muted); font-size: 0.95em; }
+          .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: opacity 0.2s;
+          }
+          .button:hover { opacity: 0.9; }
+          .metric {
+            display: inline-block;
+            margin: 10px 20px 10px 0;
+            text-align: center;
+          }
+          .metric-value { font-size: 2em; font-weight: bold; color: var(--primary); }
+          .metric-label { font-size: 0.8em; color: var(--muted); text-transform: uppercase; }
+          footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9em;
+          }
+          a { color: var(--primary); }
+          .info-box {
+            background: var(--card-bg);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+          }
+        </style>
+      </head>
+      <body>
+        <header>
+          <h1>🌬️ Wisp</h1>
+          <p class="subtitle">Context-Aware, Zero-Dependency UI Engine</p>
+          <div class="badges">
+            <span class="badge">~5KB Total</span>
+            <span class="badge secondary">Zero Config</span>
+            <span class="badge secondary">Semantic HTML</span>
+          </div>
+        </header>
+        
+        <div class="info-box">
+          <strong>Live Analysis Dashboard</strong><br>
+          View real-time content analysis, benchmarks, and framework comparisons.
+        </div>
+        
+        <div class="grid">
+          <div class="card">
+            <h3>📊 Interactive Dashboard</h3>
+            <p>Visual analysis of content density, context detection, and performance metrics.</p>
+            <a href="dashboard.html" class="button">View Dashboard</a>
+          </div>
+          
+          <div class="card">
+            <h3>📝 Analysis Report</h3>
+            <p>Detailed HTML report with fixture analysis and live URL tests.</p>
+            <a href="analysis/" class="button">View Report</a>
+          </div>
+          
+          <div class="card">
+            <h3>📦 Download</h3>
+            <p>Get the latest minified CSS and JS files for your project.</p>
+            <a href="dist/wisp.min.css" class="button" style="margin-right: 10px;">CSS</a>
+            <a href="dist/wisp.min.js" class="button">JS</a>
+          </div>
+          
+          <div class="card">
+            <h3>🔬 Test Fixtures</h3>
+            <p>See Wisp in action with Wikipedia, blogs, and dashboard examples.</p>
+            <a href="analysis/" class="button">Browse Fixtures</a>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin: 40px 0;">
+          <h2>Performance Metrics</h2>
+          <div style="margin-top: 20px;">
+            <div class="metric">
+              <div class="metric-value">&lt;1ms</div>
+              <div class="metric-label">Analysis</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">~5KB</div>
+              <div class="metric-label">Total Size</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">4</div>
+              <div class="metric-label">Contexts</div>
+            </div>
+          </div>
+        </div>
+        
+        <footer>
+          <p>Generated by GitLab CI • <a href="https://gitlab.com/rotsl/wisp">View on GitLab</a></p>
+          <p style="margin-top: 10px;">Made with 💙 by Rohan R.</p>
+        </footer>
+      </body>
+      </html>
+      EOF
+  artifacts:
+    paths:
+      - public/
+    expire_in: 1 month
+  only:
+    - main
+    - merge_requests
+
+pages:
+  stage: deploy
+  dependencies:
+    - analyze
+  script:
+    - echo "Deploying to GitLab Pages..."
+    - ls -la public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

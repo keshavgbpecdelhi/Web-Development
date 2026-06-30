@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wisp Wikipedia Test</title>
+  <link rel="stylesheet" href="../../dist/wisp.css">
+  <style>
+    /* Wikipedia structure simulation */
+    .infobox { 
+      float: right; 
+      margin: 0 0 var(--wisp-md) var(--wisp-md);
+      border: 1px solid var(--wisp-border);
+      padding: var(--wisp-sm);
+      width: 300px;
+      font-size: 0.9em;
+    }
+    table.wikitable { 
+      border-collapse: collapse; 
+      margin: var(--wisp-md) 0;
+      width: 100%;
+    }
+    .wikitable th, .wikitable td { 
+      border: 1px solid var(--wisp-border); 
+      padding: var(--wisp-xs) var(--wisp-sm);
+    }
+    .thumb { margin: var(--wisp-md) 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Wiki</h1>
+    <p>From Wikipedia, the free encyclopedia</p>
+    
+    <div class="infobox">
+      <table>
+        <tr><th>Wiki</th></tr>
+        <tr><td>Quick facts</td></tr>
+      </table>
+    </div>
+    
+    <p>A <strong>wiki</strong> is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.</p>
+    
+    <p>Wikis are enabled by wiki software, otherwise known as wiki engines. A wiki engine, being a form of a content management system, differs from other web-based systems such as blog software, in that the content is created without any defined owner or leader, and wikis have little inherent structure, allowing structure to emerge according to the needs of the users.</p>
+    
+    <h2>Characteristics</h2>
+    <p>Ward Cunningham, the developer of the first wiki software, WikiWikiWeb, originally described wiki as "the simplest online database that could possibly work". "Wiki" (pronounced [wiki]) is a Hawaiian word meaning "quick".</p>
+    
+    <table class="wikitable">
+      <tr><th>Feature</th><th>Description</th></tr>
+      <tr><td>Collaborative</td><td>Anyone can edit</td></tr>
+      <tr><td>Version control</td><td>History tracked</td></tr>
+    </table>
+    
+    <h2>History</h2>
+    <p>WikiWikiWeb was the first wiki. Ward Cunningham started developing WikiWikiWeb in Portland, Oregon, in 1994, and installed it on the Internet domain c2.com on March 25, 1995.</p>
+    
+    <h2>See also</h2>
+    <ul>
+      <li>Content management system</li>
+      <li>Knowledge base</li>
+      <li>Collaborative software</li>
+    </ul>
+  </main>
+  
+  <script src="../../dist/wisp.js"></script>
+  <script>
+    // Show analysis overlay
+    setTimeout(() => {
+      const a = Wisp.scan();
+      const div = document.createElement('div');
+      div.style.cssText = 'position:fixed;top:10px;right:10px;background:var(--wisp-accent);color:white;padding:12px;border-radius:4px;font-size:13px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);';
+      div.innerHTML = `
+        <strong>🌬️ Wisp Analysis</strong><br>
+        Context: ${a.context}<br>
+        Pattern: ${a.pattern}<br>
+        Density: ${a.density.toFixed(3)}
+      `;
+      document.body.appendChild(div);
+      console.log('Wisp Analysis:', a);
+    }, 100);
+  </script>
+</body>
+</html>

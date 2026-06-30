@@ -1,0 +1,430 @@
+name: Wisp Analysis & Reporting
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * 0'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Build Wisp
+      run: python scripts/build.py
+    
+    - name: Run tests
+      run: python tests/test_scanner.py
+    
+    - name: Generate analysis reports
+      run: |
+        # Create output directory structure
+        mkdir -p _site/analysis
+        mkdir -p _site/dist
+        
+        # Copy built files
+        cp dist/* _site/dist/
+        
+        # Generate HTML report instead of markdown
+        cat > _site/analysis/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Wisp Analysis Report</title>
+          <style>
+            :root {
+              --primary: #0066cc;
+              --bg: #ffffff;
+              --text: #1a1a1a;
+              --muted: #666666;
+              --border: #e1e4e8;
+              --card-bg: #f6f8fa;
+              --code-bg: #f4f4f4;
+            }
+            @media (prefers-color-scheme: dark) {
+              :root {
+                --bg: #0d1117;
+                --text: #c9d1d9;
+                --muted: #8b949e;
+                --border: #30363d;
+                --card-bg: #161b22;
+                --code-bg: #21262d;
+              }
+            }
+            * { box-sizing: border-box; margin: 0; }
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+              background: var(--bg);
+              color: var(--text);
+              line-height: 1.6;
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 40px 20px;
+            }
+            h1 { border-bottom: 2px solid var(--border); padding-bottom: 10px; margin-bottom: 20px; }
+            h2 { margin-top: 30px; color: var(--primary); }
+            h3 { margin-top: 20px; }
+            .meta { color: var(--muted); font-size: 0.9em; margin-bottom: 30px; }
+            .fixture {
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-radius: 8px;
+              padding: 20px;
+              margin: 15px 0;
+            }
+            .fixture h3 { margin-top: 0; }
+            .metric {
+              display: inline-block;
+              margin-right: 20px;
+              font-family: monospace;
+              background: var(--code-bg);
+              padding: 4px 8px;
+              border-radius: 4px;
+              font-size: 0.9em;
+            }
+            .back {
+              display: inline-block;
+              margin-bottom: 20px;
+              color: var(--primary);
+              text-decoration: none;
+            }
+            .back:hover { text-decoration: underline; }
+            pre {
+              background: var(--code-bg);
+              padding: 15px;
+              border-radius: 6px;
+              overflow-x: auto;
+              font-size: 0.9em;
+            }
+            code {
+              font-family: 'Monaco', 'Consolas', monospace;
+              font-size: 0.9em;
+            }
+          </style>
+        </head>
+        <body>
+          <a href="/wisp/" class="back">← Back to Home</a>
+          <h1>🧪 Wisp Analysis Report</h1>
+          <div class="meta">
+            Generated: 
+        EOF
+        echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> _site/analysis/index.html
+        cat >> _site/analysis/index.html << 'EOF'
+          </div>
+          
+          <h2>Test Fixtures Analysis</h2>
+          <div id="fixtures">
+        EOF
+        
+        # Analyze each fixture and append to HTML
+        for fixture in tests/fixtures/*.html; do
+          name=$(basename "$fixture")
+          echo "<div class=\"fixture\"><h3>📄 $name</h3>" >> _site/analysis/index.html
+          
+          python3 << EOF >> _site/analysis/index.html
+        import sys
+        sys.path.insert(0, '.')
+        from src.core.scanner import WispScanner
+        
+        with open('$fixture') as f:
+            scanner = WispScanner(f.read())
+            a = scanner.analyze()
+        
+        print(f'<div class="metric"><strong>Context:</strong> {a.context}</div>')
+        print(f'<div class="metric"><strong>Pattern:</strong> {a.pattern}</div>')
+        print(f'<div class="metric"><strong>Density:</strong> {a.density:.4f}</div>')
+        print(f'<div class="metric"><strong>Depth:</strong> {a.depth}</div>')
+        print('</div>')
+        EOF
+        done
+        
+        # Add live URL section
+        cat >> _site/analysis/index.html << 'EOF'
+          </div>
+          
+          <h2>🌐 Live URL Tests</h2>
+          <div class="fixture">
+            <h3>Wikipedia - Wiki</h3>
+            <p>Testing on real-world content from en.wikipedia.org</p>
+        EOF
+        
+        python -m src.core.fetcher https://en.wikipedia.org/wiki/Wiki --css-only -o _site/analysis/wiki.css 2>&1 | tee -a _site/analysis/index.html || true
+        
+        cat >> _site/analysis/index.html << 'EOF'
+          </div>
+          
+          <h2>📊 Generated CSS</h2>
+          <p>Download the generated CSS files:</p>
+          <ul>
+            <li><a href="wiki.css">wiki.css</a> - Wikipedia optimized styles</li>
+          </ul>
+          
+          <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9em;">
+            Generated by GitHub Actions
+          </footer>
+        </body>
+        </html>
+        EOF
+    
+    - name: Generate dashboard
+      run: |
+        python scripts/generate_dashboard.py
+        cp public/dashboard.html _site/dashboard.html
+        
+        # Create proper index.html for GitHub Pages
+        cat > _site/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Wisp - Context-Aware UI Engine</title>
+          <style>
+            :root {
+              --primary: #0066cc;
+              --bg: #ffffff;
+              --text: #1a1a1a;
+              --muted: #666666;
+              --border: #e1e4e8;
+              --card-bg: #f6f8fa;
+            }
+            @media (prefers-color-scheme: dark) {
+              :root {
+                --bg: #0d1117;
+                --text: #c9d1d9;
+                --muted: #8b949e;
+                --border: #30363d;
+                --card-bg: #161b22;
+              }
+            }
+            * { box-sizing: border-box; margin: 0; }
+            body {
+              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+              background: var(--bg);
+              color: var(--text);
+              line-height: 1.6;
+              max-width: 900px;
+              margin: 0 auto;
+              padding: 40px 20px;
+            }
+            header { text-align: center; margin-bottom: 40px; }
+            h1 { font-size: 3em; margin-bottom: 10px; letter-spacing: -1px; }
+            .subtitle { color: var(--muted); font-size: 1.2em; }
+            .badges { margin: 20px 0; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+            .badge {
+              display: inline-block;
+              padding: 6px 12px;
+              border-radius: 20px;
+              font-size: 0.85em;
+              font-weight: 500;
+              background: var(--primary);
+              color: white;
+              text-decoration: none;
+            }
+            .badge.secondary { background: var(--card-bg); color: var(--text); border: 1px solid var(--border); }
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+            .card {
+              background: var(--card-bg);
+              border: 1px solid var(--border);
+              border-radius: 8px;
+              padding: 24px;
+              transition: transform 0.2s, box-shadow 0.2s;
+            }
+            .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+            .card h3 { margin-bottom: 10px; color: var(--primary); }
+            .card p { color: var(--muted); font-size: 0.95em; }
+            .button {
+              display: inline-block;
+              padding: 12px 24px;
+              background: var(--primary);
+              color: white;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: 500;
+              margin-top: 10px;
+              transition: opacity 0.2s;
+            }
+            .button:hover { opacity: 0.9; }
+            .metric {
+              display: inline-block;
+              margin: 10px 20px 10px 0;
+              text-align: center;
+            }
+            .metric-value { font-size: 2em; font-weight: bold; color: var(--primary); }
+            .metric-label { font-size: 0.8em; color: var(--muted); text-transform: uppercase; }
+            footer {
+              margin-top: 60px;
+              padding-top: 20px;
+              border-top: 1px solid var(--border);
+              text-align: center;
+              color: var(--muted);
+              font-size: 0.9em;
+            }
+            a { color: var(--primary); }
+            .info-box {
+              background: var(--card-bg);
+              border-left: 4px solid var(--primary);
+              padding: 16px 20px;
+              margin: 20px 0;
+              border-radius: 0 8px 8px 0;
+            }
+          </style>
+        </head>
+        <body>
+          <header>
+            <h1>🌬️ Wisp</h1>
+            <p class="subtitle">Context-Aware, Zero-Dependency UI Engine</p>
+            <div class="badges">
+              <span class="badge">~5KB Total</span>
+              <span class="badge secondary">Zero Config</span>
+              <span class="badge secondary">Semantic HTML</span>
+            </div>
+          </header>
+          
+          <div class="info-box">
+            <strong>Live Analysis Dashboard</strong><br>
+            View real-time content analysis, benchmarks, and framework comparisons.
+          </div>
+          
+          <div class="grid">
+            <div class="card">
+              <h3>📊 Interactive Dashboard</h3>
+              <p>Visual analysis of content density, context detection, and performance metrics.</p>
+              <a href="dashboard.html" class="button">View Dashboard</a>
+            </div>
+            
+            <div class="card">
+              <h3>📝 Analysis Report</h3>
+              <p>Detailed HTML report with fixture analysis and live URL tests.</p>
+              <a href="analysis/" class="button">View Report</a>
+            </div>
+            
+            <div class="card">
+              <h3>📦 Download</h3>
+              <p>Get the latest minified CSS and JS files for your project.</p>
+              <a href="dist/wisp.min.css" class="button" style="margin-right: 10px;">CSS</a>
+              <a href="dist/wisp.min.js" class="button">JS</a>
+            </div>
+            
+            <div class="card">
+              <h3>🔬 Test Fixtures</h3>
+              <p>See Wisp in action with Wikipedia, blogs, and dashboard examples.</p>
+              <a href="analysis/" class="button">Browse Fixtures</a>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin: 40px 0;">
+            <h2>Performance Metrics</h2>
+            <div style="margin-top: 20px;">
+              <div class="metric">
+                <div class="metric-value">&lt;1ms</div>
+                <div class="metric-label">Analysis</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">~5KB</div>
+                <div class="metric-label">Total Size</div>
+              </div>
+              <div class="metric">
+                <div class="metric-value">4</div>
+                <div class="metric-label">Contexts</div>
+              </div>
+            </div>
+          </div>
+          
+          <footer>
+            <p>Generated by GitHub Actions • <a href="https://github.com/rotsl/wisp">View on GitHub</a></p>
+            <p style="margin-top: 10px;">Made with 💙 by Rohan R.</p>
+          </footer>
+        </body>
+        </html>
+        EOF
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: github-pages
+        path: _site/
+    
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: gh-pages
+        force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: "deploy: update GitHub Pages [skip ci]"
+
+  benchmark:
+    runs-on: ubuntu-latest
+    needs: analyze
+    if: github.event_name != 'schedule'
+    
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - run: pip install -r requirements.txt
+    - run: |
+        python3 -c "
+        import time, json, sys
+        sys.path.insert(0, '.')
+        from src.core.scanner import WispScanner
+        with open('tests/fixtures/blog-post.html') as f:
+            content = f.read()
+        results = {}
+        start = time.perf_counter()
+        for _ in range(100):
+            WispScanner(content).analyze()
+        results['analysis_100x'] = (time.perf_counter() - start) * 1000
+        print(json.dumps(results))
+        " > benchmark.json
+    - uses: actions/upload-artifact@v4
+      with:
+        name: benchmark-results
+        path: benchmark.json
+    - if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const b = JSON.parse(fs.readFileSync('benchmark.json', 'utf8'));
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `## ⚡ Benchmark\nAnalysis (100x): ${b.analysis_100x.toFixed(2)}ms`
+          });
