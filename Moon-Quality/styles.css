@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Hide all images by default */
+}
+
+#img-144p {
+    display: block; /* Show the 144p image by default */
+}
+
+.img-container select {
+    margin-top: 20px;
+}
