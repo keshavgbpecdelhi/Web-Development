@@ -76,6 +76,7 @@ Web Development Demo Pages collection<br><br>
 | Review Cards | [Code](https://github.com/31Sanskrati/keshavgbpecdelhi/tree/master/Review%20Cards) | [Demo](https://codepen.io/Sanskrati01/pen/yLbxboO) |
 | Sorting Visualizer | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Sorting_Visualizer) | [Demo](https://sortingvisualizera.netlify.app/) |
 | Age Calculator | [Code](https://github.com/DevanshMudgal/Web-Development/tree/master/AgeCalculator) | [Demo](https://demo.100jsprojects.com/age-calculator) |
+| Weather AI |[code] https://github.com/Avani24-byte/Web-Development/tree/master/Weather_AI | [Demo]Not Available |
 
 ## :handshake: Our Contributors
 
