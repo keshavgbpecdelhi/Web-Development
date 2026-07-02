@@ -77,6 +77,7 @@ Web Development Demo Pages collection<br><br>
 | Sorting Visualizer | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/Sorting_Visualizer) | [Demo](https://sortingvisualizera.netlify.app/) |
 | Age Calculator | [Code](https://github.com/DevanshMudgal/Web-Development/tree/master/AgeCalculator) | [Demo](https://demo.100jsprojects.com/age-calculator) |
 | Landing Page for Bank Site | [Code](https://github.com/Dev-Sambhav/OIBSIP/tree/master/Landing%20Page) | [Demo](https://landingpageview.netlify.app/) |
+| Wisp | Context-aware, zero-dependency UI engine that analyzes HTML structure and automatically applies adaptive styling. | [Code](https://github.com/rotsl/wisp) | [Demo](https://rotsl.github.io/wisp/) |
 
 ## :handshake: Our Contributors
 
