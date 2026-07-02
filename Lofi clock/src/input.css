@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: DanceB;
+  src: url(../Fonts/DancingScript-Bold.ttf);
+}
+@font-face {
+  font-family: Dance;
+  src: url(../Fonts/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: heart;
+  src: url(../Fonts/AlwaysInMyHeart.ttf);
+}
+* {
+  font-family: DanceB;
+}
+
+.dropdown {
+  position: fixed;
+  left: 0.6%;
+  top: 10%;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+
+  backdrop-filter: blur(10px);
+  min-width: 120px;
+
+  z-index: 1;
+  height: 0px;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.dropdown-content a {
+  font-size: medium;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  height: 200px;
+  
+}
+.onof{
+  background-color: #FFE6A7;
+  transition: background-color 1s ease;
+}
