@@ -10,7 +10,7 @@
   "author": "Jigar Sable",
   "license": "ISC",
   "dependencies": {
-    "tailwindcss": "^2.2.7",
+    "tailwindcss": "^4.3.2",
     "win-node-env": "^0.4.0"
   },
   "devDependencies": {
