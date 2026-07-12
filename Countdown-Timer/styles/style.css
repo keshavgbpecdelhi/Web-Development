@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --blue: #0995fa;
+  --red: #f0310b;
+  --yellow: #f6e608;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  width: 768px;
+  margin: 0 auto;
+  /* outline: 1px solid white; */
+}
+
+/* BUTTONS */
+button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* TIMER SECTION */
+.timer-section {
+  margin-bottom: 3rem;
+}
+
+/* TIMER */
+.timer-display {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.timer-display .separator {
+  margin: 0 0.5rem;
+}
+
+.timer-display .time-unit {
+  font-size: 3rem;
+}
+
+/* TIMER CONTROLS */
+.timer-ctrls {
+  width: 50%;
+  margin: 0 auto 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.timer-ctrls .btn {
+  width: 4.3rem;
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: 0.15s all;
+}
+
+.timer-ctrls .btn:active {
+  transform: scale(0.94);
+}
+
+.timer-ctrls .timer-start {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.timer-ctrls .timer-start:hover {
+  color: #000;
+  background-color: var(--blue);
+}
+
+.timer-ctrls .timer-stop {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.timer-ctrls .timer-stop:hover {
+  color: #fff;
+  background-color: var(--red);
+}
+
+.timer-ctrls .timer-pause {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.timer-ctrls .timer-pause:hover {
+  color: #000;
+  background-color: var(--yellow);
+}
+
+.timer-ctrls .btn.disabled,
+.timer-ctrls .btn.disabled:hover,
+.timer-ctrls .btn.disabled:active {
+  border: 1px solid #555;
+  background-color: #222;
+  color: #555;
+  transform: none;
+}
+
+/* TIMER VALUE INPUT */
+.timer-value-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-value-input > div:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.timer-value-input input[type="range"] {
+  display: block;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  /* TIMER CONTROLS */
+  .timer-ctrls {
+    width: 70%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* TIMER DISPLAY */
+  .timer-display {
+    font-size: 3rem;
+  }
+
+  .timer-display .separator {
+    margin: 0 2px;
+  }
+
+  .timer-display .time-unit {
+    font-size: 2rem;
+  }
+
+  /* TIMER CONTROLS */
+  .timer-ctrls .btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* TIMER VALUE INPUT */
+  .timer-value-input {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .timer-value-input > div:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .timer-value-input > div {
+    width: 100%;
+  }
+
+  .timer-value-input input[type="range"] {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  /* TIMER DISPLAY */
+  .timer-display {
+    font-size: 3.5rem;
+  }
+
+  /* TIMER CONTROLS */
+  .timer-ctrls {
+    width: 90%;
+  }
+}
