@@ -1,50 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Calculator</title>
+    <title>Glassmorphism Calculator</title>
 </head>
 <body>
     <div class="container">
-        <div class="calculator">
-            <div class="display-screen">
-                <div id="display"></div>
+        <div class="calculator-card">
+            <!-- Theme Toggle and Title Header -->
+            <div class="header">
+                <span class="logo">Calculator</span>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
             </div>
-            <div class="buttons">
-                <table>
-                    <tr>
-                        <td><button class="btn-operator" id="clear">C</button></td>
-                        <td><button class="btn-operator" id="/">&divide;</button></td>
-                        <td><button class="btn-operator" id="*">&times;</button></td>
-                        <td><button class="btn-operator" id="backspace"></button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="7">7</button></td>
-                        <td><button class="btn-number" id="8">8</button></td>
-                        <td><button class="btn-number" id="9">9</button></td>
-                        <td><button class="btn-operator" id="-">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="4">4</button></td>
-                        <td><button class="btn-number" id="5">5</button></td>
-                        <td><button class="btn-number" id="6">6</button></td>
-                        <td><button class="btn-operator" id="+">+</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-number" id="1">1</button></td>
-                        <td><button class="btn-number" id="2">2</button></td>
-                        <td><button class="btn-number" id="3">3</button></td>
-                        <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn-operator" id="(">(</button></td>
-                        <td><button class="btn-number" id="0">0</button></td>
-                        <td><button class="btn-operator" id=")">)</button></td>
-                    </tr>
-                </table>
+
+            <!-- Display Screen -->
+            <div class="display-screen">
+                <div class="history-display" id="history"></div>
+                <div class="main-display" id="display">0</div>
+            </div>
+
+            <!-- Buttons Grid Layout -->
+            <div class="buttons-grid">
+                <button class="btn btn-operator btn-clear" id="clear">C</button>
+                <button class="btn btn-operator" id="(">(</button>
+                <button class="btn btn-operator" id=")">)</button>
+                <button class="btn btn-operator btn-math" id="/">&divide;</button>
+
+                <button class="btn btn-number" id="7">7</button>
+                <button class="btn btn-number" id="8">8</button>
+                <button class="btn btn-number" id="9">9</button>
+                <button class="btn btn-operator btn-math" id="*">&times;</button>
+
+                <button class="btn btn-number" id="4">4</button>
+                <button class="btn btn-number" id="5">5</button>
+                <button class="btn btn-number" id="6">6</button>
+                <button class="btn btn-operator btn-math" id="-">&minus;</button>
+
+                <button class="btn btn-number" id="1">1</button>
+                <button class="btn btn-number" id="2">2</button>
+                <button class="btn btn-number" id="3">3</button>
+                <button class="btn btn-operator btn-math" id="+">+</button>
+
+                <button class="btn btn-number" id="0">0</button>
+                <button class="btn btn-number" id=".">.</button>
+                <button class="btn btn-operator btn-backspace" id="backspace" aria-label="Backspace">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+                        <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+                        <line x1="18" y1="9" x2="12" y2="15"></line>
+                        <line x1="12" y1="9" x2="18" y2="15"></line>
+                    </svg>
+                </button>
+                <button class="btn btn-equal" id="equal">=</button>
             </div>
         </div>
     </div>
