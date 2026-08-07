@@ -16,10 +16,13 @@ mainNav.querySelectorAll('a').forEach((link) => {
 });
 
 const contactForm = document.getElementById('contact-form');
-const formNote = document.getElementById('form-note');
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formNote.textContent = "Thanks — we've received your details and will get back to you shortly.";
-  contactForm.reset();
-});
+if (contactForm) {
+  const formNote = document.getElementById('form-note');
+
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    formNote.textContent = "Thanks — we've received your details and will get back to you shortly.";
+    contactForm.reset();
+  });
+}

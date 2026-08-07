@@ -133,6 +133,22 @@ ul, ol {
   text-align: center;
 }
 
+.btn-outline-dark {
+  background: transparent;
+  border-color: var(--brick);
+  color: var(--brick);
+}
+
+.btn-outline-dark:hover {
+  background: var(--brick);
+  color: var(--white);
+}
+
+.section-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -174,6 +190,10 @@ ul, ol {
 }
 
 .main-nav a:hover {
+  color: var(--brick);
+}
+
+.main-nav a.active {
   color: var(--brick);
 }
 
@@ -268,6 +288,44 @@ ul, ol {
   letter-spacing: 0.05em;
 }
 
+/* Inner-page hero */
+.page-hero {
+  background: linear-gradient(160deg, var(--charcoal) 0%, #3a2c22 60%, var(--brick-dark) 100%);
+  color: var(--white);
+  padding: 70px 0 60px;
+  text-align: center;
+}
+
+.page-hero .eyebrow {
+  color: #e8b79c;
+}
+
+.page-hero h1 {
+  color: var(--white);
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+}
+
+.page-hero-sub {
+  max-width: 640px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* CTA banner */
+.cta-banner {
+  background: var(--cream);
+  padding: 70px 0;
+  text-align: center;
+}
+
+.cta-banner-inner {
+  max-width: 560px;
+}
+
+.cta-banner p {
+  color: var(--gray);
+}
+
 /* Problem section */
 .problem {
   background: var(--cream);
@@ -317,6 +375,43 @@ ul, ol {
   color: var(--gray);
   font-size: 0.95rem;
   margin: 0;
+}
+
+/* Services detail (services.html) */
+.services-detail {
+  padding: 80px 0;
+}
+
+.service-detail {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(36, 33, 31, 0.1);
+}
+
+.service-detail:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.service-detail h2 {
+  color: var(--brick);
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 1.6em;
+  margin-bottom: 0.5em;
+  color: var(--gray);
+}
+
+.check-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--vriksh-green);
+  font-weight: 700;
 }
 
 /* Why us */
@@ -521,6 +616,7 @@ ul, ol {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   padding: 0.7em 0.9em;
@@ -529,9 +625,12 @@ ul, ol {
   font-family: var(--font-body);
   font-size: 0.95rem;
   resize: vertical;
+  background: var(--white);
+  color: var(--charcoal);
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--brick);
