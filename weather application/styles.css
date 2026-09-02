@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: 850px;
+    margin: 0;
+    background: url(images/nat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-style: bold;
+  }
+  
+  .weather-container {
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    height: 800px;
+  }
+  
+  input[type="text"] {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    /* background-color: #2E6E6D; */
+    background-color: #0fa014;
+    border-radius: 15px;
+    color: white;
+    border: #2e6e6d;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  #playPauseButton{
+    position: absolute;
+    left: 3%;
+    top: 1%;
+    border-radius: 200px;
+    /* padding: 5px 10px; */
+    background-color:#2e6e6d ;
+    color: white;
+    border: #2e6e6d;
+    size: 1px;
+  }
+  #weatherInfo {
+    margin-top: 20px;
+    padding: 20px;
+    font-style: bold;
+    font-weight: bold;
+  }
+  .footer {
+    position: absolute;
+    text-align: center;
+    bottom: -1%;
+  }
+  .footer a {
+    text-decoration: underline;
+    color: white;
+  }
+  
