@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast</title>
+    <link rel="icon" href="images/images.jpg">
+    <script src="https://kit.fontawesome.com/197a31d41e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="playPauseButton"> </button>
+    <div class="weather-container">
+        <h3 id="date"></h3>
+        <h1>SkyCast - Weather Application</h1>
+        <label for="locationInput"><b>Please Enter the Location :</b></label>
+        <input type="text" id="locationInput" name="locationInput" placeholder="Enter City Name"> <br>
+        <button class="btn" onclick="getWeather()"><i class="fa-solid fa-cloud"></i> Get Weather</button>
+        <button class="btn" onclick="currentLocationweather()"><i class="fa-solid fa-location-crosshairs fa-lg"></i>
+            Current-Location</button>
+        <div id="weatherInfo"></div>
+        <p id="quote"></p>
+        <p class="footer">Made by : <a href="https://linktr.ee/SaiShankarPunna" target="_blank"><i>Sai Shankar</i></a>
+        </p>
+
+        <audio id="backgroundAudio" autoplay loop>
+            <source src="audio/relaxing-rain-8228.mp3" type="audio/mp3">
+            <source src="audio/relaxing-rain-8228.mp3" type="audio/mp3">
+        </audio>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
