@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Typing Speed Test</title>
+  <meta name="description" content="A small typing speed test built with HTML, CSS and vanilla JavaScript. Measures words per minute and accuracy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Typing Speed Test</h1>
+      <p>Start typing and the timer begins.</p>
+    </header>
+
+    <div class="lengths" role="group" aria-label="Test length">
+      <button type="button" class="length" data-seconds="15" aria-pressed="false">15 s</button>
+      <button type="button" class="length" data-seconds="30" aria-pressed="true">30 s</button>
+      <button type="button" class="length" data-seconds="60" aria-pressed="false">60 s</button>
+    </div>
+
+    <section class="keys" aria-label="Live stats">
+      <div class="key"><span class="key-value" id="time">30</span><span class="key-label">seconds left</span></div>
+      <div class="key"><span class="key-value" id="wpm">0</span><span class="key-label">words per minute</span></div>
+      <div class="key"><span class="key-value" id="accuracy">100%</span><span class="key-label">accuracy</span></div>
+      <div class="key"><span class="key-value" id="best">0</span><span class="key-label">your best</span></div>
+    </section>
+
+    <section class="stage" id="stage">
+      <div class="passage" id="passage" aria-hidden="true"></div>
+      <label class="sr-only" for="input">Type the passage shown above</label>
+      <input id="input" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+    </section>
+
+    <div class="actions">
+      <button type="button" class="restart" id="restart">Restart</button>
+      <span class="hint">Press Esc at any time to restart with new words.</span>
+    </div>
+
+    <section class="result" id="result" hidden aria-live="polite">
+      <h2 id="result-title">Time's up</h2>
+      <dl>
+        <div><dt>Speed</dt><dd id="r-wpm">0 WPM</dd></div>
+        <div><dt>Accuracy</dt><dd id="r-acc">100%</dd></div>
+        <div><dt>Correct characters</dt><dd id="r-chars">0</dd></div>
+        <div><dt>Mistakes</dt><dd id="r-miss">0</dd></div>
+      </dl>
+      <button type="button" class="again" id="again">Try again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

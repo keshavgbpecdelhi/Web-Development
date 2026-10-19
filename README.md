@@ -82,6 +82,7 @@ The list of active maintainers is available in [MAINTAINERS.md](./MAINTAINERS.md
 | Age Calculator | [Code](https://github.com/DevanshMudgal/Web-Development/tree/master/AgeCalculator) | [Demo](https://demo.100jsprojects.com/age-calculator) |
 | Landing Page for Bank Site | [Code](https://github.com/Dev-Sambhav/OIBSIP/tree/master/Landing%20Page) | [Demo](https://landingpageview.netlify.app/) |
 | Wisp | Context-aware, zero-dependency UI engine that analyzes HTML structure and automatically applies adaptive styling. | [Code](https://github.com/rotsl/wisp) | [Demo](https://rotsl.github.io/wisp/) |
+| Typing Speed Test | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/projects/Typing-Speed-Test) | [Demo](https://keshavgbpecdelhi.github.io/Web-Development/projects/Typing-Speed-Test/) |
 
 ## :handshake: Our Contributors
 
