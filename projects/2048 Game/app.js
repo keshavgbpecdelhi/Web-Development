@@ -1,19 +1,11 @@
 const board = [
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0],
-        [0, 0, 0, 0]
-    ]
-    // const board = [
-    //     [0, 2, 4, 8],
-    //     [16, 32, 64, 128],
-    //     [256, 512, 1024, 0],
-    //     [0, 0, 0, 0]
-    // ]
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0]
+];
+
 const boardContainer = document.querySelector(".board");
-document.addEventListener('swiped-up', function(e) {
-    console.log(e.target); // the element that was swiped
-});
 
 function display() {
     let elem = 0;
@@ -23,61 +15,150 @@ function display() {
                 boardContainer.children[elem].style.color = "";
                 boardContainer.children[elem].innerText = "";
                 boardContainer.children[elem].style.backgroundColor = "";
-                elem++
+                elem++;
             } else {
                 if (board[row][col] >= 128) {
                     boardContainer.children[elem].style.color = "white";
+                } else {
+                    boardContainer.children[elem].style.color = "#111";
                 }
                 boardContainer.children[elem].innerText = board[row][col];
                 boardContainer.children[elem].style.backgroundColor = changeColor(row, col);
-                elem++
+                elem++;
             }
         }
     }
 }
 
-function assignRandom() {
-    let row = Math.floor(Math.random() * 4)
-    let col = Math.floor(Math.random() * 4)
-    if (board[row][col] == 0) {
-        let chance = Math.random();
-        if (chance > 0.9)
-            board[row][col] = 4;
-        else board[row][col] = 2;
-    } else {
-        try {
-            assignRandom();
-        } catch {
-            console.log("game over");
+function slide(row) {
+    let arr = row.filter(val => val !== 0);
+    while (arr.length < 4) {
+        arr.push(0);
+    }
+    return arr;
+}
+
+function combine(row) {
+    for (let i = 0; i < 3; i++) {
+        if (row[i] !== 0 && row[i] === row[i + 1]) {
+            row[i] *= 2;
+            row[i + 1] = 0;
         }
     }
+    return row;
 }
-window.addEventListener('keyup', (e) => {
+
+function moveRowLeft(row) {
+    let s = slide(row);
+    let c = combine(s);
+    return slide(c);
+}
+
+function moveLeft() {
+    let changed = false;
+    for (let r = 0; r < 4; r++) {
+        let oldRow = [...board[r]];
+        board[r] = moveRowLeft(board[r]);
+        if (oldRow.some((val, idx) => val !== board[r][idx])) {
+            changed = true;
+        }
+    }
+    return changed;
+}
+
+function moveRight() {
+    let changed = false;
+    for (let r = 0; r < 4; r++) {
+        let oldRow = [...board[r]];
+        let reversed = [...board[r]].reverse();
+        reversed = moveRowLeft(reversed);
+        board[r] = reversed.reverse();
+        if (oldRow.some((val, idx) => val !== board[r][idx])) {
+            changed = true;
+        }
+    }
+    return changed;
+}
+
+function moveUp() {
+    let changed = false;
+    for (let c = 0; c < 4; c++) {
+        let col = [board[0][c], board[1][c], board[2][c], board[3][c]];
+        let newCol = moveRowLeft(col);
+        for (let r = 0; r < 4; r++) {
+            if (board[r][c] !== newCol[r]) {
+                changed = true;
+            }
+            board[r][c] = newCol[r];
+        }
+    }
+    return changed;
+}
+
+function moveDown() {
+    let changed = false;
+    for (let c = 0; c < 4; c++) {
+        let col = [board[0][c], board[1][c], board[2][c], board[3][c]];
+        let reversed = col.reverse();
+        let newCol = moveRowLeft(reversed).reverse();
+        for (let r = 0; r < 4; r++) {
+            if (board[r][c] !== newCol[r]) {
+                changed = true;
+            }
+            board[r][c] = newCol[r];
+        }
+    }
+    return changed;
+}
+
+function assignRandom() {
+    let emptyCells = [];
+    for (let r = 0; r < 4; r++) {
+        for (let c = 0; c < 4; c++) {
+            if (board[r][c] === 0) {
+                emptyCells.push({ r, c });
+            }
+        }
+    }
+    if (emptyCells.length === 0) return false;
+    let chosen = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+    board[chosen.r][chosen.c] = Math.random() > 0.9 ? 4 : 2;
+    return true;
+}
+
+window.addEventListener('keydown', (e) => {
+    let moved = false;
     switch (e.key) {
         case "ArrowUp":
-            moveUp();
+            e.preventDefault();
+            moved = moveUp();
             break;
         case "ArrowDown":
-            moveDown();
+            e.preventDefault();
+            moved = moveDown();
             break;
         case "ArrowLeft":
-            moveLeft();
+            e.preventDefault();
+            moved = moveLeft();
             break;
         case "ArrowRight":
-            moveRight();
+            e.preventDefault();
+            moved = moveRight();
             break;
         default:
-            return
+            return;
     }
-    display()
-    assignRandom()
-    display()
-})
+    if (moved) {
+        assignRandom();
+        display();
+    }
+});
 
 function changeColor(row, col) {
     let value = board[row][col];
-    return `hsla(220, ${(100/12)*(Math.log2(value))}%, ${100-Math.log2(value)*12}%,${100-Math.log2(value)/12}%)`;
+    return `hsla(220, ${(100 / 12) * (Math.log2(value))}%, ${100 - Math.log2(value) * 12}%, ${100 - Math.log2(value) / 12}%)`;
 }
-assignRandom()
-assignRandom()
-display()
+
+assignRandom();
+assignRandom();
+display();
