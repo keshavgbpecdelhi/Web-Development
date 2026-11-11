@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word & Character Counter Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📝 Word & Character Counter</h1>
+      <p class="subtitle">Live statistics, reading time estimation, and text formatting</p>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-value" id="wordCount">0</span>
+        <span class="stat-label">Words</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="charCount">0</span>
+        <span class="stat-label">Characters</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="charNoSpaces">0</span>
+        <span class="stat-label">No Spaces</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="sentenceCount">0</span>
+        <span class="stat-label">Sentences</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="paragraphCount">0</span>
+        <span class="stat-label">Paragraphs</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-value" id="readingTime">0s</span>
+        <span class="stat-label">Reading Time</span>
+      </div>
+    </div>
+
+    <div class="editor-section">
+      <textarea id="textInput" placeholder="Type or paste your text here to begin analysis..." autofocus></textarea>
+    </div>
+
+    <div class="actions-bar">
+      <div class="tool-buttons">
+        <button id="upperBtn" class="btn btn-tool">UPPERCASE</button>
+        <button id="lowerBtn" class="btn btn-tool">lowercase</button>
+        <button id="titleBtn" class="btn btn-tool">Title Case</button>
+        <button id="copyBtn" class="btn btn-tool">📋 Copy</button>
+        <button id="clearBtn" class="btn btn-tool btn-danger">🗑️ Clear</button>
+      </div>
+      <div id="toast" class="toast">Copied to clipboard!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
