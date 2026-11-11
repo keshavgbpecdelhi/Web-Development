@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <header class="card-header">
+      <h1>📷 QR Code Generator</h1>
+      <p>Convert text or URLs into customizable, downloadable QR codes</p>
+    </header>
+
+    <div class="input-group">
+      <label for="textInput">Enter Text or URL</label>
+      <input type="text" id="textInput" placeholder="https://example.com" value="https://github.com/keshavgbpecdelhi/Web-Development" autocomplete="off">
+    </div>
+
+    <div class="customization-row">
+      <div class="color-control">
+        <label for="fgColor">Color</label>
+        <input type="color" id="fgColor" value="#0f172a">
+      </div>
+      <div class="color-control">
+        <label for="bgColor">Background</label>
+        <input type="color" id="bgColor" value="#ffffff">
+      </div>
+      <div class="size-control">
+        <label for="sizeSelect">Size</label>
+        <select id="sizeSelect">
+          <option value="160">160 × 160</option>
+          <option value="220" selected>220 × 220</option>
+          <option value="280">280 × 280</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="qr-preview-box">
+      <div id="qrcode"></div>
+    </div>
+
+    <div class="action-buttons">
+      <button id="generateBtn" class="btn btn-primary">Generate QR</button>
+      <button id="downloadBtn" class="btn btn-secondary">Download PNG</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
