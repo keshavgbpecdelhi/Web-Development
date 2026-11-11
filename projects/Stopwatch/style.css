@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #0f172a, #020617);
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.stopwatch-container {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  color: #f1f5f9;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.display-card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  padding: 28px 16px;
+  margin-bottom: 24px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.time-display {
+  font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', monospace;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.milliseconds {
+  font-size: 1.75rem;
+  color: #7dd3fc;
+  font-weight: 500;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.btn {
+  flex: 1;
+  padding: 13px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.btn-start:hover:not(:disabled) {
+  background: #16a34a;
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.4);
+}
+
+.btn-pause {
+  background: #f59e0b;
+  color: #451a03;
+}
+
+.btn-pause:hover:not(:disabled) {
+  background: #d97706;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.4);
+}
+
+.btn-lap {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.btn-lap:hover:not(:disabled) {
+  background: #2563eb;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.4);
+}
+
+.btn-reset {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-reset:hover:not(:disabled) {
+  background: #dc2626;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.4);
+}
+
+.shortcuts-hint {
+  font-size: 0.78rem;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.shortcuts-hint strong {
+  color: #94a3b8;
+}
+
+.laps-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+  text-align: left;
+}
+
+.laps-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #94a3b8;
+  padding: 0 8px 8px;
+  letter-spacing: 0.5px;
+}
+
+.laps-list {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.laps-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.laps-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.lap-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  font-family: monospace;
+  font-size: 0.92rem;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  background: rgba(15, 23, 42, 0.4);
+}
+
+.lap-item.fastest {
+  color: #4ade80;
+  background: rgba(34, 197, 94, 0.12);
+}
+
+.lap-item.slowest {
+  color: #f87171;
+  background: rgba(239, 68, 68, 0.12);
+}

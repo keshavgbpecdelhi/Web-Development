@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Stopwatch with Laps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <header class="app-header">
+      <h1>⏱️ Stopwatch</h1>
+      <p class="subtitle">Precision timing with lap recording</p>
+    </header>
+
+    <div class="display-card">
+      <div class="time-display" id="timeDisplay">00:00:00<span class="milliseconds" id="msDisplay">.00</span></div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn" class="btn btn-start">Start</button>
+      <button id="lapBtn" class="btn btn-lap" disabled>Lap</button>
+      <button id="resetBtn" class="btn btn-reset" disabled>Reset</button>
+    </div>
+
+    <div class="shortcuts-hint">
+      <span>Shortcuts: <strong>Space</strong> (Start/Pause) | <strong>L</strong> (Lap) | <strong>R</strong> (Reset)</span>
+    </div>
+
+    <div class="laps-section" id="lapsSection" style="display: none;">
+      <div class="laps-header">
+        <span>Lap</span>
+        <span>Split Time</span>
+        <span>Total Time</span>
+      </div>
+      <ul class="laps-list" id="lapsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

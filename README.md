@@ -8,7 +8,7 @@ The list of active maintainers is available in [MAINTAINERS.md](./MAINTAINERS.md
 
 | Title | Code | Live Demo |
 | ----- | ---- | --------- |
-|Stopwatch| [Code](https://github.com/Husayn01/Stopwatch)| [Demo](https://stopwatch-husayn01.vercel.app/)|
+| Stopwatch | [Code](https://github.com/keshavgbpecdelhi/Web-Development/tree/master/projects/Stopwatch) | [Demo](https://keshavgbpecdelhi.github.io/Web-Development/projects/Stopwatch/index.html) |
 | Headings | [Headings](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/basics/html/types_of_headings.html) | [See headings](https://keshavgbpecdelhi.github.io/Web-Development/basics/html/types_of_headings.html) |
 | Tables | [Table](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/basics/html/a_simple_table_in_html.html) | [See Table](https://keshavgbpecdelhi.github.io/Web-Development/basics/html/a_simple_table_in_html.html) |
 | Basic Form | [Basic Form](https://github.com/keshavgbpecdelhi/Web-Development/blob/master/basics/html/Basic_form.html) | [Tuition Form](https://keshavgbpecdelhi.github.io/Web-Development/basics/html/Basic_form.html) |
